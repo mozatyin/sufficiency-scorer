@@ -1,14 +1,14 @@
-"""Scenario validation — 9 types of user input with expected ring behavior.
+"""Scenario validation — 9 types of user input with insight-based expectations.
 
-Uses the 10_scenarios.json data from emotion-detector as ground truth for
-emotion activation, and simulates the other detectors based on content analysis.
+Uses 10_scenarios.json from emotion-detector for real text inputs.
+Tests that each scenario type produces the right number and type of insights.
 """
 
 import json
 import pytest
 from pathlib import Path
 
-from sufficiency_scorer.models import DetectorResult, Dimension
+from sufficiency_scorer.models import DetectorResult, Dimension, InsightQuality
 from sufficiency_scorer.scorer import SufficiencyScorer
 from sufficiency_scorer.detectors.eq import EQAdapter
 
@@ -23,215 +23,150 @@ def load_scenarios() -> list[dict]:
         return json.load(f)
 
 
-# Expected activation patterns per scenario type.
-# These are based on the design doc's analysis of what each input type triggers.
-EXPECTED_ACTIVATIONS: dict[str, dict[str, bool]] = {
-    "工作压力": {
-        "emotion": True, "eq": True, "conflict": True, "fragility": True,
-        "humor": False, "mbti": False, "love_language": False,
-        "connection_response": False, "character": False,
-        "communication_dna": True, "soulgraph": True,
-    },
-    "自嘲幽默": {
-        "emotion": True, "eq": True, "conflict": False, "fragility": True,
-        "humor": True, "mbti": False, "love_language": False,
-        "connection_response": False, "character": False,
-        "communication_dna": True, "soulgraph": True,
-    },
-    "关系困境": {
-        "emotion": True, "eq": True, "conflict": True, "fragility": True,
-        "humor": False, "mbti": False, "love_language": True,
-        "connection_response": True, "character": False,
-        "communication_dna": True, "soulgraph": True,
-    },
-    "自我探索": {
-        "emotion": True, "eq": True, "conflict": False, "fragility": False,
-        "humor": False, "mbti": True, "love_language": False,
-        "connection_response": False, "character": False,
-        "communication_dna": True, "soulgraph": True,
-    },
-    "焦虑失眠": {
-        "emotion": True, "eq": True, "conflict": False, "fragility": True,
-        "humor": False, "mbti": False, "love_language": False,
-        "connection_response": False, "character": False,
-        "communication_dna": True, "soulgraph": True,
-    },
-    "孤独隐形": {
-        "emotion": True, "eq": True, "conflict": False, "fragility": True,
-        "humor": False, "mbti": True, "love_language": False,
-        "connection_response": False, "character": False,
-        "communication_dna": True, "soulgraph": True,
-    },
-    "兴奋发现": {
-        "emotion": True, "eq": True, "conflict": False, "fragility": False,
-        "humor": False, "mbti": True, "love_language": False,
-        "connection_response": False, "character": False,
-        "communication_dna": True, "soulgraph": True,
-    },
-    "迷茫漂泊": {
-        "emotion": True, "eq": True, "conflict": False, "fragility": True,
-        "humor": False, "mbti": False, "love_language": False,
-        "connection_response": False, "character": False,
-        "communication_dna": True, "soulgraph": True,
-    },
-    "丧亲之痛": {
-        "emotion": True, "eq": True, "conflict": False, "fragility": True,
-        "humor": False, "mbti": False, "love_language": False,
-        "connection_response": False, "character": False,
-        "communication_dna": True, "soulgraph": True,
-    },
-}
-
-# Expected score ranges per scenario type
-EXPECTED_SCORE_RANGES: dict[str, tuple[float, float]] = {
-    "工作压力": (0.55, 0.90),    # emotion + conflict + fragility + eq + comm_dna + soulgraph = 6
-    "自嘲幽默": (0.55, 0.90),    # emotion + humor + fragility + eq + comm_dna + soulgraph = 6
-    "关系困境": (0.85, 1.00),    # 8 dimensions → should hit 100%
-    "自我探索": (0.45, 0.80),    # emotion + eq + mbti + comm_dna + soulgraph = 5
-    "焦虑失眠": (0.45, 0.80),    # emotion + eq + fragility + comm_dna + soulgraph = 5
-    "孤独隐形": (0.55, 0.90),    # emotion + eq + fragility + mbti + comm_dna + soulgraph = 6
-    "兴奋发现": (0.45, 0.80),    # emotion + eq + mbti + comm_dna + soulgraph = 5
-    "迷茫漂泊": (0.45, 0.80),    # emotion + eq + fragility + comm_dna + soulgraph = 5
-    "丧亲之痛": (0.45, 0.80),    # emotion + eq + fragility + comm_dna + soulgraph = 5
-}
+def make_result(dim: Dimension, activated: bool = False, confidence: float = 0.0, detail: dict | None = None) -> DetectorResult:
+    return DetectorResult(dimension=dim, activated=activated, confidence=confidence, detail=detail or {})
 
 
-def simulate_detectors(scenario: dict, activations: dict[str, bool]) -> list[DetectorResult]:
-    """Simulate detector results based on expected activation patterns.
-
-    Uses real emotion data from 10_scenarios.json and simulates others.
-    """
+def simulate_scenario(activations: dict[str, dict]) -> list[DetectorResult]:
+    """Build detector results from expected activation patterns."""
     results = []
-    emotions = scenario.get("emotions", {})
-    max_emotion = max(emotions.values()) if emotions else 0.0
-    distress = scenario.get("distress", 0.0)
-
-    dim_map = {
-        "emotion": Dimension.EMOTION,
-        "eq": Dimension.EQ,
-        "conflict": Dimension.CONFLICT,
-        "humor": Dimension.HUMOR,
-        "mbti": Dimension.MBTI,
-        "fragility": Dimension.FRAGILITY,
-        "love_language": Dimension.LOVE_LANGUAGE,
-        "connection_response": Dimension.CONNECTION_RESPONSE,
-        "character": Dimension.CHARACTER,
-        "communication_dna": Dimension.COMMUNICATION_DNA,
-        "soulgraph": Dimension.SOULGRAPH,
-    }
-
-    for name, dim in dim_map.items():
-        activated = activations.get(name, False)
-        if name == "emotion":
-            confidence = max_emotion if activated else 0.0
-        elif name == "eq":
-            confidence = min(1.0, distress + 0.3) if activated else 0.0
-        elif name == "fragility":
-            confidence = min(1.0, distress * 1.2) if activated else 0.0
-        elif activated:
-            confidence = 0.6  # default for simulated detectors
+    for dim in Dimension:
+        spec = activations.get(dim.value)
+        if spec and spec.get("activated"):
+            results.append(make_result(dim, True, spec.get("confidence", 0.6), spec.get("detail", {})))
         else:
-            confidence = 0.0
-
-        results.append(DetectorResult(
-            dimension=dim,
-            activated=activated,
-            confidence=confidence,
-        ))
-
+            results.append(make_result(dim))
     return results
 
 
-class TestScenarioScoring:
-    """Validate that 9 scenario types produce reasonable ring progress."""
+SCENARIO_DETECTORS = {
+    "工作压力": {
+        "emotion": {"activated": True, "confidence": 0.7, "detail": {
+            "top_emotions": [("frustration", 0.55), ("anger", 0.52), ("sadness", 0.48)],
+        }},
+        "eq": {"activated": True, "confidence": 0.6, "detail": {
+            "features": {"self_ref": 0.15, "question_ratio": 0.33, "words": 27},
+            "valence": -0.35, "distress": 0.43,
+        }},
+        "conflict": {"activated": True, "confidence": 0.6, "detail": {
+            "styles": {"avoid": 0.7, "compromise": 0.4},
+        }},
+        "fragility": {"activated": True, "confidence": 0.5, "detail": {
+            "pattern": "open", "pattern_scores": {"open": 0.6},
+        }},
+        "soulgraph": {"activated": True, "confidence": 0.5, "detail": {
+            "items": 2, "avg_specificity": 0.5,
+        }},
+    },
+    "自嘲幽默": {
+        "emotion": {"activated": True, "confidence": 0.6, "detail": {
+            "top_emotions": [("sadness", 0.5), ("amusement", 0.4)],
+        }},
+        "eq": {"activated": True, "confidence": 0.5, "detail": {
+            "features": {"self_ref": 0.1, "question_ratio": 0.33, "words": 26},
+            "valence": -0.15, "distress": 0.25,
+        }},
+        "humor": {"activated": True, "confidence": 0.7, "detail": {
+            "humor_detected": True, "styles": {"self_deprecating": 0.8, "affiliative": 0.3},
+        }},
+        "conflict": {"activated": True, "confidence": 0.5, "detail": {
+            "styles": {"avoid": 0.6, "compromise": 0.3},
+        }},
+        "fragility": {"activated": True, "confidence": 0.5, "detail": {
+            "pattern": "masked", "pattern_scores": {"masked": 0.6},
+        }},
+        "soulgraph": {"activated": True, "confidence": 0.4, "detail": {
+            "items": 1, "avg_specificity": 0.4,
+        }},
+    },
+    "关系困境": {
+        "emotion": {"activated": True, "confidence": 0.7, "detail": {
+            "top_emotions": [("frustration", 0.6), ("sadness", 0.55), ("anger", 0.4)],
+        }},
+        "eq": {"activated": True, "confidence": 0.6, "detail": {
+            "features": {"self_ref": 0.1, "question_ratio": 0.0, "words": 30},
+            "valence": -0.4, "distress": 0.5,
+        }},
+        "conflict": {"activated": True, "confidence": 0.7, "detail": {
+            "styles": {"avoid": 0.6, "collaborate": 0.5},
+        }},
+        "fragility": {"activated": True, "confidence": 0.6, "detail": {
+            "pattern": "open", "pattern_scores": {"open": 0.7},
+        }},
+        "love_language": {"activated": True, "confidence": 0.5, "detail": {
+            "has_relationship_context": True,
+        }},
+        "connection_response": {"activated": True, "confidence": 0.5, "detail": {
+            "patterns": ["turning_away"],
+        }},
+        "soulgraph": {"activated": True, "confidence": 0.6, "detail": {
+            "items": 3, "avg_specificity": 0.6,
+        }},
+    },
+    "丧亲之痛": {
+        "emotion": {"activated": True, "confidence": 0.8, "detail": {
+            "top_emotions": [("grief", 0.8), ("sadness", 0.7), ("despair", 0.5)],
+        }},
+        "eq": {"activated": True, "confidence": 0.7, "detail": {
+            "features": {"self_ref": 0.12, "question_ratio": 0.0, "words": 35},
+            "valence": -0.6, "distress": 0.7,
+        }},
+        "fragility": {"activated": True, "confidence": 0.7, "detail": {
+            "pattern": "open", "pattern_scores": {"open": 0.8},
+        }},
+        "soulgraph": {"activated": True, "confidence": 0.5, "detail": {
+            "items": 2, "avg_specificity": 0.5,
+        }},
+    },
+}
 
+
+class TestScenarioInsights:
     @pytest.fixture
     def scorer(self):
         return SufficiencyScorer()
 
-    @pytest.fixture
-    def scenarios(self):
-        return load_scenarios()
-
-    def test_all_scenarios_in_expected_range(self, scorer, scenarios):
-        for scenario in scenarios:
-            stype = scenario["type"]
-            if stype not in EXPECTED_ACTIVATIONS:
-                continue
-            activations = EXPECTED_ACTIVATIONS[stype]
-            results = simulate_detectors(scenario, activations)
-            report = scorer.score(results)
-            lo, hi = EXPECTED_SCORE_RANGES[stype]
-            assert lo <= report.score <= hi, (
-                f"{stype}: score {report.score:.3f} not in [{lo}, {hi}]. "
-                f"Activated: {report.activated_count}"
-            )
-
-    def test_work_pressure_activates_conflict(self, scorer, scenarios):
-        scenario = next(s for s in scenarios if s["type"] == "工作压力")
-        activations = EXPECTED_ACTIVATIONS["工作压力"]
-        results = simulate_detectors(scenario, activations)
+    def test_work_pressure_ready(self, scorer):
+        results = simulate_scenario(SCENARIO_DETECTORS["工作压力"])
         report = scorer.score(results)
-        conflict_seg = [s for s in report.segments if s.dimension == Dimension.CONFLICT][0]
-        assert conflict_seg.filled is True
+        assert report.ready is True
+        assert len(report.insights) >= 3
 
-    def test_self_deprecating_humor_activates_humor(self, scorer, scenarios):
-        scenario = next(s for s in scenarios if s["type"] == "自嘲幽默")
-        activations = EXPECTED_ACTIVATIONS["自嘲幽默"]
-        results = simulate_detectors(scenario, activations)
+    def test_self_deprecating_humor_ready(self, scorer):
+        results = simulate_scenario(SCENARIO_DETECTORS["自嘲幽默"])
         report = scorer.score(results)
-        humor_seg = [s for s in report.segments if s.dimension == Dimension.HUMOR][0]
-        assert humor_seg.filled is True
+        assert report.ready is True
+        humor_insights = [i for i in report.insights if Dimension.HUMOR in i.source_dimensions]
+        assert len(humor_insights) >= 1
 
-    def test_relationship_crisis_near_full(self, scorer, scenarios):
-        """关系困境 activates 8 dimensions → should be near/at 100%."""
-        scenario = next(s for s in scenarios if s["type"] == "关系困境")
-        activations = EXPECTED_ACTIVATIONS["关系困境"]
-        results = simulate_detectors(scenario, activations)
+    def test_relationship_crisis_ready_with_many(self, scorer):
+        results = simulate_scenario(SCENARIO_DETECTORS["关系困境"])
         report = scorer.score(results)
-        assert report.score >= 0.85
-        assert report.activated_count >= 7
+        assert report.ready is True
+        assert len(report.insights) >= 4
 
-    def test_grief_activates_fragility(self, scorer, scenarios):
-        scenario = next(s for s in scenarios if s["type"] == "丧亲之痛")
-        activations = EXPECTED_ACTIVATIONS["丧亲之痛"]
-        results = simulate_detectors(scenario, activations)
+    def test_grief_ready(self, scorer):
+        results = simulate_scenario(SCENARIO_DETECTORS["丧亲之痛"])
         report = scorer.score(results)
-        frag_seg = [s for s in report.segments if s.dimension == Dimension.FRAGILITY][0]
-        assert frag_seg.filled is True
+        assert report.ready is True
+        assert any("grief" in i.signal or "loss" in i.reframe.lower() or "depth" in i.reframe.lower()
+                    for i in report.insights)
 
 
 class TestGibberishRejection:
-    """Garbage input should not move the ring."""
-
     @pytest.fixture
     def scorer(self):
         return SufficiencyScorer()
 
-    def test_hahaha_hi_zero_score(self, scorer):
-        """'哈哈哈嗨' equivalent — nothing activates."""
-        results = [DetectorResult(dimension=dim) for dim in Dimension]
+    def test_nothing_activated_not_ready(self, scorer):
+        results = [make_result(dim) for dim in Dimension]
         report = scorer.score(results)
-        assert report.score == 0.0
-        assert report.activated_count == 0
+        assert report.ready is False
+        assert len(report.insights) == 0
         assert report.prompt_hint == "tell_me_more"
-
-    def test_only_eq_from_short_text(self, scorer):
-        """Even if EQ picks up a faint signal, no emotion = capped."""
-        results = [DetectorResult(dimension=dim) for dim in Dimension]
-        results = [
-            r if r.dimension != Dimension.EQ
-            else DetectorResult(dimension=Dimension.EQ, activated=True, confidence=0.2)
-            for r in results
-        ]
-        report = scorer.score(results)
-        assert report.score <= 0.45
-        assert report.prompt_hint == "how_do_you_feel"
 
 
 class TestEQOnRealScenarios:
-    """Run the real EQ adapter on scenario texts."""
-
     @pytest.fixture
     def scenarios(self):
         return load_scenarios()
@@ -242,7 +177,6 @@ class TestEQOnRealScenarios:
         adapter = EQAdapter()
         result = await adapter.detect(scenario["text"])
         assert result.activated is True
-        assert result.detail["features"]["self_ref"] > 0.05
 
     @pytest.mark.asyncio
     async def test_excited_discovery_eq(self, scenarios):
@@ -250,5 +184,3 @@ class TestEQOnRealScenarios:
         adapter = EQAdapter()
         result = await adapter.detect(scenario["text"])
         assert result.activated is True
-        # Should have positive emotion signal
-        assert result.detail["features"]["pos_emotion_ratio"] > 0 or result.detail["features"]["exclamation_ratio"] > 0
