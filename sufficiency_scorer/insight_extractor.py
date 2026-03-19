@@ -5,6 +5,8 @@ Two passes:
 2. Single-dimensional (MEDIUM): top signal from each detector, positively reframed.
 """
 
+import re
+
 from sufficiency_scorer.config import MIN_CONFIDENCE, MIN_INSIGHT_CONFIDENCE
 from sufficiency_scorer.models import (
     DetectorResult,
@@ -233,7 +235,7 @@ CROSS_PATTERNS: list[_CrossPattern] = [
 class InsightExtractor:
     """Extracts reframeable insights from detector results."""
 
-    def extract(self, results: list[DetectorResult]) -> list[InsightCandidate]:
+    def extract(self, results: list[DetectorResult], user_text: str = "") -> list[InsightCandidate]:
         """Run both passes and return sorted insights."""
         active = [r for r in results if r.activated and r.confidence >= MIN_CONFIDENCE]
         by_dim: dict[Dimension, DetectorResult] = {r.dimension: r for r in active}
@@ -251,9 +253,105 @@ class InsightExtractor:
         single_insights = self._single_dimensional(by_dim, used_dims)
         insights.extend(single_insights)
 
+        # --- Contextualize with user text (dynamic reframing) ---
+        if user_text:
+            context = self._extract_context(user_text)
+            insights = [self._contextualize(i, context) for i in insights]
+
         # Sort: quality desc, confidence desc
         insights.sort(key=lambda i: (-i.quality.value, -i.confidence))
         return insights
+
+    @staticmethod
+    def _extract_context(text: str) -> dict:
+        """Extract key contextual elements from user text."""
+        text_lower = text.lower()
+        words = text_lower.split()
+
+        # Extract topic indicators
+        topics: list[str] = []
+        topic_patterns = {
+            "work": ["work", "job", "boss", "overtime", "ot", "office", "career", "colleague"],
+            "relationship": ["partner", "husband", "wife", "boyfriend", "girlfriend", "relationship", "marriage", "dating", "dumped", "breakup"],
+            "family": ["mom", "dad", "mother", "father", "parent", "brother", "sister", "family", "child", "son", "daughter"],
+            "health": ["sleep", "insomnia", "tired", "exhausted", "sick", "anxiety", "panic", "pain"],
+            "identity": ["who am i", "purpose", "meaning", "lost", "confused", "direction", "figure out"],
+            "grief": ["passed away", "died", "death", "lost", "funeral", "grief", "mourning", "gone"],
+        }
+        for topic, keywords in topic_patterns.items():
+            if any(kw in text_lower for kw in keywords):
+                topics.append(topic)
+
+        # Extract key action phrases (what the user is doing/experiencing)
+        actions: list[str] = []
+        action_patterns = [
+            r"(forcing me to [\w ]{1,30})",
+            r"(keeps? (?:pushing|asking|telling|making) me[\w ]{0,20})",
+            r"(don'?t know (?:what to do|how to|if I)[\w ]{0,15})",
+            r"(can'?t (?:sleep|stop|take|handle|figure)[\w ]{0,20})",
+            r"(feel(?:s|ing)? (?:like|trapped|lost|alone|invisible)[\w ]{0,15})",
+            r"(got dumped|broke up|left me)",
+            r"(passed away|died)",
+        ]
+        for pattern in action_patterns:
+            match = re.search(pattern, text_lower)
+            if match:
+                actions.append(match.group(1).strip())
+
+        # Extract key nouns for specificity
+        specifics: list[str] = []
+        for word in words:
+            if word in ("boss", "partner", "mom", "dad", "job", "interview", "painting"):
+                specifics.append(word)
+
+        return {
+            "topics": topics,
+            "actions": actions,
+            "specifics": specifics,
+            "has_question": "?" in text,
+        }
+
+    def _contextualize(self, insight: InsightCandidate, context: dict) -> InsightCandidate:
+        """Add user context to a reframe if possible."""
+        topics = context.get("topics", [])
+        actions = context.get("actions", [])
+        specifics = context.get("specifics", [])
+
+        if not (topics or actions or specifics):
+            return insight
+
+        # Build a contextual suffix
+        suffix = ""
+        if actions:
+            suffix = f" \u2014 especially when {actions[0]}"
+        elif specifics and topics:
+            topic = topics[0]
+            specific = specifics[0]
+            topic_phrases = {
+                "work": f"at work with your {specific}" if specific in ("boss", "colleague") else "in your work situation",
+                "relationship": "in your relationship" if specific in ("partner", "husband", "wife") else "in your relationships",
+                "family": f"with your {specific}" if specific in ("mom", "dad", "mother", "father") else "in your family",
+                "grief": f"after losing your {specific}" if specific in ("mom", "dad") else "through this loss",
+                "health": "with what you're going through physically",
+                "identity": "as you figure out what you really want",
+            }
+            suffix = f" \u2014 {topic_phrases.get(topic, 'in your situation')}"
+        elif topics:
+            topic_generic = {
+                "work": "in your work situation",
+                "relationship": "in your relationships",
+                "family": "within your family",
+                "grief": "through this loss",
+                "health": "with what you're going through",
+                "identity": "as you search for clarity",
+            }
+            suffix = f" \u2014 {topic_generic.get(topics[0], 'in your situation')}"
+
+        if suffix and not insight.reframe.endswith(suffix):
+            new_reframe = insight.reframe.rstrip(".!") + suffix
+            return insight.model_copy(update={"reframe": new_reframe})
+
+        return insight
 
     # ------------------------------------------------------------------
     # Pass 1 — cross-dimensional
