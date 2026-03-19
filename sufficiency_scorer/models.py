@@ -11,12 +11,12 @@ class Dimension(str, Enum):
     HUMOR = "humor"
     MBTI = "mbti"
     LOVE_LANGUAGE = "love_language"
-    EQ = "eq"  # behavioral features + valence + distress
+    EQ = "eq"
     FRAGILITY = "fragility"
     CONNECTION_RESPONSE = "connection_response"
     CHARACTER = "character"
     COMMUNICATION_DNA = "communication_dna"
-    SOULGRAPH = "soulgraph"  # intention extraction
+    SOULGRAPH = "soulgraph"
 
 
 class DetectorResult(BaseModel):
@@ -28,22 +28,62 @@ class DetectorResult(BaseModel):
 
 
 class RingSegment(BaseModel):
-    """One segment of the ring visualization."""
+    """Legacy — kept for backward compat until scorer.py is rewritten."""
     dimension: Dimension
     filled: bool = False
     intensity: float = Field(default=0.0, ge=0.0, le=1.0)
 
 
+class InsightQuality(int, Enum):
+    """Quality tier of an insight candidate."""
+    NOISE = 0
+    LOW = 1
+    MEDIUM = 2
+    HIGH = 3
+
+
+class InsightCandidate(BaseModel):
+    """A packageable finding — something we can reframe back to the user."""
+    source_dimensions: list[Dimension]
+    signal: str = Field(description="What the detectors found (internal)")
+    reframe: str = Field(description="How to say it back to the user (positive reframing)")
+    quality: InsightQuality = InsightQuality.NOISE
+    confidence: float = Field(default=0.0, ge=0.0, le=1.0)
+
+
 class SufficiencyReport(BaseModel):
-    """Full output of the scorer - drives the ring UI."""
-    score: float = Field(ge=0.0, le=1.0, description="0.0-1.0 ring progress")
-    ready: bool = Field(default=False, description="True when ring is full, trigger star bloom")
-    activated_count: int = Field(default=0, description="How many dimensions lit up")
-    total_dimensions: int = Field(default=11)
-    segments: list[RingSegment] = Field(default_factory=list)
+    """Output of the scorer — drives ring UI and star bloom."""
+    ready: bool = Field(default=False, description="True = bloom, False = keep going")
+    insights: list[InsightCandidate] = Field(default_factory=list)
     detector_results: list[DetectorResult] = Field(default_factory=list)
-    prompt_hint: str = Field(default="", description="UI hint: empty=keep going, 'ready'=bloom")
+    ring_progress: float = Field(default=0.0, ge=0.0, le=1.0, description="For ring animation")
+    prompt_hint: str = Field(default="", description="UI hint for what to show")
+
+    # Legacy fields — kept for backward compat until scorer.py is rewritten
+    score: float = Field(default=0.0, ge=0.0, le=1.0, description="Legacy: 0.0-1.0 ring progress")
+    activated_count: int = Field(default=0, description="Legacy: how many dimensions lit up")
+    total_dimensions: int = Field(default=11, description="Legacy")
+    segments: list[RingSegment] = Field(default_factory=list, description="Legacy")
+
+
+class SessionState:
+    """Accumulates text across multiple presses (Touch ID multi-tap)."""
+
+    def __init__(self, min_words: int = 40):
+        self.segments: list[str] = []
+        self.min_words = min_words
+
+    def add_segment(self, text: str) -> None:
+        self.segments.append(text)
 
     @property
-    def activation_ratio(self) -> float:
-        return self.activated_count / self.total_dimensions
+    def full_text(self) -> str:
+        return " ".join(self.segments)
+
+    @property
+    def word_count(self) -> int:
+        return len(self.full_text.split())
+
+    @property
+    def meets_minimum(self) -> bool:
+        return self.word_count >= self.min_words
