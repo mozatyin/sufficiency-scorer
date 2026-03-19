@@ -1,0 +1,3403 @@
+[
+  {
+    "id": 33,
+    "character": "Ishmael",
+    "novel": "Moby-Dick",
+    "avg_score": 40.0,
+    "insight_count": 3,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand the",
+        "quality": "HIGH"
+      },
+      {
+        "score": 70,
+        "reason": "PARTIAL DEEP: 'self-aware about using adventure to escape inner darkness'",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your w",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You've been carrying something heavy for a while — in your work situation",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "character": "Madame Bovary",
+    "novel": "Madame Bovary",
+    "avg_score": 40.0,
+    "insight_count": 3,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand the",
+        "quality": "HIGH"
+      },
+      {
+        "score": 70,
+        "reason": "PARTIAL DEEP: 'the gap between her inner world and outer reality is unbridgeable'",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your r",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You have a sharp sense of when things aren't right — in your relationships",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "character": "Celie",
+    "novel": "The Color Purple",
+    "avg_score": 39.4,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand the",
+        "quality": "HIGH"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'confused about what's happening'",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that ",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You connect with a warmth that others can feel",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 72,
+        "reason": "PARTIAL DEEP: 'doesn't realize her own strength yet'",
+        "reframe": "You let yourself be seen — that takes more courage than most realize",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 97,
+    "character": "Liesel (late)",
+    "novel": "The Book Thief",
+    "avg_score": 35.0,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that ",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — especiall",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — especiall",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'doesn't know how to live now'",
+        "reframe": "You care deeply about fairness — especially when don't know how to live in a wor",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'doesn't know how to live now'",
+        "reframe": "You feel things at a depth most people don't reach — especially when don't know ",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "character": "Eleanor Oliphant",
+    "novel": "Eleanor Oliphant Is Completely",
+    "avg_score": 34.0,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 70,
+        "reason": "PARTIAL DEEP: 'vodka on Fridays is the only crack in the facade'",
+        "reframe": "You've built walls, but you also see them clearly — that awareness is the first ",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand the",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your w",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You've built ways to protect yourself — and that kept you safe when you needed i",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're honest enough to sit with uncertainty instead of faking clarity — in your",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "character": "Mariam",
+    "novel": "A Thousand Splendid Suns",
+    "avg_score": 32.833333333333336,
+    "insight_count": 6,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand the",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You carry more than you let on, but part of you knows it — that self-knowledge i",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your w",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 72,
+        "reason": "PARTIAL DEEP: 'resilience she can't see in herself'",
+        "reframe": "You find the funny side even in hard moments — that's resilience — in your work ",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You carry more than you show — there's depth behind the surface — in your work s",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Even in difficulty, you hold onto what matters — in your work situation",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "character": "Pi Patel",
+    "novel": "Life of Pi",
+    "avg_score": 30.0,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that ",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Even in difficulty, you hold onto what matters — in your work situation",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'people don't believe him'",
+        "reframe": "You feel things at a depth most people don't reach — in your work situation",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — in your w",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your w",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "character": "Ove",
+    "novel": "A Man Called Ove",
+    "avg_score": 29.166666666666668,
+    "insight_count": 6,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself feel the hard things instead of running — that's braver than mo",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're not just venting — you're actively searching for answers — in your relati",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're asking the hard questions that most people avoid — that honesty takes rea",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're not just talking — you're actively searching for understanding — in your ",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'people don't follow rules'",
+        "reframe": "You feel things at a depth most people don't reach — in your relationships",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — in your r",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "character": "Raskolnikov",
+    "novel": "Crime and Punishment",
+    "avg_score": 25.0,
+    "insight_count": 7,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You laugh at yourself not to hide, but to stay real — humor is your honesty tool",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're not just venting — you're actively searching for answers — in your work s",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that ",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You use humor to keep things real — people trust that — in your work situation",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — in your w",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're tuned into risks others might miss — in your work situation",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your w",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "character": "Elizabeth Bennet",
+    "novel": "Pride and Prejudice",
+    "avg_score": 25.0,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You find the funny side even in hard moments — that's resilience — in your work ",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — in your w",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You care deeply about fairness — in your work situation",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You notice friction that others overlook — in your work situation",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your w",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "character": "Meursault",
+    "novel": "The Stranger",
+    "avg_score": 25.0,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that ",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "The depth of your loss reflects the depth of what you had — especially when died",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You feel things at a depth most people don't reach — especially when died",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — especiall",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — especiall",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "character": "Scout Finch",
+    "novel": "To Kill a Mockingbird",
+    "avg_score": 25.0,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand the",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that ",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — within yo",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're honest enough to sit with uncertainty instead of faking clarity — within ",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — within yo",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "character": "Humbert Humbert",
+    "novel": "Lolita",
+    "avg_score": 25.0,
+    "insight_count": 3,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand the",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your w",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You connect with a warmth that others can feel — in your work situation",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "character": "Offred",
+    "novel": "The Handmaid's Tale",
+    "avg_score": 25.0,
+    "insight_count": 3,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself feel the hard things instead of running — that's braver than mo",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — as you se",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You feel things at a depth most people don't reach — as you search for clarity",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "character": "Atticus Finch",
+    "novel": "To Kill a Mockingbird",
+    "avg_score": 25.0,
+    "insight_count": 2,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're honest enough to sit with uncertainty instead of faking clarity — within ",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Even in difficulty, you hold onto what matters — within your family",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "character": "Anna Karenina",
+    "novel": "Anna Karenina",
+    "avg_score": 25.0,
+    "insight_count": 3,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand the",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your w",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You feel things at a depth most people don't reach — in your work situation",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "character": "Winston Smith",
+    "novel": "1984",
+    "avg_score": 25.0,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that ",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your w",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — in your w",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're tuned into risks others might miss — in your work situation",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're honest enough to sit with uncertainty instead of faking clarity — in your",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "character": "Katniss Everdeen",
+    "novel": "The Hunger Games",
+    "avg_score": 25.0,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that ",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand the",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your w",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — in your w",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're tuned into risks others might miss — in your work situation",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "character": "Hamlet",
+    "novel": "Hamlet",
+    "avg_score": 25.0,
+    "insight_count": 3,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand the",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — especiall",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You care deeply about fairness — especially when feel like the whole worl",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "character": "Jane Eyre",
+    "novel": "Jane Eyre",
+    "avg_score": 25.0,
+    "insight_count": 3,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand the",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your w",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You connect with a warmth that others can feel — in your work situation",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "character": "Pip",
+    "novel": "Great Expectations",
+    "avg_score": 25.0,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand the",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're not hiding from what's hard — that openness is the foundation for growth ",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your w",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You've been carrying something heavy for a while — in your work situation",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — in your w",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "character": "Clarissa Dalloway",
+    "novel": "Mrs. Dalloway",
+    "avg_score": 25.0,
+    "insight_count": 3,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're not just venting — you're actively searching for answers — in your work s",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Your mind is always working to protect you — in your work situation",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your w",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "character": "Bigger Thomas",
+    "novel": "Native Son",
+    "avg_score": 25.0,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand the",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that ",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your w",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You have a sharp sense of when things aren't right — in your work situation",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — in your w",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "character": "Santiago",
+    "novel": "The Old Man and the Sea",
+    "avg_score": 25.0,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself feel the hard things instead of running — that's braver than mo",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that ",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your w",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — in your w",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You feel things at a depth most people don't reach — in your work situation",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "character": "Esther Greenwood",
+    "novel": "The Bell Jar",
+    "avg_score": 25.0,
+    "insight_count": 6,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that ",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand the",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself feel the hard things instead of running — that's braver than mo",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — as you se",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — as you se",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You feel things at a depth most people don't reach — as you search for clarity",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "character": "Sethe",
+    "novel": "Beloved",
+    "avg_score": 25.0,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that ",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — in your w",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your w",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Even in difficulty, you hold onto what matters — in your work situation",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You've been carrying something heavy for a while — in your work situation",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "character": "Huck Finn",
+    "novel": "Adventures of Huckleberry Finn",
+    "avg_score": 25.0,
+    "insight_count": 3,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — with what",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're honest enough to sit with uncertainty instead of faking clarity — with wh",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — with what",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "character": "Lisbeth Salander",
+    "novel": "The Girl with the Dragon Tatto",
+    "avg_score": 25.0,
+    "insight_count": 6,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that ",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand the",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your w",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You find the funny side even in hard moments — that's resilience — in your work ",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — in your w",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Even in difficulty, you hold onto what matters — in your work situation",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "character": "Dorian Gray",
+    "novel": "The Picture of Dorian Gray",
+    "avg_score": 25.0,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that ",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand the",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself be seen — that takes more courage than most realize",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You care deeply about fairness",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "character": "Nora Helmer",
+    "novel": "A Doll's House",
+    "avg_score": 25.0,
+    "insight_count": 8,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You think before you act in conflict — that's emotional intelligence, not avoida",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You carry more than you let on, but part of you knows it — that self-knowledge i",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand the",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You feel strongly but hold back — you're managing more than people see — in your",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your w",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You think before you engage — that's restraint, not weakness — in your work situ",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You carry more than you show — there's depth behind the surface — in your work s",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You care deeply about fairness — in your work situation",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "character": "Amir",
+    "novel": "The Kite Runner",
+    "avg_score": 25.0,
+    "insight_count": 2,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You've been carrying something heavy for a while",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "character": "Yossarian",
+    "novel": "Catch-22",
+    "avg_score": 25.0,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand the",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You think before you act in conflict — that's emotional intelligence, not avoida",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your w",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You think before you engage — that's restraint, not weakness — in your work situ",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're tuned into risks others might miss — in your work situation",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "character": "Tess Durbeyfield",
+    "novel": "Tess of the d'Urbervilles",
+    "avg_score": 25.0,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand the",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that ",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your w",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You care about being the person you want to be — in your work situation",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — in your w",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "character": "Jean Valjean",
+    "novel": "Les Misérables",
+    "avg_score": 25.0,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand the",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — within yo",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You face things head-on instead of letting them fester — within your family",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You have a sharp sense of when things aren't right — within your family",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "character": "Edna Pontellier",
+    "novel": "The Awakening",
+    "avg_score": 25.0,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that ",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand the",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — especiall",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — especiall",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're honest enough to sit with uncertainty instead of faking clarity — especia",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "character": "Alex DeLarge",
+    "novel": "A Clockwork Orange",
+    "avg_score": 25.0,
+    "insight_count": 2,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're not just talking — you're actively searching for understanding",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "character": "Jing-mei Woo",
+    "novel": "The Joy Luck Club",
+    "avg_score": 25.0,
+    "insight_count": 3,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand the",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your w",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Even in difficulty, you hold onto what matters — in your work situation",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "character": "Lily Bart",
+    "novel": "The House of Mirth",
+    "avg_score": 25.0,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You carry more than you let on, but part of you knows it — that self-knowledge i",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You carry more than you show — there's depth behind the surface — in your work s",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your w",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You feel things at a depth most people don't reach — in your work situation",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You've been carrying something heavy for a while — in your work situation",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "character": "Gregor Samsa",
+    "novel": "The Metamorphosis",
+    "avg_score": 25.0,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand the",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that ",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your w",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're tuned into risks others might miss — in your work situation",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — in your w",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "character": "Beloved",
+    "novel": "Beloved",
+    "avg_score": 25.0,
+    "insight_count": 3,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're not just venting — you're actively searching for answers — within your fa",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — within yo",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You care deeply about fairness — within your family",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "character": "Pecola Breedlove",
+    "novel": "The Bluest Eye",
+    "avg_score": 25.0,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand the",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You carry more than you let on, but part of you knows it — that self-knowledge i",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You care about being the person you want to be",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You carry more than you show — there's depth behind the surface",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "character": "Rodion's Mother",
+    "novel": "Crime and Punishment",
+    "avg_score": 25.0,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're not just venting — you're actively searching for answers — in your work s",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that ",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You connect with a warmth that others can feel — in your work situation",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — in your w",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your w",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "character": "Willy Loman",
+    "novel": "Death of a Salesman",
+    "avg_score": 25.0,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that ",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand the",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — with what",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — with what",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You have a sharp sense of when things aren't right — with what you're going thro",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "character": "Daisy Buchanan",
+    "novel": "The Great Gatsby",
+    "avg_score": 25.0,
+    "insight_count": 3,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're not just talking — you're actively searching for understanding",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You find the funny side even in hard moments — that's resilience",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "character": "Heathcliff",
+    "novel": "Wuthering Heights",
+    "avg_score": 25.0,
+    "insight_count": 1,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your w",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "character": "Janie Crawford",
+    "novel": "Their Eyes Were Watching God",
+    "avg_score": 25.0,
+    "insight_count": 3,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your w",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You feel things at a depth most people don't reach — in your work situation",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You connect with a warmth that others can feel — in your work situation",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "character": "Ivan Ilyich",
+    "novel": "The Death of Ivan Ilyich",
+    "avg_score": 25.0,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand the",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that ",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You've been carrying something heavy for a while — in your work situation",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your w",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — in your w",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "character": "Invisible Man",
+    "novel": "Invisible Man",
+    "avg_score": 25.0,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand the",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You carry more than you let on, but part of you knows it — that self-knowledge i",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your w",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You care about being the person you want to be — in your work situation",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You carry more than you show — there's depth behind the surface — in your work s",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "character": "Francie Nolan",
+    "novel": "A Tree Grows in Brooklyn",
+    "avg_score": 25.0,
+    "insight_count": 3,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand the",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Even in difficulty, you hold onto what matters",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "character": "McMurphy",
+    "novel": "One Flew Over the Cuckoo's Nes",
+    "avg_score": 25.0,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're not just venting — you're actively searching for answers",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're asking the hard questions that most people avoid — that honesty takes rea",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're not just talking — you're actively searching for understanding",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You carry more than you show — there's depth behind the surface",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "The depth of your loss reflects the depth of what you had",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "character": "Lennie Small",
+    "novel": "Of Mice and Men",
+    "avg_score": 25.0,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that ",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand the",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself be seen — that takes more courage than most realize",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're honest enough to sit with uncertainty instead of faking clarity",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "character": "Ifemelu",
+    "novel": "Americanah",
+    "avg_score": 25.0,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You carry more than you let on, but part of you knows it — that self-knowledge i",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand the",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You carry more than you show — there's depth behind the surface",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You feel things at a depth most people don't reach",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "character": "Montag",
+    "novel": "Fahrenheit 451",
+    "avg_score": 25.0,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that ",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're not just venting — you're actively searching for answers — especially whe",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — especiall",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — especiall",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're honest enough to sit with uncertainty instead of faking clarity — especia",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "character": "Kvothe",
+    "novel": "The Name of the Wind",
+    "avg_score": 25.0,
+    "insight_count": 3,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand the",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — within yo",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You care deeply about fairness — within your family",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "character": "Precious Jones",
+    "novel": "Push",
+    "avg_score": 25.0,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that ",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand the",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — within yo",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — within yo",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Even in difficulty, you hold onto what matters — within your family",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "character": "Oskar Schell",
+    "novel": "Extremely Loud and Incredibly ",
+    "avg_score": 25.0,
+    "insight_count": 6,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that ",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand the",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself feel the hard things instead of running — that's braver than mo",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — especiall",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — especiall",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You feel things at a depth most people don't reach — especially when died",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "character": "Charlie",
+    "novel": "The Perks of Being a Wallflowe",
+    "avg_score": 25.0,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that ",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — within yo",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — within yo",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're tuned into risks others might miss — within your family",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 62,
+    "character": "Chief Bromden",
+    "novel": "One Flew Over the Cuckoo's Nes",
+    "avg_score": 25.0,
+    "insight_count": 3,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that ",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your w",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — in your w",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "character": "Mathilde Loisel",
+    "novel": "The Necklace",
+    "avg_score": 25.0,
+    "insight_count": 3,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're not just venting — you're actively searching for answers — especially whe",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're not just talking — you're actively searching for understanding — especial",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You hold yourself to a high standard — that speaks to your integrity — especiall",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 64,
+    "character": "Aibileen Clark",
+    "novel": "The Help",
+    "avg_score": 25.0,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand the",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that ",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — within yo",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You connect with a warmth that others can feel — within your family",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — within yo",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "character": "Sal Paradise",
+    "novel": "On the Road",
+    "avg_score": 25.0,
+    "insight_count": 1,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your w",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "character": "Offred (late)",
+    "novel": "The Handmaid's Tale",
+    "avg_score": 25.0,
+    "insight_count": 1,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "character": "Mr. Stevens",
+    "novel": "The Remains of the Day",
+    "avg_score": 25.0,
+    "insight_count": 6,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that ",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand the",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself feel the hard things instead of running — that's braver than mo",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — as you se",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — as you se",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You feel things at a depth most people don't reach — as you search for clarity",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "character": "Gogol Ganguli",
+    "novel": "The Namesake",
+    "avg_score": 25.0,
+    "insight_count": 6,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You think before you act in conflict — that's emotional intelligence, not avoida",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand the",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You feel strongly but hold back — you're managing more than people see — especia",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — especiall",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You think before you engage — that's restraint, not weakness — especially when f",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You care deeply about fairness — especially when feel like i don",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 69,
+    "character": "Sansa Stark",
+    "novel": "A Game of Thrones",
+    "avg_score": 25.0,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You feel strongly but hold back — you're managing more than people see — within ",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You think before you engage — that's restraint, not weakness — within your famil",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You care deeply about fairness — within your family",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — within yo",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 70,
+    "character": "Piscine Molitor Patel",
+    "novel": "Life of Pi",
+    "avg_score": 25.0,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand the",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that ",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — within yo",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're honest enough to sit with uncertainty instead of faking clarity — within ",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — within yo",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 71,
+    "character": "Briony Tallis",
+    "novel": "Atonement",
+    "avg_score": 25.0,
+    "insight_count": 3,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand the",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You care deeply about fairness",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 72,
+    "character": "Jonas",
+    "novel": "The Giver",
+    "avg_score": 25.0,
+    "insight_count": 3,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — with what",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You care deeply about fairness — with what you're going through",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You feel things at a depth most people don't reach — with what you're going thro",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 73,
+    "character": "Severus Snape",
+    "novel": "Harry Potter",
+    "avg_score": 25.0,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You carry more than you let on, but part of you knows it — that self-knowledge i",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You connect with a warmth that others can feel — especially when died",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You feel things at a depth most people don't reach — especially when died",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — especiall",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You carry more than you show — there's depth behind the surface — especially whe",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 74,
+    "character": "Sula",
+    "novel": "Sula",
+    "avg_score": 25.0,
+    "insight_count": 6,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that ",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand the",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your w",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You find the funny side even in hard moments — that's resilience — in your work ",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — in your w",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You have a sharp sense of when things aren't right — in your work situation",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 75,
+    "character": "Mary Katherine Blackwood",
+    "novel": "We Have Always Lived in the Ca",
+    "avg_score": 25.0,
+    "insight_count": 3,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand the",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your w",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You care deeply about fairness — in your work situation",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 76,
+    "character": "Ponyboy Curtis",
+    "novel": "The Outsiders",
+    "avg_score": 25.0,
+    "insight_count": 3,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand the",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Even in difficulty, you hold onto what matters",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 77,
+    "character": "Mrs. Ramsay",
+    "novel": "To the Lighthouse",
+    "avg_score": 25.0,
+    "insight_count": 2,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You've built ways to protect yourself — and that kept you safe when you needed i",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You have a sharp sense of when things aren't right",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 78,
+    "character": "Shug Avery",
+    "novel": "The Color Purple",
+    "avg_score": 25.0,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're asking the hard questions that most people avoid — that honesty takes rea",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand the",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your w",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You carry more than you show — there's depth behind the surface — in your work s",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You feel things at a depth most people don't reach — in your work situation",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 79,
+    "character": "Thomas (Maze Runner)",
+    "novel": "The Maze Runner",
+    "avg_score": 25.0,
+    "insight_count": 1,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your w",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 80,
+    "character": "Hazel Grace Lancaster",
+    "novel": "The Fault in Our Stars",
+    "avg_score": 25.0,
+    "insight_count": 3,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that ",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your w",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — in your w",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 81,
+    "character": "Tris Prior",
+    "novel": "Divergent",
+    "avg_score": 25.0,
+    "insight_count": 3,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that ",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — especiall",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — especiall",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 82,
+    "character": "Seymour Glass",
+    "novel": "A Perfect Day for Bananafish",
+    "avg_score": 25.0,
+    "insight_count": 1,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself be seen — that takes more courage than most realize",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 83,
+    "character": "Ma (Room)",
+    "novel": "Room",
+    "avg_score": 25.0,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that ",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand the",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself be seen — that takes more courage than most realize",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're tuned into risks others might miss",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 84,
+    "character": "Newland Archer",
+    "novel": "The Age of Innocence",
+    "avg_score": 25.0,
+    "insight_count": 3,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your w",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're honest enough to sit with uncertainty instead of faking clarity — in your",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Even in difficulty, you hold onto what matters — in your work situation",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 85,
+    "character": "Don Quixote",
+    "novel": "Don Quixote",
+    "avg_score": 25.0,
+    "insight_count": 6,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You feel strongly but hold back — you're managing more than people see — in your",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand the",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You think before you act in conflict — that's emotional intelligence, not avoida",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your w",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You care deeply about fairness — in your work situation",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You think before you engage — that's restraint, not weakness — in your work situ",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 86,
+    "character": "Kathy H.",
+    "novel": "Never Let Me Go",
+    "avg_score": 25.0,
+    "insight_count": 3,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand the",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You connect with a warmth that others can feel",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 88,
+    "character": "Ignatius J. Reilly",
+    "novel": "A Confederacy of Dunces",
+    "avg_score": 25.0,
+    "insight_count": 1,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You notice friction that others overlook — in your work situation",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 89,
+    "character": "Ruth (Never Let Me Go)",
+    "novel": "Never Let Me Go",
+    "avg_score": 25.0,
+    "insight_count": 6,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that ",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand the",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself feel the hard things instead of running — that's braver than mo",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself be seen — that takes more courage than most realize",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You feel things at a depth most people don't reach",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 90,
+    "character": "Cathy Ames",
+    "novel": "East of Eden",
+    "avg_score": 25.0,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You think before you engage — that's restraint, not weakness",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You've built ways to protect yourself — and that kept you safe when you needed i",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Even in difficulty, you hold onto what matters",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You connect with a warmth that others can feel",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 91,
+    "character": "Larry Darrell",
+    "novel": "The Razor's Edge",
+    "avg_score": 25.0,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand the",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that ",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your w",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You've been carrying something heavy for a while — in your work situation",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — in your w",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 92,
+    "character": "Esmeralda",
+    "novel": "When I Was Puerto Rican",
+    "avg_score": 25.0,
+    "insight_count": 7,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself feel the hard things instead of running — that's braver than mo",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand the",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that ",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your w",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — in your w",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You feel things at a depth most people don't reach — in your work situation",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You find the funny side even in hard moments — that's resilience — in your work ",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 93,
+    "character": "Ned Vizzini (fictionalized)",
+    "novel": "It's Kind of a Funny Story",
+    "avg_score": 25.0,
+    "insight_count": 3,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You carry more than you let on, but part of you knows it — that self-knowledge i",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You carry more than you show — there's depth behind the surface",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 94,
+    "character": "Morrie Schwartz",
+    "novel": "Tuesdays with Morrie",
+    "avg_score": 25.0,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand the",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that ",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Even in difficulty, you hold onto what matters",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself be seen — that takes more courage than most realize",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 95,
+    "character": "Piranesi",
+    "novel": "Piranesi",
+    "avg_score": 25.0,
+    "insight_count": 3,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You carry more than you let on, but part of you knows it — that self-knowledge i",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You carry more than you show — there's depth behind the surface",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 96,
+    "character": "Maxim de Winter",
+    "novel": "Rebecca",
+    "avg_score": 25.0,
+    "insight_count": 3,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand the",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Even in difficulty, you hold onto what matters",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 98,
+    "character": "Coraline",
+    "novel": "Coraline",
+    "avg_score": 25.0,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that ",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand the",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your w",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — in your w",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're tuned into risks others might miss — in your work situation",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 99,
+    "character": "Marjane Satrapi",
+    "novel": "Persepolis",
+    "avg_score": 25.0,
+    "insight_count": 6,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that ",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Even in difficulty, you hold onto what matters — in your work situation",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You think before you engage — that's restraint, not weakness — in your work situ",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your w",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — in your w",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're honest enough to sit with uncertainty instead of faking clarity — in your",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 100,
+    "character": "Chiron",
+    "novel": "Moonlight (In Moonlight Black ",
+    "avg_score": 25.0,
+    "insight_count": 6,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that ",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand the",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself feel the hard things instead of running — that's braver than mo",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your w",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — in your w",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You feel things at a depth most people don't reach — in your work situation",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "character": "Amy Dunne",
+    "novel": "Gone Girl",
+    "avg_score": 21.0,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself feel the hard things instead of running — that's braver than mo",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that ",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You feel things at a depth most people don't reach — in your relationships",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — in your r",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 5,
+        "reason": "WRONG: matches 'self-aware without narcissism'",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your r",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "character": "Liesel Meminger",
+    "novel": "The Book Thief",
+    "avg_score": 21.0,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 5,
+        "reason": "WRONG: matches 'too young to understand'",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand the",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that ",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — especiall",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're honest enough to sit with uncertainty instead of faking clarity — especia",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — especiall",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 87,
+    "character": "Marcus Finch",
+    "novel": "About a Boy",
+    "avg_score": 21.0,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that ",
+        "quality": "HIGH"
+      },
+      {
+        "score": 5,
+        "reason": "WRONG: matches 'too young to understand'",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand the",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your w",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — in your w",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're tuned into risks others might miss — in your work situation",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "character": "Jay Gatsby",
+    "novel": "The Great Gatsby",
+    "avg_score": 18.333333333333332,
+    "insight_count": 6,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that ",
+        "quality": "HIGH"
+      },
+      {
+        "score": 5,
+        "reason": "WRONG: matches 'self-aware'",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand the",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself feel the hard things instead of running — that's braver than mo",
+        "quality": "HIGH"
+      },
+      {
+        "score": 5,
+        "reason": "WRONG: matches 'self-aware'",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your w",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — in your w",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You feel things at a depth most people don't reach — in your work situation",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "character": "Bone",
+    "novel": "Bastard Out of Carolina",
+    "avg_score": 18.333333333333332,
+    "insight_count": 3,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand the",
+        "quality": "HIGH"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world",
+        "quality": "MEDIUM"
+      },
+      {
+        "score": 5,
+        "reason": "WRONG: matches 'doesn't care about labels'",
+        "reframe": "You care about being the person you want to be",
+        "quality": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "character": "Holden Caulfield",
+    "novel": "The Catcher in the Rye",
+    "avg_score": 0,
+    "insight_count": 0,
+    "scores": []
+  }
+]
