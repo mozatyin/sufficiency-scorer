@@ -27,12 +27,6 @@ class DetectorResult(BaseModel):
     detail: dict = Field(default_factory=dict)
 
 
-class RingSegment(BaseModel):
-    """Legacy — kept for backward compat until scorer.py is rewritten."""
-    dimension: Dimension
-    filled: bool = False
-    intensity: float = Field(default=0.0, ge=0.0, le=1.0)
-
 
 class InsightQuality(int, Enum):
     """Quality tier of an insight candidate."""
@@ -59,11 +53,6 @@ class SufficiencyReport(BaseModel):
     ring_progress: float = Field(default=0.0, ge=0.0, le=1.0, description="For ring animation")
     prompt_hint: str = Field(default="", description="UI hint for what to show")
 
-    # Legacy fields — kept for backward compat until scorer.py is rewritten
-    score: float = Field(default=0.0, ge=0.0, le=1.0, description="Legacy: 0.0-1.0 ring progress")
-    activated_count: int = Field(default=0, description="Legacy: how many dimensions lit up")
-    total_dimensions: int = Field(default=11, description="Legacy")
-    segments: list[RingSegment] = Field(default_factory=list, description="Legacy")
 
 
 class SessionState:

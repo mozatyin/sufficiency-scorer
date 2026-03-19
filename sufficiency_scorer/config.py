@@ -23,21 +23,3 @@ PARALLEL_GROUPS: list[list[Dimension]] = [
         Dimension.COMMUNICATION_DNA, Dimension.SOULGRAPH,
     ],
 ]
-
-# === Legacy compat (removed in scorer.py rewrite) ===
-WEIGHTS: dict[Dimension, float] = {
-    Dimension.EMOTION: 0.20,
-    Dimension.EQ: 0.10,
-    Dimension.FRAGILITY: 0.10,
-    Dimension.CONFLICT: 0.10,
-    Dimension.HUMOR: 0.08,
-    Dimension.MBTI: 0.08,
-    Dimension.LOVE_LANGUAGE: 0.08,
-    Dimension.COMMUNICATION_DNA: 0.08,
-    Dimension.CONNECTION_RESPONSE: 0.06,
-    Dimension.CHARACTER: 0.06,
-    Dimension.SOULGRAPH: 0.06,
-}
-EMOTION_GATE_CAP = 0.45
-ACTIVATION_TARGET = 7
-READY_THRESHOLD = 0.95
