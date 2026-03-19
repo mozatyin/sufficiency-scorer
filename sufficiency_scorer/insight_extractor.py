@@ -225,6 +225,34 @@ CROSS_PATTERNS: list[_CrossPattern] = [
         lambda q, f: f"distress ({q.get('distress', 0):.0%}) + open fragility",
         "You're not hiding from what's hard — that openness is the foundation for growth",
     ),
+    # 13. self-awareness + open fragility (not distress-dependent)
+    _CrossPattern(
+        Dimension.EQ, Dimension.FRAGILITY,
+        lambda q, f: q.get("features", {}).get("self_ref", 0) >= 0.05 and _fragility_pattern(f) == "open",
+        lambda q, f: f"self-awareness ({q.get('features', {}).get('self_ref', 0):.0%}) + open fragility",
+        "You pay attention to what's happening inside you and you don't look away — that combination is rare",
+    ),
+    # 14. questioning + open fragility
+    _CrossPattern(
+        Dimension.EQ, Dimension.FRAGILITY,
+        lambda q, f: q.get("features", {}).get("question_ratio", 0) >= 0.1 and _fragility_pattern(f) in ("open", "masked"),
+        lambda q, f: f"questioning ({q.get('features', {}).get('question_ratio', 0):.0%}) + {_fragility_pattern(f)} fragility",
+        "You're asking the hard questions that most people avoid — that honesty takes real courage",
+    ),
+    # 15. self-awareness + defensive fragility
+    _CrossPattern(
+        Dimension.EQ, Dimension.FRAGILITY,
+        lambda q, f: q.get("features", {}).get("self_ref", 0) >= 0.05 and _fragility_pattern(f) == "defensive",
+        lambda q, f: f"self-awareness + defensive fragility",
+        "You've built walls, but you also see them clearly — that awareness is the first crack in the armor",
+    ),
+    # 16. self-awareness + masked fragility
+    _CrossPattern(
+        Dimension.EQ, Dimension.FRAGILITY,
+        lambda q, f: q.get("features", {}).get("self_ref", 0) >= 0.05 and _fragility_pattern(f) == "masked",
+        lambda q, f: f"self-awareness + masked fragility",
+        "You carry more than you let on, but part of you knows it — that self-knowledge is your edge",
+    ),
 ]
 
 
@@ -247,9 +275,13 @@ class InsightExtractor:
         cross_insights = self._cross_dimensional(by_dim)
         for ci in cross_insights:
             insights.append(ci)
+            # Track which specific signals were used, not entire dimensions
             used_dims.update(ci.source_dimensions)
 
         # --- Pass 2: single-dimensional (MEDIUM) ---
+        # Dimensions used by cross-insights can still produce ADDITIONAL insights
+        # (e.g., cross used emotion's top-1, single can use emotion's top-2)
+        # But we reduce the count: if cross used a dim, single only adds 1 more from it
         single_insights = self._single_dimensional(by_dim, used_dims)
         insights.extend(single_insights)
 
@@ -411,82 +443,140 @@ class InsightExtractor:
         found: list[InsightCandidate] = []
 
         for dim, result in by_dim.items():
-            # Skip dimensions already consumed by cross-insights
+            insights = self._multi_for(dim, result)
             if dim in used_dims:
-                continue
-
-            insight = self._single_for(dim, result)
-            if insight is not None:
-                found.append(insight)
+                # Cross already used this dim — allow only 1 additional insight
+                insights = insights[:1]
+            found.extend(insights)
 
         return found
 
-    def _single_for(self, dim: Dimension, result: DetectorResult) -> InsightCandidate | None:
+    def _multi_for(self, dim: Dimension, result: DetectorResult) -> list[InsightCandidate]:
+        """Extract multiple insights from a single activated dimension."""
         detail = result.detail
-        signal: str | None = None
-        reframe: str | None = None
 
         if dim == Dimension.EMOTION:
-            te = _top_emotion(detail)
-            if te:
-                emo_name, emo_score = te
-                reframe = EMOTION_REFRAMES.get(emo_name)
-                signal = f"top emotion: {emo_name} ({emo_score:.0%})"
-
+            return self._emotion_multi(detail, result.confidence)
         elif dim == Dimension.CONFLICT:
-            tc = _top_conflict(detail)
-            if tc:
-                style, score = tc
-                reframe = CONFLICT_REFRAMES.get(style)
-                signal = f"conflict style: {style} ({score:.0%})"
-
+            return self._conflict_single(detail, result.confidence)
         elif dim == Dimension.HUMOR:
-            th = _top_humor(detail)
-            if th:
-                style, score = th
-                reframe = HUMOR_REFRAMES.get(style)
-                signal = f"humor style: {style} ({score:.0%})"
-
+            return self._humor_single(detail, result.confidence)
         elif dim == Dimension.FRAGILITY:
-            pat = _fragility_pattern(detail)
-            if pat:
-                reframe = FRAGILITY_REFRAMES.get(pat)
-                signal = f"fragility pattern: {pat}"
-
+            return self._fragility_single(detail, result.confidence)
         elif dim == Dimension.EQ:
-            signal, reframe = self._eq_insight(detail)
-
+            return self._eq_multi(detail, result.confidence)
         else:
-            # Dimensions without specific reframes (MBTI, SOULGRAPH, etc.)
-            # produce no single-dimensional insight
-            return None
+            return []
 
-        if signal is None or reframe is None:
-            return None
+    def _emotion_multi(self, detail: dict, confidence: float) -> list[InsightCandidate]:
+        """Top 2 emotions each get their own insight (if distinct reframes exist)."""
+        tops = detail.get("top_emotions", [])
+        found = []
+        seen_reframes = set()
+        for emo_name, emo_score in tops[:3]:
+            if emo_score < 0.20:
+                break
+            reframe = EMOTION_REFRAMES.get(emo_name)
+            if reframe and reframe not in seen_reframes:
+                found.append(InsightCandidate(
+                    source_dimensions=[Dimension.EMOTION],
+                    signal=f"emotion: {emo_name} ({emo_score:.0%})",
+                    reframe=reframe,
+                    quality=InsightQuality.MEDIUM,
+                    confidence=emo_score,
+                ))
+                seen_reframes.add(reframe)
+            if len(found) >= 2:
+                break
+        return found
 
-        return InsightCandidate(
-            source_dimensions=[dim],
-            signal=signal,
-            reframe=reframe,
-            quality=InsightQuality.MEDIUM,
-            confidence=result.confidence,
-        )
+    def _conflict_single(self, detail: dict, confidence: float) -> list[InsightCandidate]:
+        tc = _top_conflict(detail)
+        if tc:
+            style, score = tc
+            reframe = CONFLICT_REFRAMES.get(style)
+            if reframe:
+                return [InsightCandidate(
+                    source_dimensions=[Dimension.CONFLICT],
+                    signal=f"conflict style: {style} ({score:.0%})",
+                    reframe=reframe,
+                    quality=InsightQuality.MEDIUM,
+                    confidence=confidence,
+                )]
+        return []
 
-    @staticmethod
-    def _eq_insight(detail: dict) -> tuple[str | None, str | None]:
+    def _humor_single(self, detail: dict, confidence: float) -> list[InsightCandidate]:
+        th = _top_humor(detail)
+        if th:
+            style, score = th
+            reframe = HUMOR_REFRAMES.get(style)
+            if reframe:
+                return [InsightCandidate(
+                    source_dimensions=[Dimension.HUMOR],
+                    signal=f"humor style: {style} ({score:.0%})",
+                    reframe=reframe,
+                    quality=InsightQuality.MEDIUM,
+                    confidence=confidence,
+                )]
+        return []
+
+    def _fragility_single(self, detail: dict, confidence: float) -> list[InsightCandidate]:
+        pat = _fragility_pattern(detail)
+        if pat:
+            reframe = FRAGILITY_REFRAMES.get(pat)
+            if reframe:
+                return [InsightCandidate(
+                    source_dimensions=[Dimension.FRAGILITY],
+                    signal=f"fragility pattern: {pat}",
+                    reframe=reframe,
+                    quality=InsightQuality.MEDIUM,
+                    confidence=confidence,
+                )]
+        return []
+
+    def _eq_multi(self, detail: dict, confidence: float) -> list[InsightCandidate]:
+        """EQ can produce up to 2 insights from distinct signals."""
         features = detail.get("features", {})
         qr = features.get("question_ratio", 0)
         sr = features.get("self_ref", 0)
         distress = detail.get("distress", 0)
         valence = detail.get("valence", 0)
 
-        # Pick the most salient EQ signal
-        if qr >= 0.2:
-            return f"question_ratio={qr:.0%}", EQ_REFRAMES["high_question_ratio"]
-        if distress >= 0.3:
-            return f"distress={distress:.2f}", EQ_REFRAMES["high_distress"]
-        if valence < -0.2:
-            return f"valence={valence:.2f}", EQ_REFRAMES["negative_valence"]
-        if sr >= 0.1:
-            return f"self_ref={sr:.0%}", EQ_REFRAMES["high_self_ref"]
-        return None, None
+        found = []
+        # Self-awareness signal
+        if sr >= 0.05:
+            found.append(InsightCandidate(
+                source_dimensions=[Dimension.EQ],
+                signal=f"self_ref={sr:.0%}",
+                reframe=EQ_REFRAMES["high_self_ref"],
+                quality=InsightQuality.MEDIUM,
+                confidence=min(sr * 5, 1.0),
+            ))
+        # Questioning / search mode
+        if qr >= 0.10:
+            found.append(InsightCandidate(
+                source_dimensions=[Dimension.EQ],
+                signal=f"question_ratio={qr:.0%}",
+                reframe=EQ_REFRAMES["high_question_ratio"],
+                quality=InsightQuality.MEDIUM,
+                confidence=min(qr * 3, 1.0),
+            ))
+        # Distress signal (only if no self_ref already, to avoid redundancy)
+        if distress >= 0.3 and len(found) < 2:
+            found.append(InsightCandidate(
+                source_dimensions=[Dimension.EQ],
+                signal=f"distress={distress:.2f}",
+                reframe=EQ_REFRAMES["high_distress"],
+                quality=InsightQuality.MEDIUM,
+                confidence=distress,
+            ))
+        # Valence (only if nothing else, as fallback)
+        if valence < -0.2 and len(found) == 0:
+            found.append(InsightCandidate(
+                source_dimensions=[Dimension.EQ],
+                signal=f"valence={valence:.2f}",
+                reframe=EQ_REFRAMES["negative_valence"],
+                quality=InsightQuality.MEDIUM,
+                confidence=abs(valence),
+            ))
+        return found[:2]  # cap at 2

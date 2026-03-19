@@ -134,10 +134,10 @@ class TestCrossDimensionalInsights:
             assert c.quality == InsightQuality.HIGH
 
     def test_cross_below_min_insight_confidence_filtered(self, extractor):
-        """If both detectors are below MIN_INSIGHT_CONFIDENCE, no cross insight."""
+        """If both detectors are below MIN_INSIGHT_CONFIDENCE (0.25), no cross insight."""
         results = [
-            _dr(Dimension.EMOTION, confidence=0.3, detail={"top_emotions": [("frustration", 0.55)]}),
-            _dr(Dimension.CONFLICT, confidence=0.3, detail={"styles": {"avoid": 0.7}}),
+            _dr(Dimension.EMOTION, confidence=0.2, detail={"top_emotions": [("frustration", 0.55)]}),
+            _dr(Dimension.CONFLICT, confidence=0.2, detail={"styles": {"avoid": 0.7}}),
         ]
         insights = extractor.extract(results)
         high = [i for i in insights if i.quality == InsightQuality.HIGH]

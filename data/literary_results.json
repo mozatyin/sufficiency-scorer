@@ -6,16 +6,44 @@
     "words": 40,
     "activated": [
       "emotion",
-      "eq"
+      "eq",
+      "fragility"
     ],
-    "activated_count": 2,
-    "total_insights": 2,
-    "good_insights": 2,
-    "ready": false,
-    "avg_specificity": 0.75,
-    "avg_reframe": 0.7,
-    "bloom_worthy": false,
+    "activated_count": 3,
+    "total_insights": 6,
+    "good_insights": 6,
+    "ready": true,
+    "avg_specificity": 0.85,
+    "avg_reframe": 0.742,
+    "bloom_worthy": true,
     "insights": [
+      {
+        "quality": "HIGH",
+        "signal": "self-awareness (18%) + open fragility",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that combination is rare ",
+        "dims": [
+          "eq",
+          "fragility"
+        ]
+      },
+      {
+        "quality": "HIGH",
+        "signal": "sadness (35%) + self-awareness (self_ref 18%)",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand them — in your work sit",
+        "dims": [
+          "emotion",
+          "eq"
+        ]
+      },
+      {
+        "quality": "HIGH",
+        "signal": "sadness (35%) + open fragility",
+        "reframe": "You let yourself feel the hard things instead of running — that's braver than most people manage — i",
+        "dims": [
+          "emotion",
+          "fragility"
+        ]
+      },
       {
         "quality": "MEDIUM",
         "signal": "self_ref=18%",
@@ -26,7 +54,15 @@
       },
       {
         "quality": "MEDIUM",
-        "signal": "top emotion: sadness (35%)",
+        "signal": "fragility pattern: open",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — in your work situation",
+        "dims": [
+          "fragility"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: sadness (35%)",
         "reframe": "You feel things at a depth most people don't reach — in your work situation",
         "dims": [
           "emotion"
@@ -58,16 +94,35 @@
     "words": 39,
     "activated": [
       "emotion",
-      "eq"
+      "eq",
+      "fragility"
     ],
-    "activated_count": 2,
-    "total_insights": 2,
-    "good_insights": 2,
-    "ready": false,
-    "avg_specificity": 0.55,
-    "avg_reframe": 0.825,
-    "bloom_worthy": false,
+    "activated_count": 3,
+    "total_insights": 5,
+    "good_insights": 5,
+    "ready": true,
+    "avg_specificity": 0.66,
+    "avg_reframe": 0.72,
+    "bloom_worthy": true,
     "insights": [
+      {
+        "quality": "HIGH",
+        "signal": "love (50%) + self-awareness (self_ref 15%)",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand them",
+        "dims": [
+          "emotion",
+          "eq"
+        ]
+      },
+      {
+        "quality": "HIGH",
+        "signal": "self-awareness (15%) + open fragility",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that combination is rare",
+        "dims": [
+          "eq",
+          "fragility"
+        ]
+      },
       {
         "quality": "MEDIUM",
         "signal": "self_ref=15%",
@@ -78,10 +133,18 @@
       },
       {
         "quality": "MEDIUM",
-        "signal": "top emotion: confusion (35%)",
-        "reframe": "You're honest enough to sit with uncertainty instead of faking clarity",
+        "signal": "emotion: love (50%)",
+        "reframe": "You connect with a warmth that others can feel",
         "dims": [
           "emotion"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "fragility pattern: open",
+        "reframe": "You let yourself be seen — that takes more courage than most realize",
+        "dims": [
+          "fragility"
         ]
       }
     ]
@@ -94,16 +157,44 @@
     "activated": [
       "emotion",
       "eq",
-      "humor"
+      "humor",
+      "fragility"
     ],
-    "activated_count": 3,
-    "total_insights": 3,
-    "good_insights": 3,
+    "activated_count": 4,
+    "total_insights": 7,
+    "good_insights": 7,
     "ready": true,
-    "avg_specificity": 0.75,
-    "avg_reframe": 0.6,
+    "avg_specificity": 0.836,
+    "avg_reframe": 0.707,
     "bloom_worthy": true,
     "insights": [
+      {
+        "quality": "HIGH",
+        "signal": "self-deprecating humor (45%) + open fragility",
+        "reframe": "You laugh at yourself not to hide, but to stay real — humor is your honesty tool — in your work situ",
+        "dims": [
+          "humor",
+          "fragility"
+        ]
+      },
+      {
+        "quality": "HIGH",
+        "signal": "fear (35%) + questioning (33%)",
+        "reframe": "You're not just venting — you're actively searching for answers — in your work situation",
+        "dims": [
+          "emotion",
+          "eq"
+        ]
+      },
+      {
+        "quality": "HIGH",
+        "signal": "self-awareness (7%) + open fragility",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that combination is rare ",
+        "dims": [
+          "eq",
+          "fragility"
+        ]
+      },
       {
         "quality": "MEDIUM",
         "signal": "humor style: self_deprecating (45%)",
@@ -114,7 +205,15 @@
       },
       {
         "quality": "MEDIUM",
-        "signal": "top emotion: fear (35%)",
+        "signal": "fragility pattern: open",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — in your work situation",
+        "dims": [
+          "fragility"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: fear (35%)",
         "reframe": "You're tuned into risks others might miss — in your work situation",
         "dims": [
           "emotion"
@@ -122,8 +221,8 @@
       },
       {
         "quality": "MEDIUM",
-        "signal": "question_ratio=33%",
-        "reframe": "You're not just talking — you're actively searching for understanding — in your work situation",
+        "signal": "self_ref=7%",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your work situation",
         "dims": [
           "eq"
         ]
@@ -138,15 +237,16 @@
     "activated": [
       "emotion",
       "eq",
-      "humor"
+      "humor",
+      "fragility"
     ],
-    "activated_count": 3,
-    "total_insights": 1,
-    "good_insights": 1,
-    "ready": false,
-    "avg_specificity": 0.75,
-    "avg_reframe": 0.7,
-    "bloom_worthy": false,
+    "activated_count": 4,
+    "total_insights": 5,
+    "good_insights": 5,
+    "ready": true,
+    "avg_specificity": 0.71,
+    "avg_reframe": 0.74,
+    "bloom_worthy": true,
     "insights": [
       {
         "quality": "MEDIUM",
@@ -154,6 +254,38 @@
         "reframe": "You find the funny side even in hard moments — that's resilience — in your work situation",
         "dims": [
           "humor"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "fragility pattern: open",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — in your work situation",
+        "dims": [
+          "fragility"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: anger (35%)",
+        "reframe": "You care deeply about fairness — in your work situation",
+        "dims": [
+          "emotion"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: irritation (35%)",
+        "reframe": "You notice friction that others overlook — in your work situation",
+        "dims": [
+          "emotion"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "self_ref=7%",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your work situation",
+        "dims": [
+          "eq"
         ]
       }
     ]
@@ -165,22 +297,56 @@
     "words": 37,
     "activated": [
       "emotion",
-      "eq"
+      "eq",
+      "fragility"
     ],
-    "activated_count": 2,
-    "total_insights": 1,
-    "good_insights": 1,
-    "ready": false,
-    "avg_specificity": 0.45,
-    "avg_reframe": 0.6,
-    "bloom_worthy": false,
+    "activated_count": 3,
+    "total_insights": 5,
+    "good_insights": 5,
+    "ready": true,
+    "avg_specificity": 0.37,
+    "avg_reframe": 0.68,
+    "bloom_worthy": true,
     "insights": [
       {
+        "quality": "HIGH",
+        "signal": "self-awareness (8%) + open fragility",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that combination is rare ",
+        "dims": [
+          "eq",
+          "fragility"
+        ]
+      },
+      {
         "quality": "MEDIUM",
-        "signal": "top emotion: grief (65%)",
+        "signal": "emotion: grief (65%)",
         "reframe": "The depth of your loss reflects the depth of what you had — especially when died",
         "dims": [
           "emotion"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: sadness (50%)",
+        "reframe": "You feel things at a depth most people don't reach — especially when died",
+        "dims": [
+          "emotion"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "self_ref=8%",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — especially when died",
+        "dims": [
+          "eq"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "fragility pattern: open",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — especially when died",
+        "dims": [
+          "fragility"
         ]
       }
     ]
@@ -192,16 +358,35 @@
     "words": 43,
     "activated": [
       "emotion",
-      "eq"
+      "eq",
+      "fragility"
     ],
-    "activated_count": 2,
-    "total_insights": 2,
-    "good_insights": 2,
-    "ready": false,
-    "avg_specificity": 0.75,
-    "avg_reframe": 0.7,
-    "bloom_worthy": false,
+    "activated_count": 3,
+    "total_insights": 5,
+    "good_insights": 5,
+    "ready": true,
+    "avg_specificity": 0.83,
+    "avg_reframe": 0.77,
+    "bloom_worthy": true,
     "insights": [
+      {
+        "quality": "HIGH",
+        "signal": "confusion (50%) + self-awareness (self_ref 16%)",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand them — within your fami",
+        "dims": [
+          "emotion",
+          "eq"
+        ]
+      },
+      {
+        "quality": "HIGH",
+        "signal": "self-awareness (16%) + open fragility",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that combination is rare ",
+        "dims": [
+          "eq",
+          "fragility"
+        ]
+      },
       {
         "quality": "MEDIUM",
         "signal": "self_ref=16%",
@@ -212,10 +397,18 @@
       },
       {
         "quality": "MEDIUM",
-        "signal": "top emotion: sadness (35%)",
-        "reframe": "You feel things at a depth most people don't reach — within your family",
+        "signal": "emotion: confusion (50%)",
+        "reframe": "You're honest enough to sit with uncertainty instead of faking clarity — within your family",
         "dims": [
           "emotion"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "fragility pattern: open",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — within your family",
+        "dims": [
+          "fragility"
         ]
       }
     ]
@@ -226,22 +419,40 @@
     "novel": "Lolita",
     "words": 42,
     "activated": [
+      "emotion",
       "eq"
     ],
-    "activated_count": 1,
-    "total_insights": 1,
-    "good_insights": 1,
-    "ready": false,
-    "avg_specificity": 0.75,
-    "avg_reframe": 0.8,
-    "bloom_worthy": false,
+    "activated_count": 2,
+    "total_insights": 3,
+    "good_insights": 3,
+    "ready": true,
+    "avg_specificity": 0.817,
+    "avg_reframe": 0.733,
+    "bloom_worthy": true,
     "insights": [
+      {
+        "quality": "HIGH",
+        "signal": "love (35%) + self-awareness (self_ref 12%)",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand them — in your work sit",
+        "dims": [
+          "emotion",
+          "eq"
+        ]
+      },
       {
         "quality": "MEDIUM",
         "signal": "self_ref=12%",
         "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your work situation",
         "dims": [
           "eq"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: love (35%)",
+        "reframe": "You connect with a warmth that others can feel — in your work situation",
+        "dims": [
+          "emotion"
         ]
       }
     ]
@@ -256,13 +467,22 @@
       "fragility"
     ],
     "activated_count": 2,
-    "total_insights": 2,
-    "good_insights": 2,
-    "ready": false,
-    "avg_specificity": 0.6,
-    "avg_reframe": 0.8,
-    "bloom_worthy": false,
+    "total_insights": 3,
+    "good_insights": 3,
+    "ready": true,
+    "avg_specificity": 0.667,
+    "avg_reframe": 0.85,
+    "bloom_worthy": true,
     "insights": [
+      {
+        "quality": "HIGH",
+        "signal": "sadness (35%) + open fragility",
+        "reframe": "You let yourself feel the hard things instead of running — that's braver than most people manage — a",
+        "dims": [
+          "emotion",
+          "fragility"
+        ]
+      },
       {
         "quality": "MEDIUM",
         "signal": "fragility pattern: open",
@@ -273,7 +493,7 @@
       },
       {
         "quality": "MEDIUM",
-        "signal": "top emotion: sadness (35%)",
+        "signal": "emotion: sadness (35%)",
         "reframe": "You feel things at a depth most people don't reach — as you search for clarity",
         "dims": [
           "emotion"
@@ -291,16 +511,24 @@
       "eq"
     ],
     "activated_count": 2,
-    "total_insights": 1,
-    "good_insights": 1,
+    "total_insights": 2,
+    "good_insights": 2,
     "ready": false,
     "avg_specificity": 0.75,
-    "avg_reframe": 0.6,
+    "avg_reframe": 0.725,
     "bloom_worthy": false,
     "insights": [
       {
         "quality": "MEDIUM",
-        "signal": "top emotion: hope (35%)",
+        "signal": "emotion: confusion (35%)",
+        "reframe": "You're honest enough to sit with uncertainty instead of faking clarity — within your family",
+        "dims": [
+          "emotion"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: hope (35%)",
         "reframe": "Even in difficulty, you hold onto what matters — within your family",
         "dims": [
           "emotion"
@@ -314,22 +542,40 @@
     "novel": "Anna Karenina",
     "words": 43,
     "activated": [
+      "emotion",
       "eq"
     ],
-    "activated_count": 1,
-    "total_insights": 1,
-    "good_insights": 1,
-    "ready": false,
-    "avg_specificity": 0.75,
-    "avg_reframe": 0.8,
-    "bloom_worthy": false,
+    "activated_count": 2,
+    "total_insights": 3,
+    "good_insights": 3,
+    "ready": true,
+    "avg_specificity": 0.817,
+    "avg_reframe": 0.733,
+    "bloom_worthy": true,
     "insights": [
+      {
+        "quality": "HIGH",
+        "signal": "sadness (35%) + self-awareness (self_ref 12%)",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand them — in your work sit",
+        "dims": [
+          "emotion",
+          "eq"
+        ]
+      },
       {
         "quality": "MEDIUM",
         "signal": "self_ref=12%",
         "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your work situation",
         "dims": [
           "eq"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: sadness (35%)",
+        "reframe": "You feel things at a depth most people don't reach — in your work situation",
+        "dims": [
+          "emotion"
         ]
       }
     ]
@@ -340,16 +586,60 @@
     "novel": "1984",
     "words": 43,
     "activated": [
-      "eq"
+      "emotion",
+      "eq",
+      "fragility"
     ],
-    "activated_count": 1,
-    "total_insights": 0,
-    "good_insights": 0,
-    "ready": false,
-    "avg_specificity": 0.0,
-    "avg_reframe": 0.0,
-    "bloom_worthy": false,
-    "insights": []
+    "activated_count": 3,
+    "total_insights": 5,
+    "good_insights": 5,
+    "ready": true,
+    "avg_specificity": 0.79,
+    "avg_reframe": 0.73,
+    "bloom_worthy": true,
+    "insights": [
+      {
+        "quality": "HIGH",
+        "signal": "self-awareness (9%) + open fragility",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that combination is rare ",
+        "dims": [
+          "eq",
+          "fragility"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "self_ref=9%",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your work situation",
+        "dims": [
+          "eq"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "fragility pattern: open",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — in your work situation",
+        "dims": [
+          "fragility"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: fear (35%)",
+        "reframe": "You're tuned into risks others might miss — in your work situation",
+        "dims": [
+          "emotion"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: confusion (35%)",
+        "reframe": "You're honest enough to sit with uncertainty instead of faking clarity — in your work situation",
+        "dims": [
+          "emotion"
+        ]
+      }
+    ]
   },
   {
     "id": 13,
@@ -362,13 +652,22 @@
       "fragility"
     ],
     "activated_count": 3,
-    "total_insights": 2,
-    "good_insights": 2,
-    "ready": false,
-    "avg_specificity": 0.85,
-    "avg_reframe": 0.8,
-    "bloom_worthy": false,
+    "total_insights": 5,
+    "good_insights": 5,
+    "ready": true,
+    "avg_specificity": 0.83,
+    "avg_reframe": 0.72,
+    "bloom_worthy": true,
     "insights": [
+      {
+        "quality": "HIGH",
+        "signal": "self-awareness (22%) + open fragility",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that combination is rare ",
+        "dims": [
+          "eq",
+          "fragility"
+        ]
+      },
       {
         "quality": "HIGH",
         "signal": "fear (50%) + self-awareness (self_ref 22%)",
@@ -380,10 +679,26 @@
       },
       {
         "quality": "MEDIUM",
+        "signal": "self_ref=22%",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your work situation",
+        "dims": [
+          "eq"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
         "signal": "fragility pattern: open",
         "reframe": "You let yourself be seen — that takes more courage than most realize — in your work situation",
         "dims": [
           "fragility"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: fear (50%)",
+        "reframe": "You're tuned into risks others might miss — in your work situation",
+        "dims": [
+          "emotion"
         ]
       }
     ]
@@ -398,24 +713,33 @@
       "eq"
     ],
     "activated_count": 2,
-    "total_insights": 2,
-    "good_insights": 2,
-    "ready": false,
-    "avg_specificity": 0.3,
-    "avg_reframe": 0.65,
-    "bloom_worthy": false,
+    "total_insights": 3,
+    "good_insights": 3,
+    "ready": true,
+    "avg_specificity": 0.367,
+    "avg_reframe": 0.8,
+    "bloom_worthy": true,
     "insights": [
       {
+        "quality": "HIGH",
+        "signal": "anger (50%) + self-awareness (self_ref 10%)",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand them — especially when ",
+        "dims": [
+          "emotion",
+          "eq"
+        ]
+      },
+      {
         "quality": "MEDIUM",
-        "signal": "question_ratio=40%",
-        "reframe": "You're not just talking — you're actively searching for understanding — especially when feel like th",
+        "signal": "self_ref=10%",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — especially when feel like the",
         "dims": [
           "eq"
         ]
       },
       {
         "quality": "MEDIUM",
-        "signal": "top emotion: anger (35%)",
+        "signal": "emotion: anger (50%)",
         "reframe": "You care deeply about fairness — especially when feel like the whole worl",
         "dims": [
           "emotion"
@@ -433,12 +757,12 @@
       "eq"
     ],
     "activated_count": 2,
-    "total_insights": 1,
-    "good_insights": 1,
-    "ready": false,
-    "avg_specificity": 0.95,
-    "avg_reframe": 0.8,
-    "bloom_worthy": false,
+    "total_insights": 3,
+    "good_insights": 3,
+    "ready": true,
+    "avg_specificity": 0.817,
+    "avg_reframe": 0.733,
+    "bloom_worthy": true,
     "insights": [
       {
         "quality": "HIGH",
@@ -447,6 +771,22 @@
         "dims": [
           "emotion",
           "eq"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "self_ref=20%",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your work situation",
+        "dims": [
+          "eq"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: love (50%)",
+        "reframe": "You connect with a warmth that others can feel — in your work situation",
+        "dims": [
+          "emotion"
         ]
       }
     ]
@@ -458,15 +798,16 @@
     "words": 39,
     "activated": [
       "emotion",
-      "eq"
+      "eq",
+      "fragility"
     ],
-    "activated_count": 2,
-    "total_insights": 1,
-    "good_insights": 1,
-    "ready": false,
-    "avg_specificity": 0.95,
-    "avg_reframe": 0.8,
-    "bloom_worthy": false,
+    "activated_count": 3,
+    "total_insights": 5,
+    "good_insights": 5,
+    "ready": true,
+    "avg_specificity": 0.83,
+    "avg_reframe": 0.72,
+    "bloom_worthy": true,
     "insights": [
       {
         "quality": "HIGH",
@@ -475,6 +816,39 @@
         "dims": [
           "emotion",
           "eq"
+        ]
+      },
+      {
+        "quality": "HIGH",
+        "signal": "distress (32%) + open fragility",
+        "reframe": "You're not hiding from what's hard — that openness is the foundation for growth — in your work situa",
+        "dims": [
+          "eq",
+          "fragility"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "self_ref=21%",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your work situation",
+        "dims": [
+          "eq"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: despair (50%)",
+        "reframe": "You've been carrying something heavy for a while — in your work situation",
+        "dims": [
+          "emotion"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "fragility pattern: open",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — in your work situation",
+        "dims": [
+          "fragility"
         ]
       }
     ]
@@ -485,20 +859,38 @@
     "novel": "Mrs. Dalloway",
     "words": 47,
     "activated": [
+      "emotion",
       "eq"
     ],
-    "activated_count": 1,
-    "total_insights": 1,
-    "good_insights": 1,
-    "ready": false,
-    "avg_specificity": 0.75,
-    "avg_reframe": 0.5,
-    "bloom_worthy": false,
+    "activated_count": 2,
+    "total_insights": 3,
+    "good_insights": 3,
+    "ready": true,
+    "avg_specificity": 0.817,
+    "avg_reframe": 0.667,
+    "bloom_worthy": true,
     "insights": [
       {
+        "quality": "HIGH",
+        "signal": "anxiety (50%) + questioning (20%)",
+        "reframe": "You're not just venting — you're actively searching for answers — in your work situation",
+        "dims": [
+          "emotion",
+          "eq"
+        ]
+      },
+      {
         "quality": "MEDIUM",
-        "signal": "question_ratio=20%",
-        "reframe": "You're not just talking — you're actively searching for understanding — in your work situation",
+        "signal": "emotion: anxiety (50%)",
+        "reframe": "Your mind is always working to protect you — in your work situation",
+        "dims": [
+          "emotion"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "self_ref=9%",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your work situation",
         "dims": [
           "eq"
         ]
@@ -512,22 +904,33 @@
     "words": 43,
     "activated": [
       "emotion",
-      "eq"
+      "eq",
+      "fragility"
     ],
-    "activated_count": 2,
-    "total_insights": 2,
-    "good_insights": 2,
-    "ready": false,
-    "avg_specificity": 0.75,
-    "avg_reframe": 0.75,
-    "bloom_worthy": false,
+    "activated_count": 3,
+    "total_insights": 5,
+    "good_insights": 5,
+    "ready": true,
+    "avg_specificity": 0.83,
+    "avg_reframe": 0.74,
+    "bloom_worthy": true,
     "insights": [
       {
-        "quality": "MEDIUM",
-        "signal": "top emotion: frustration (50%)",
-        "reframe": "You have a sharp sense of when things aren't right — in your work situation",
+        "quality": "HIGH",
+        "signal": "frustration (50%) + self-awareness (self_ref 12%)",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand them — in your work sit",
         "dims": [
-          "emotion"
+          "emotion",
+          "eq"
+        ]
+      },
+      {
+        "quality": "HIGH",
+        "signal": "self-awareness (12%) + open fragility",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that combination is rare ",
+        "dims": [
+          "eq",
+          "fragility"
         ]
       },
       {
@@ -536,6 +939,22 @@
         "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your work situation",
         "dims": [
           "eq"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: frustration (50%)",
+        "reframe": "You have a sharp sense of when things aren't right — in your work situation",
+        "dims": [
+          "emotion"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "fragility pattern: open",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — in your work situation",
+        "dims": [
+          "fragility"
         ]
       }
     ]
@@ -547,19 +966,54 @@
     "words": 41,
     "activated": [
       "emotion",
-      "eq"
+      "eq",
+      "fragility"
     ],
-    "activated_count": 2,
-    "total_insights": 1,
-    "good_insights": 1,
-    "ready": false,
-    "avg_specificity": 0.75,
-    "avg_reframe": 0.6,
-    "bloom_worthy": false,
+    "activated_count": 3,
+    "total_insights": 5,
+    "good_insights": 5,
+    "ready": true,
+    "avg_specificity": 0.83,
+    "avg_reframe": 0.73,
+    "bloom_worthy": true,
     "insights": [
       {
+        "quality": "HIGH",
+        "signal": "sadness (35%) + open fragility",
+        "reframe": "You let yourself feel the hard things instead of running — that's braver than most people manage — i",
+        "dims": [
+          "emotion",
+          "fragility"
+        ]
+      },
+      {
+        "quality": "HIGH",
+        "signal": "self-awareness (10%) + open fragility",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that combination is rare ",
+        "dims": [
+          "eq",
+          "fragility"
+        ]
+      },
+      {
         "quality": "MEDIUM",
-        "signal": "top emotion: sadness (35%)",
+        "signal": "self_ref=10%",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your work situation",
+        "dims": [
+          "eq"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "fragility pattern: open",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — in your work situation",
+        "dims": [
+          "fragility"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: sadness (35%)",
         "reframe": "You feel things at a depth most people don't reach — in your work situation",
         "dims": [
           "emotion"
@@ -574,16 +1028,44 @@
     "words": 47,
     "activated": [
       "emotion",
-      "eq"
+      "eq",
+      "fragility"
     ],
-    "activated_count": 2,
-    "total_insights": 2,
-    "good_insights": 2,
-    "ready": false,
-    "avg_specificity": 0.6,
-    "avg_reframe": 0.8,
-    "bloom_worthy": false,
+    "activated_count": 3,
+    "total_insights": 6,
+    "good_insights": 6,
+    "ready": true,
+    "avg_specificity": 0.7,
+    "avg_reframe": 0.842,
+    "bloom_worthy": true,
     "insights": [
+      {
+        "quality": "HIGH",
+        "signal": "self-awareness (11%) + open fragility",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that combination is rare ",
+        "dims": [
+          "eq",
+          "fragility"
+        ]
+      },
+      {
+        "quality": "HIGH",
+        "signal": "sadness (35%) + self-awareness (self_ref 11%)",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand them — as you search fo",
+        "dims": [
+          "emotion",
+          "eq"
+        ]
+      },
+      {
+        "quality": "HIGH",
+        "signal": "sadness (35%) + open fragility",
+        "reframe": "You let yourself feel the hard things instead of running — that's braver than most people manage — a",
+        "dims": [
+          "emotion",
+          "fragility"
+        ]
+      },
       {
         "quality": "MEDIUM",
         "signal": "self_ref=11%",
@@ -594,8 +1076,16 @@
       },
       {
         "quality": "MEDIUM",
-        "signal": "top emotion: despair (35%)",
-        "reframe": "You've been carrying something heavy for a while — as you search for clarity",
+        "signal": "fragility pattern: open",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — as you search for clarity",
+        "dims": [
+          "fragility"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: sadness (35%)",
+        "reframe": "You feel things at a depth most people don't reach — as you search for clarity",
         "dims": [
           "emotion"
         ]
@@ -609,19 +1099,53 @@
     "words": 46,
     "activated": [
       "emotion",
-      "eq"
+      "eq",
+      "fragility"
     ],
-    "activated_count": 2,
-    "total_insights": 1,
-    "good_insights": 1,
-    "ready": false,
-    "avg_specificity": 0.75,
-    "avg_reframe": 0.5,
-    "bloom_worthy": false,
+    "activated_count": 3,
+    "total_insights": 5,
+    "good_insights": 5,
+    "ready": true,
+    "avg_specificity": 0.79,
+    "avg_reframe": 0.66,
+    "bloom_worthy": true,
     "insights": [
       {
+        "quality": "HIGH",
+        "signal": "self-awareness (9%) + open fragility",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that combination is rare ",
+        "dims": [
+          "eq",
+          "fragility"
+        ]
+      },
+      {
         "quality": "MEDIUM",
-        "signal": "top emotion: despair (35%)",
+        "signal": "fragility pattern: open",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — in your work situation",
+        "dims": [
+          "fragility"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "self_ref=9%",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your work situation",
+        "dims": [
+          "eq"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: hope (35%)",
+        "reframe": "Even in difficulty, you hold onto what matters — in your work situation",
+        "dims": [
+          "emotion"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: despair (35%)",
         "reframe": "You've been carrying something heavy for a while — in your work situation",
         "dims": [
           "emotion"
@@ -636,22 +1160,39 @@
     "words": 48,
     "activated": [
       "emotion",
-      "eq"
+      "eq",
+      "fragility"
     ],
-    "activated_count": 2,
-    "total_insights": 1,
-    "good_insights": 1,
-    "ready": false,
+    "activated_count": 3,
+    "total_insights": 3,
+    "good_insights": 3,
+    "ready": true,
     "avg_specificity": 0.6,
-    "avg_reframe": 0.85,
-    "bloom_worthy": false,
+    "avg_reframe": 0.817,
+    "bloom_worthy": true,
     "insights": [
       {
         "quality": "MEDIUM",
-        "signal": "top emotion: confusion (35%)",
+        "signal": "fragility pattern: open",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — with what you're going throug",
+        "dims": [
+          "fragility"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: confusion (35%)",
         "reframe": "You're honest enough to sit with uncertainty instead of faking clarity — with what you're going thro",
         "dims": [
           "emotion"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "self_ref=6%",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — with what you're going throug",
+        "dims": [
+          "eq"
         ]
       }
     ]
@@ -662,17 +1203,37 @@
     "novel": "The Girl with the Dragon Tattoo",
     "words": 39,
     "activated": [
+      "emotion",
       "eq",
-      "humor"
+      "humor",
+      "fragility"
     ],
-    "activated_count": 2,
-    "total_insights": 2,
-    "good_insights": 2,
-    "ready": false,
-    "avg_specificity": 0.75,
-    "avg_reframe": 0.75,
-    "bloom_worthy": false,
+    "activated_count": 4,
+    "total_insights": 6,
+    "good_insights": 6,
+    "ready": true,
+    "avg_specificity": 0.817,
+    "avg_reframe": 0.717,
+    "bloom_worthy": true,
     "insights": [
+      {
+        "quality": "HIGH",
+        "signal": "self-awareness (13%) + open fragility",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that combination is rare ",
+        "dims": [
+          "eq",
+          "fragility"
+        ]
+      },
+      {
+        "quality": "HIGH",
+        "signal": "hope (35%) + self-awareness (self_ref 13%)",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand them — in your work sit",
+        "dims": [
+          "emotion",
+          "eq"
+        ]
+      },
       {
         "quality": "MEDIUM",
         "signal": "self_ref=13%",
@@ -688,6 +1249,22 @@
         "dims": [
           "humor"
         ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "fragility pattern: open",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — in your work situation",
+        "dims": [
+          "fragility"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: hope (35%)",
+        "reframe": "Even in difficulty, you hold onto what matters — in your work situation",
+        "dims": [
+          "emotion"
+        ]
       }
     ]
   },
@@ -698,16 +1275,35 @@
     "words": 45,
     "activated": [
       "emotion",
-      "eq"
+      "eq",
+      "fragility"
     ],
-    "activated_count": 2,
-    "total_insights": 2,
-    "good_insights": 2,
-    "ready": false,
-    "avg_specificity": 0.55,
-    "avg_reframe": 0.7,
-    "bloom_worthy": false,
+    "activated_count": 3,
+    "total_insights": 5,
+    "good_insights": 5,
+    "ready": true,
+    "avg_specificity": 0.66,
+    "avg_reframe": 0.76,
+    "bloom_worthy": true,
     "insights": [
+      {
+        "quality": "HIGH",
+        "signal": "self-awareness (16%) + open fragility",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that combination is rare",
+        "dims": [
+          "eq",
+          "fragility"
+        ]
+      },
+      {
+        "quality": "HIGH",
+        "signal": "anger (35%) + self-awareness (self_ref 16%)",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand them",
+        "dims": [
+          "emotion",
+          "eq"
+        ]
+      },
       {
         "quality": "MEDIUM",
         "signal": "self_ref=16%",
@@ -718,8 +1314,16 @@
       },
       {
         "quality": "MEDIUM",
-        "signal": "top emotion: hope (35%)",
-        "reframe": "Even in difficulty, you hold onto what matters",
+        "signal": "fragility pattern: open",
+        "reframe": "You let yourself be seen — that takes more courage than most realize",
+        "dims": [
+          "fragility"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: anger (35%)",
+        "reframe": "You care deeply about fairness",
         "dims": [
           "emotion"
         ]
@@ -733,16 +1337,54 @@
     "words": 48,
     "activated": [
       "emotion",
-      "eq"
+      "eq",
+      "conflict",
+      "fragility"
     ],
-    "activated_count": 2,
-    "total_insights": 2,
-    "good_insights": 2,
-    "ready": false,
-    "avg_specificity": 0.75,
+    "activated_count": 4,
+    "total_insights": 8,
+    "good_insights": 8,
+    "ready": true,
+    "avg_specificity": 0.838,
     "avg_reframe": 0.65,
-    "bloom_worthy": false,
+    "bloom_worthy": true,
     "insights": [
+      {
+        "quality": "HIGH",
+        "signal": "avoidance (50%) + self-awareness (self_ref 12%)",
+        "reframe": "You think before you act in conflict — that's emotional intelligence, not avoidance — in your work s",
+        "dims": [
+          "conflict",
+          "eq"
+        ]
+      },
+      {
+        "quality": "HIGH",
+        "signal": "self-awareness + masked fragility",
+        "reframe": "You carry more than you let on, but part of you knows it — that self-knowledge is your edge — in you",
+        "dims": [
+          "eq",
+          "fragility"
+        ]
+      },
+      {
+        "quality": "HIGH",
+        "signal": "anger (35%) + self-awareness (self_ref 12%)",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand them — in your work sit",
+        "dims": [
+          "emotion",
+          "eq"
+        ]
+      },
+      {
+        "quality": "HIGH",
+        "signal": "anger (35%) + avoidance (50%)",
+        "reframe": "You feel strongly but hold back — you're managing more than people see — in your work situation",
+        "dims": [
+          "emotion",
+          "conflict"
+        ]
+      },
       {
         "quality": "MEDIUM",
         "signal": "self_ref=12%",
@@ -753,8 +1395,24 @@
       },
       {
         "quality": "MEDIUM",
-        "signal": "top emotion: despair (35%)",
-        "reframe": "You've been carrying something heavy for a while — in your work situation",
+        "signal": "conflict style: avoid (50%)",
+        "reframe": "You think before you engage — that's restraint, not weakness — in your work situation",
+        "dims": [
+          "conflict"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "fragility pattern: masked",
+        "reframe": "You carry more than you show — there's depth behind the surface — in your work situation",
+        "dims": [
+          "fragility"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: anger (35%)",
+        "reframe": "You care deeply about fairness — in your work situation",
         "dims": [
           "emotion"
         ]
@@ -771,16 +1429,24 @@
       "eq"
     ],
     "activated_count": 2,
-    "total_insights": 1,
-    "good_insights": 1,
+    "total_insights": 2,
+    "good_insights": 2,
     "ready": false,
-    "avg_specificity": 0.5,
-    "avg_reframe": 0.5,
+    "avg_specificity": 0.55,
+    "avg_reframe": 0.65,
     "bloom_worthy": false,
     "insights": [
       {
         "quality": "MEDIUM",
-        "signal": "top emotion: despair (35%)",
+        "signal": "self_ref=8%",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world",
+        "dims": [
+          "eq"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: despair (35%)",
         "reframe": "You've been carrying something heavy for a while",
         "dims": [
           "emotion"
@@ -794,17 +1460,44 @@
     "novel": "Catch-22",
     "words": 47,
     "activated": [
+      "emotion",
       "eq",
       "conflict"
     ],
-    "activated_count": 2,
-    "total_insights": 2,
-    "good_insights": 2,
-    "ready": false,
-    "avg_specificity": 0.75,
-    "avg_reframe": 0.55,
-    "bloom_worthy": false,
+    "activated_count": 3,
+    "total_insights": 5,
+    "good_insights": 5,
+    "ready": true,
+    "avg_specificity": 0.83,
+    "avg_reframe": 0.64,
+    "bloom_worthy": true,
     "insights": [
+      {
+        "quality": "HIGH",
+        "signal": "fear (35%) + self-awareness (self_ref 11%)",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand them — in your work sit",
+        "dims": [
+          "emotion",
+          "eq"
+        ]
+      },
+      {
+        "quality": "HIGH",
+        "signal": "avoidance (50%) + self-awareness (self_ref 11%)",
+        "reframe": "You think before you act in conflict — that's emotional intelligence, not avoidance — in your work s",
+        "dims": [
+          "conflict",
+          "eq"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "self_ref=11%",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your work situation",
+        "dims": [
+          "eq"
+        ]
+      },
       {
         "quality": "MEDIUM",
         "signal": "conflict style: avoid (50%)",
@@ -815,10 +1508,10 @@
       },
       {
         "quality": "MEDIUM",
-        "signal": "self_ref=11%",
-        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your work situation",
+        "signal": "emotion: fear (35%)",
+        "reframe": "You're tuned into risks others might miss — in your work situation",
         "dims": [
-          "eq"
+          "emotion"
         ]
       }
     ]
@@ -830,15 +1523,16 @@
     "words": 48,
     "activated": [
       "emotion",
-      "eq"
+      "eq",
+      "fragility"
     ],
-    "activated_count": 2,
-    "total_insights": 1,
-    "good_insights": 1,
-    "ready": false,
-    "avg_specificity": 0.95,
-    "avg_reframe": 0.8,
-    "bloom_worthy": false,
+    "activated_count": 3,
+    "total_insights": 5,
+    "good_insights": 5,
+    "ready": true,
+    "avg_specificity": 0.83,
+    "avg_reframe": 0.74,
+    "bloom_worthy": true,
     "insights": [
       {
         "quality": "HIGH",
@@ -847,6 +1541,39 @@
         "dims": [
           "emotion",
           "eq"
+        ]
+      },
+      {
+        "quality": "HIGH",
+        "signal": "self-awareness (15%) + open fragility",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that combination is rare ",
+        "dims": [
+          "eq",
+          "fragility"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "self_ref=15%",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your work situation",
+        "dims": [
+          "eq"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: shame (50%)",
+        "reframe": "You care about being the person you want to be — in your work situation",
+        "dims": [
+          "emotion"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "fragility pattern: open",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — in your work situation",
+        "dims": [
+          "fragility"
         ]
       }
     ]
@@ -858,22 +1585,24 @@
     "words": 49,
     "activated": [
       "emotion",
-      "eq"
+      "eq",
+      "conflict"
     ],
-    "activated_count": 2,
-    "total_insights": 2,
-    "good_insights": 2,
-    "ready": false,
-    "avg_specificity": 0.75,
-    "avg_reframe": 0.75,
-    "bloom_worthy": false,
+    "activated_count": 3,
+    "total_insights": 4,
+    "good_insights": 4,
+    "ready": true,
+    "avg_specificity": 0.8,
+    "avg_reframe": 0.762,
+    "bloom_worthy": true,
     "insights": [
       {
-        "quality": "MEDIUM",
-        "signal": "top emotion: frustration (35%)",
-        "reframe": "You have a sharp sense of when things aren't right — within your family",
+        "quality": "HIGH",
+        "signal": "frustration (35%) + self-awareness (self_ref 10%)",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand them — within your fami",
         "dims": [
-          "emotion"
+          "emotion",
+          "eq"
         ]
       },
       {
@@ -882,6 +1611,22 @@
         "reframe": "You're deeply self-aware — you pay attention to your own inner world — within your family",
         "dims": [
           "eq"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "conflict style: confront (50%)",
+        "reframe": "You face things head-on instead of letting them fester — within your family",
+        "dims": [
+          "conflict"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: frustration (35%)",
+        "reframe": "You have a sharp sense of when things aren't right — within your family",
+        "dims": [
+          "emotion"
         ]
       }
     ]
@@ -893,16 +1638,35 @@
     "words": 46,
     "activated": [
       "emotion",
-      "eq"
+      "eq",
+      "fragility"
     ],
-    "activated_count": 2,
-    "total_insights": 2,
-    "good_insights": 2,
-    "ready": false,
-    "avg_specificity": 0.3,
-    "avg_reframe": 0.825,
-    "bloom_worthy": false,
+    "activated_count": 3,
+    "total_insights": 5,
+    "good_insights": 5,
+    "ready": true,
+    "avg_specificity": 0.38,
+    "avg_reframe": 0.77,
+    "bloom_worthy": true,
     "insights": [
+      {
+        "quality": "HIGH",
+        "signal": "self-awareness (24%) + open fragility",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that combination is rare ",
+        "dims": [
+          "eq",
+          "fragility"
+        ]
+      },
+      {
+        "quality": "HIGH",
+        "signal": "confusion (35%) + self-awareness (self_ref 24%)",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand them — especially when ",
+        "dims": [
+          "emotion",
+          "eq"
+        ]
+      },
       {
         "quality": "MEDIUM",
         "signal": "self_ref=24%",
@@ -913,7 +1677,15 @@
       },
       {
         "quality": "MEDIUM",
-        "signal": "top emotion: confusion (35%)",
+        "signal": "fragility pattern: open",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — especially when don't know ho",
+        "dims": [
+          "fragility"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: confusion (35%)",
         "reframe": "You're honest enough to sit with uncertainty instead of faking clarity — especially when don't know ",
         "dims": [
           "emotion"
@@ -930,17 +1702,25 @@
       "eq"
     ],
     "activated_count": 1,
-    "total_insights": 1,
-    "good_insights": 1,
+    "total_insights": 2,
+    "good_insights": 2,
     "ready": false,
-    "avg_specificity": 0.5,
-    "avg_reframe": 0.5,
+    "avg_specificity": 0.55,
+    "avg_reframe": 0.65,
     "bloom_worthy": false,
     "insights": [
       {
         "quality": "MEDIUM",
         "signal": "question_ratio=50%",
         "reframe": "You're not just talking — you're actively searching for understanding",
+        "dims": [
+          "eq"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "self_ref=10%",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world",
         "dims": [
           "eq"
         ]
@@ -957,13 +1737,22 @@
       "eq"
     ],
     "activated_count": 2,
-    "total_insights": 2,
-    "good_insights": 2,
-    "ready": false,
-    "avg_specificity": 0.75,
-    "avg_reframe": 0.7,
-    "bloom_worthy": false,
+    "total_insights": 3,
+    "good_insights": 3,
+    "ready": true,
+    "avg_specificity": 0.817,
+    "avg_reframe": 0.733,
+    "bloom_worthy": true,
     "insights": [
+      {
+        "quality": "HIGH",
+        "signal": "hope (35%) + self-awareness (self_ref 12%)",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand them — in your work sit",
+        "dims": [
+          "emotion",
+          "eq"
+        ]
+      },
       {
         "quality": "MEDIUM",
         "signal": "self_ref=12%",
@@ -974,7 +1763,7 @@
       },
       {
         "quality": "MEDIUM",
-        "signal": "top emotion: hope (35%)",
+        "signal": "emotion: hope (35%)",
         "reframe": "Even in difficulty, you hold onto what matters — in your work situation",
         "dims": [
           "emotion"
@@ -992,12 +1781,12 @@
       "eq"
     ],
     "activated_count": 2,
-    "total_insights": 1,
-    "good_insights": 1,
-    "ready": false,
-    "avg_specificity": 0.95,
-    "avg_reframe": 0.8,
-    "bloom_worthy": false,
+    "total_insights": 3,
+    "good_insights": 3,
+    "ready": true,
+    "avg_specificity": 0.817,
+    "avg_reframe": 0.7,
+    "bloom_worthy": true,
     "insights": [
       {
         "quality": "HIGH",
@@ -1006,6 +1795,22 @@
         "dims": [
           "emotion",
           "eq"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "self_ref=15%",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your work situation",
+        "dims": [
+          "eq"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: despair (50%)",
+        "reframe": "You've been carrying something heavy for a while — in your work situation",
+        "dims": [
+          "emotion"
         ]
       }
     ]
@@ -1017,20 +1822,54 @@
     "words": 43,
     "activated": [
       "emotion",
-      "eq"
+      "eq",
+      "fragility"
     ],
-    "activated_count": 2,
-    "total_insights": 1,
-    "good_insights": 1,
-    "ready": false,
-    "avg_specificity": 0.75,
-    "avg_reframe": 0.6,
-    "bloom_worthy": false,
+    "activated_count": 3,
+    "total_insights": 5,
+    "good_insights": 5,
+    "ready": true,
+    "avg_specificity": 0.79,
+    "avg_reframe": 0.62,
+    "bloom_worthy": true,
     "insights": [
       {
+        "quality": "HIGH",
+        "signal": "self-awareness + masked fragility",
+        "reframe": "You carry more than you let on, but part of you knows it — that self-knowledge is your edge — in you",
+        "dims": [
+          "eq",
+          "fragility"
+        ]
+      },
+      {
         "quality": "MEDIUM",
-        "signal": "top emotion: sadness (35%)",
+        "signal": "fragility pattern: masked",
+        "reframe": "You carry more than you show — there's depth behind the surface — in your work situation",
+        "dims": [
+          "fragility"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "self_ref=9%",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your work situation",
+        "dims": [
+          "eq"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: sadness (35%)",
         "reframe": "You feel things at a depth most people don't reach — in your work situation",
+        "dims": [
+          "emotion"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: despair (35%)",
+        "reframe": "You've been carrying something heavy for a while — in your work situation",
         "dims": [
           "emotion"
         ]
@@ -1048,19 +1887,205 @@
       "fragility"
     ],
     "activated_count": 3,
-    "total_insights": 3,
-    "good_insights": 3,
+    "total_insights": 5,
+    "good_insights": 5,
     "ready": true,
-    "avg_specificity": 0.75,
-    "avg_reframe": 0.633,
+    "avg_specificity": 0.83,
+    "avg_reframe": 0.72,
     "bloom_worthy": true,
     "insights": [
       {
+        "quality": "HIGH",
+        "signal": "fear (50%) + self-awareness (self_ref 16%)",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand them — in your work sit",
+        "dims": [
+          "emotion",
+          "eq"
+        ]
+      },
+      {
+        "quality": "HIGH",
+        "signal": "self-awareness (16%) + open fragility",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that combination is rare ",
+        "dims": [
+          "eq",
+          "fragility"
+        ]
+      },
+      {
         "quality": "MEDIUM",
-        "signal": "question_ratio=29%",
-        "reframe": "You're not just talking — you're actively searching for understanding — in your work situation",
+        "signal": "self_ref=16%",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your work situation",
         "dims": [
           "eq"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: fear (50%)",
+        "reframe": "You're tuned into risks others might miss — in your work situation",
+        "dims": [
+          "emotion"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "fragility pattern: open",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — in your work situation",
+        "dims": [
+          "fragility"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "character": "Beloved",
+    "novel": "Beloved",
+    "words": 51,
+    "activated": [
+      "emotion",
+      "eq"
+    ],
+    "activated_count": 2,
+    "total_insights": 3,
+    "good_insights": 3,
+    "ready": true,
+    "avg_specificity": 0.783,
+    "avg_reframe": 0.7,
+    "bloom_worthy": true,
+    "insights": [
+      {
+        "quality": "HIGH",
+        "signal": "anger (35%) + questioning (20%)",
+        "reframe": "You're not just venting — you're actively searching for answers — within your family",
+        "dims": [
+          "emotion",
+          "eq"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "self_ref=10%",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — within your family",
+        "dims": [
+          "eq"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: anger (35%)",
+        "reframe": "You care deeply about fairness — within your family",
+        "dims": [
+          "emotion"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "character": "Pecola Breedlove",
+    "novel": "The Bluest Eye",
+    "words": 47,
+    "activated": [
+      "emotion",
+      "eq",
+      "fragility"
+    ],
+    "activated_count": 3,
+    "total_insights": 5,
+    "good_insights": 5,
+    "ready": true,
+    "avg_specificity": 0.66,
+    "avg_reframe": 0.7,
+    "bloom_worthy": true,
+    "insights": [
+      {
+        "quality": "HIGH",
+        "signal": "shame (50%) + self-awareness (self_ref 17%)",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand them",
+        "dims": [
+          "emotion",
+          "eq"
+        ]
+      },
+      {
+        "quality": "HIGH",
+        "signal": "self-awareness + masked fragility",
+        "reframe": "You carry more than you let on, but part of you knows it — that self-knowledge is your edge",
+        "dims": [
+          "eq",
+          "fragility"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "self_ref=17%",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world",
+        "dims": [
+          "eq"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: shame (50%)",
+        "reframe": "You care about being the person you want to be",
+        "dims": [
+          "emotion"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "fragility pattern: masked",
+        "reframe": "You carry more than you show — there's depth behind the surface",
+        "dims": [
+          "fragility"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "character": "Rodion's Mother",
+    "novel": "Crime and Punishment",
+    "words": 51,
+    "activated": [
+      "emotion",
+      "eq",
+      "fragility"
+    ],
+    "activated_count": 3,
+    "total_insights": 5,
+    "good_insights": 5,
+    "ready": true,
+    "avg_specificity": 0.83,
+    "avg_reframe": 0.66,
+    "bloom_worthy": true,
+    "insights": [
+      {
+        "quality": "HIGH",
+        "signal": "love (50%) + questioning (29%)",
+        "reframe": "You're not just venting — you're actively searching for answers — in your work situation",
+        "dims": [
+          "emotion",
+          "eq"
+        ]
+      },
+      {
+        "quality": "HIGH",
+        "signal": "self-awareness (6%) + open fragility",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that combination is rare ",
+        "dims": [
+          "eq",
+          "fragility"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: love (50%)",
+        "reframe": "You connect with a warmth that others can feel — in your work situation",
+        "dims": [
+          "emotion"
         ]
       },
       {
@@ -1073,95 +2098,8 @@
       },
       {
         "quality": "MEDIUM",
-        "signal": "top emotion: fear (35%)",
-        "reframe": "You're tuned into risks others might miss — in your work situation",
-        "dims": [
-          "emotion"
-        ]
-      }
-    ]
-  },
-  {
-    "id": 36,
-    "character": "Beloved",
-    "novel": "Beloved",
-    "words": 51,
-    "activated": [
-      "eq"
-    ],
-    "activated_count": 1,
-    "total_insights": 1,
-    "good_insights": 1,
-    "ready": false,
-    "avg_specificity": 0.75,
-    "avg_reframe": 0.5,
-    "bloom_worthy": false,
-    "insights": [
-      {
-        "quality": "MEDIUM",
-        "signal": "question_ratio=20%",
-        "reframe": "You're not just talking — you're actively searching for understanding — within your family",
-        "dims": [
-          "eq"
-        ]
-      }
-    ]
-  },
-  {
-    "id": 37,
-    "character": "Pecola Breedlove",
-    "novel": "The Bluest Eye",
-    "words": 47,
-    "activated": [
-      "eq"
-    ],
-    "activated_count": 1,
-    "total_insights": 1,
-    "good_insights": 1,
-    "ready": false,
-    "avg_specificity": 0.6,
-    "avg_reframe": 0.8,
-    "bloom_worthy": false,
-    "insights": [
-      {
-        "quality": "MEDIUM",
-        "signal": "self_ref=17%",
-        "reframe": "You're deeply self-aware — you pay attention to your own inner world",
-        "dims": [
-          "eq"
-        ]
-      }
-    ]
-  },
-  {
-    "id": 38,
-    "character": "Rodion's Mother",
-    "novel": "Crime and Punishment",
-    "words": 51,
-    "activated": [
-      "emotion",
-      "eq"
-    ],
-    "activated_count": 2,
-    "total_insights": 2,
-    "good_insights": 2,
-    "ready": false,
-    "avg_specificity": 0.75,
-    "avg_reframe": 0.55,
-    "bloom_worthy": false,
-    "insights": [
-      {
-        "quality": "MEDIUM",
-        "signal": "top emotion: love (50%)",
-        "reframe": "You connect with a warmth that others can feel — in your work situation",
-        "dims": [
-          "emotion"
-        ]
-      },
-      {
-        "quality": "MEDIUM",
-        "signal": "question_ratio=29%",
-        "reframe": "You're not just talking — you're actively searching for understanding — in your work situation",
+        "signal": "self_ref=6%",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your work situation",
         "dims": [
           "eq"
         ]
@@ -1175,16 +2113,35 @@
     "words": 47,
     "activated": [
       "emotion",
-      "eq"
+      "eq",
+      "fragility"
     ],
-    "activated_count": 2,
-    "total_insights": 2,
-    "good_insights": 2,
-    "ready": false,
-    "avg_specificity": 0.6,
-    "avg_reframe": 0.75,
-    "bloom_worthy": false,
+    "activated_count": 3,
+    "total_insights": 5,
+    "good_insights": 5,
+    "ready": true,
+    "avg_specificity": 0.68,
+    "avg_reframe": 0.74,
+    "bloom_worthy": true,
     "insights": [
+      {
+        "quality": "HIGH",
+        "signal": "self-awareness (17%) + open fragility",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that combination is rare ",
+        "dims": [
+          "eq",
+          "fragility"
+        ]
+      },
+      {
+        "quality": "HIGH",
+        "signal": "frustration (35%) + self-awareness (self_ref 17%)",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand them — with what you're",
+        "dims": [
+          "emotion",
+          "eq"
+        ]
+      },
       {
         "quality": "MEDIUM",
         "signal": "self_ref=17%",
@@ -1195,7 +2152,15 @@
       },
       {
         "quality": "MEDIUM",
-        "signal": "top emotion: frustration (35%)",
+        "signal": "fragility pattern: open",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — with what you're going throug",
+        "dims": [
+          "fragility"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: frustration (35%)",
         "reframe": "You have a sharp sense of when things aren't right — with what you're going through",
         "dims": [
           "emotion"
@@ -1213,13 +2178,21 @@
       "humor"
     ],
     "activated_count": 2,
-    "total_insights": 2,
-    "good_insights": 2,
-    "ready": false,
-    "avg_specificity": 0.55,
-    "avg_reframe": 0.6,
-    "bloom_worthy": false,
+    "total_insights": 3,
+    "good_insights": 3,
+    "ready": true,
+    "avg_specificity": 0.567,
+    "avg_reframe": 0.667,
+    "bloom_worthy": true,
     "insights": [
+      {
+        "quality": "MEDIUM",
+        "signal": "question_ratio=20%",
+        "reframe": "You're not just talking — you're actively searching for understanding",
+        "dims": [
+          "eq"
+        ]
+      },
       {
         "quality": "MEDIUM",
         "signal": "humor style: self_enhancing (45%)",
@@ -1230,8 +2203,8 @@
       },
       {
         "quality": "MEDIUM",
-        "signal": "question_ratio=20%",
-        "reframe": "You're not just talking — you're actively searching for understanding",
+        "signal": "self_ref=8%",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world",
         "dims": [
           "eq"
         ]
@@ -1274,16 +2247,32 @@
       "eq"
     ],
     "activated_count": 2,
-    "total_insights": 1,
-    "good_insights": 1,
-    "ready": false,
+    "total_insights": 3,
+    "good_insights": 3,
+    "ready": true,
     "avg_specificity": 0.75,
-    "avg_reframe": 0.6,
-    "bloom_worthy": false,
+    "avg_reframe": 0.667,
+    "bloom_worthy": true,
     "insights": [
       {
         "quality": "MEDIUM",
-        "signal": "top emotion: love (35%)",
+        "signal": "self_ref=10%",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your work situation",
+        "dims": [
+          "eq"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: sadness (35%)",
+        "reframe": "You feel things at a depth most people don't reach — in your work situation",
+        "dims": [
+          "emotion"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: love (35%)",
         "reframe": "You connect with a warmth that others can feel — in your work situation",
         "dims": [
           "emotion"
@@ -1298,16 +2287,43 @@
     "words": 54,
     "activated": [
       "emotion",
-      "eq"
+      "eq",
+      "fragility"
     ],
-    "activated_count": 2,
-    "total_insights": 2,
-    "good_insights": 2,
-    "ready": false,
-    "avg_specificity": 0.7,
-    "avg_reframe": 0.8,
-    "bloom_worthy": false,
+    "activated_count": 3,
+    "total_insights": 5,
+    "good_insights": 5,
+    "ready": true,
+    "avg_specificity": 0.83,
+    "avg_reframe": 0.7,
+    "bloom_worthy": true,
     "insights": [
+      {
+        "quality": "HIGH",
+        "signal": "despair (65%) + self-awareness (self_ref 13%)",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand them — in your work sit",
+        "dims": [
+          "emotion",
+          "eq"
+        ]
+      },
+      {
+        "quality": "HIGH",
+        "signal": "self-awareness (13%) + open fragility",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that combination is rare ",
+        "dims": [
+          "eq",
+          "fragility"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: despair (65%)",
+        "reframe": "You've been carrying something heavy for a while — in your work situation",
+        "dims": [
+          "emotion"
+        ]
+      },
       {
         "quality": "MEDIUM",
         "signal": "self_ref=13%",
@@ -1318,10 +2334,10 @@
       },
       {
         "quality": "MEDIUM",
-        "signal": "top emotion: anger (35%)",
-        "reframe": "You care deeply about fairness — in your work situation",
+        "signal": "fragility pattern: open",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — in your work situation",
         "dims": [
-          "emotion"
+          "fragility"
         ]
       }
     ]
@@ -1332,22 +2348,58 @@
     "novel": "Invisible Man",
     "words": 44,
     "activated": [
-      "eq"
+      "emotion",
+      "eq",
+      "fragility"
     ],
-    "activated_count": 1,
-    "total_insights": 1,
-    "good_insights": 1,
-    "ready": false,
-    "avg_specificity": 0.75,
-    "avg_reframe": 0.8,
-    "bloom_worthy": false,
+    "activated_count": 3,
+    "total_insights": 5,
+    "good_insights": 5,
+    "ready": true,
+    "avg_specificity": 0.83,
+    "avg_reframe": 0.7,
+    "bloom_worthy": true,
     "insights": [
+      {
+        "quality": "HIGH",
+        "signal": "shame (50%) + self-awareness (self_ref 14%)",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand them — in your work sit",
+        "dims": [
+          "emotion",
+          "eq"
+        ]
+      },
+      {
+        "quality": "HIGH",
+        "signal": "self-awareness + masked fragility",
+        "reframe": "You carry more than you let on, but part of you knows it — that self-knowledge is your edge — in you",
+        "dims": [
+          "eq",
+          "fragility"
+        ]
+      },
       {
         "quality": "MEDIUM",
         "signal": "self_ref=14%",
         "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your work situation",
         "dims": [
           "eq"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: shame (50%)",
+        "reframe": "You care about being the person you want to be — in your work situation",
+        "dims": [
+          "emotion"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "fragility pattern: masked",
+        "reframe": "You carry more than you show — there's depth behind the surface — in your work situation",
+        "dims": [
+          "fragility"
         ]
       }
     ]
@@ -1362,19 +2414,20 @@
       "eq"
     ],
     "activated_count": 2,
-    "total_insights": 2,
-    "good_insights": 2,
-    "ready": false,
-    "avg_specificity": 0.55,
-    "avg_reframe": 0.7,
-    "bloom_worthy": false,
+    "total_insights": 3,
+    "good_insights": 3,
+    "ready": true,
+    "avg_specificity": 0.633,
+    "avg_reframe": 0.733,
+    "bloom_worthy": true,
     "insights": [
       {
-        "quality": "MEDIUM",
-        "signal": "top emotion: hope (35%)",
-        "reframe": "Even in difficulty, you hold onto what matters",
+        "quality": "HIGH",
+        "signal": "hope (50%) + self-awareness (self_ref 12%)",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand them",
         "dims": [
-          "emotion"
+          "emotion",
+          "eq"
         ]
       },
       {
@@ -1383,6 +2436,14 @@
         "reframe": "You're deeply self-aware — you pay attention to your own inner world",
         "dims": [
           "eq"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: hope (50%)",
+        "reframe": "Even in difficulty, you hold onto what matters",
+        "dims": [
+          "emotion"
         ]
       }
     ]
@@ -1393,22 +2454,58 @@
     "novel": "One Flew Over the Cuckoo's Nest",
     "words": 48,
     "activated": [
-      "eq"
+      "emotion",
+      "eq",
+      "fragility"
     ],
-    "activated_count": 1,
-    "total_insights": 1,
-    "good_insights": 1,
-    "ready": false,
-    "avg_specificity": 0.5,
-    "avg_reframe": 0.5,
-    "bloom_worthy": false,
+    "activated_count": 3,
+    "total_insights": 5,
+    "good_insights": 5,
+    "ready": true,
+    "avg_specificity": 0.67,
+    "avg_reframe": 0.6,
+    "bloom_worthy": true,
     "insights": [
+      {
+        "quality": "HIGH",
+        "signal": "grief (35%) + questioning (50%)",
+        "reframe": "You're not just venting — you're actively searching for answers",
+        "dims": [
+          "emotion",
+          "eq"
+        ]
+      },
+      {
+        "quality": "HIGH",
+        "signal": "questioning (50%) + masked fragility",
+        "reframe": "You're asking the hard questions that most people avoid — that honesty takes real courage",
+        "dims": [
+          "eq",
+          "fragility"
+        ]
+      },
       {
         "quality": "MEDIUM",
         "signal": "question_ratio=50%",
         "reframe": "You're not just talking — you're actively searching for understanding",
         "dims": [
           "eq"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "fragility pattern: masked",
+        "reframe": "You carry more than you show — there's depth behind the surface",
+        "dims": [
+          "fragility"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: grief (35%)",
+        "reframe": "The depth of your loss reflects the depth of what you had",
+        "dims": [
+          "emotion"
         ]
       }
     ]
@@ -1424,20 +2521,53 @@
       "fragility"
     ],
     "activated_count": 3,
-    "total_insights": 1,
-    "good_insights": 1,
-    "ready": false,
-    "avg_specificity": 0.95,
-    "avg_reframe": 0.85,
-    "bloom_worthy": false,
+    "total_insights": 5,
+    "good_insights": 5,
+    "ready": true,
+    "avg_specificity": 0.83,
+    "avg_reframe": 0.73,
+    "bloom_worthy": true,
     "insights": [
       {
         "quality": "HIGH",
-        "signal": "sadness (50%) + open fragility",
+        "signal": "sadness (65%) + open fragility",
         "reframe": "You let yourself feel the hard things instead of running — that's braver than most people manage — i",
         "dims": [
           "emotion",
           "fragility"
+        ]
+      },
+      {
+        "quality": "HIGH",
+        "signal": "self-awareness (7%) + open fragility",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that combination is rare ",
+        "dims": [
+          "eq",
+          "fragility"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: sadness (65%)",
+        "reframe": "You feel things at a depth most people don't reach — in your relationships",
+        "dims": [
+          "emotion"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "fragility pattern: open",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — in your relationships",
+        "dims": [
+          "fragility"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "self_ref=7%",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your relationships",
+        "dims": [
+          "eq"
         ]
       }
     ]
@@ -1453,13 +2583,31 @@
       "fragility"
     ],
     "activated_count": 3,
-    "total_insights": 3,
-    "good_insights": 3,
+    "total_insights": 5,
+    "good_insights": 5,
     "ready": true,
-    "avg_specificity": 0.567,
-    "avg_reframe": 0.817,
+    "avg_specificity": 0.66,
+    "avg_reframe": 0.77,
     "bloom_worthy": true,
     "insights": [
+      {
+        "quality": "HIGH",
+        "signal": "self-awareness (14%) + open fragility",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that combination is rare",
+        "dims": [
+          "eq",
+          "fragility"
+        ]
+      },
+      {
+        "quality": "HIGH",
+        "signal": "confusion (35%) + self-awareness (self_ref 14%)",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand them",
+        "dims": [
+          "emotion",
+          "eq"
+        ]
+      },
       {
         "quality": "MEDIUM",
         "signal": "self_ref=14%",
@@ -1478,7 +2626,7 @@
       },
       {
         "quality": "MEDIUM",
-        "signal": "top emotion: confusion (35%)",
+        "signal": "emotion: confusion (35%)",
         "reframe": "You're honest enough to sit with uncertainty instead of faking clarity",
         "dims": [
           "emotion"
@@ -1494,16 +2642,43 @@
     "activated": [
       "emotion",
       "eq",
-      "humor"
+      "humor",
+      "fragility"
     ],
-    "activated_count": 3,
-    "total_insights": 3,
-    "good_insights": 3,
+    "activated_count": 4,
+    "total_insights": 6,
+    "good_insights": 6,
     "ready": true,
-    "avg_specificity": 0.75,
-    "avg_reframe": 0.7,
+    "avg_specificity": 0.817,
+    "avg_reframe": 0.683,
     "bloom_worthy": true,
     "insights": [
+      {
+        "quality": "HIGH",
+        "signal": "hope (35%) + self-awareness (self_ref 12%)",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand them — in your work sit",
+        "dims": [
+          "emotion",
+          "eq"
+        ]
+      },
+      {
+        "quality": "HIGH",
+        "signal": "self-awareness + masked fragility",
+        "reframe": "You carry more than you let on, but part of you knows it — that self-knowledge is your edge — in you",
+        "dims": [
+          "eq",
+          "fragility"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "self_ref=12%",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your work situation",
+        "dims": [
+          "eq"
+        ]
+      },
       {
         "quality": "MEDIUM",
         "signal": "humor style: self_enhancing (45%)",
@@ -1514,18 +2689,18 @@
       },
       {
         "quality": "MEDIUM",
-        "signal": "top emotion: hope (35%)",
-        "reframe": "Even in difficulty, you hold onto what matters — in your work situation",
+        "signal": "fragility pattern: masked",
+        "reframe": "You carry more than you show — there's depth behind the surface — in your work situation",
         "dims": [
-          "emotion"
+          "fragility"
         ]
       },
       {
         "quality": "MEDIUM",
-        "signal": "self_ref=12%",
-        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your work situation",
+        "signal": "emotion: hope (35%)",
+        "reframe": "Even in difficulty, you hold onto what matters — in your work situation",
         "dims": [
-          "eq"
+          "emotion"
         ]
       }
     ]
@@ -1541,18 +2716,37 @@
       "fragility"
     ],
     "activated_count": 3,
-    "total_insights": 3,
-    "good_insights": 3,
+    "total_insights": 6,
+    "good_insights": 6,
     "ready": true,
-    "avg_specificity": 0.717,
-    "avg_reframe": 0.7,
+    "avg_specificity": 0.85,
+    "avg_reframe": 0.675,
     "bloom_worthy": true,
     "insights": [
       {
-        "quality": "MEDIUM",
-        "signal": "fragility pattern: open",
-        "reframe": "You let yourself be seen — that takes more courage than most realize — in your relationships",
+        "quality": "HIGH",
+        "signal": "sadness (50%) + open fragility",
+        "reframe": "You let yourself feel the hard things instead of running — that's braver than most people manage — i",
         "dims": [
+          "emotion",
+          "fragility"
+        ]
+      },
+      {
+        "quality": "HIGH",
+        "signal": "sadness (50%) + questioning (25%)",
+        "reframe": "You're not just venting — you're actively searching for answers — in your relationships",
+        "dims": [
+          "emotion",
+          "eq"
+        ]
+      },
+      {
+        "quality": "HIGH",
+        "signal": "questioning (25%) + open fragility",
+        "reframe": "You're asking the hard questions that most people avoid — that honesty takes real courage — in your ",
+        "dims": [
+          "eq",
           "fragility"
         ]
       },
@@ -1566,10 +2760,18 @@
       },
       {
         "quality": "MEDIUM",
-        "signal": "top emotion: anger (35%)",
-        "reframe": "You care deeply about fairness — in your relationships",
+        "signal": "emotion: sadness (50%)",
+        "reframe": "You feel things at a depth most people don't reach — in your relationships",
         "dims": [
           "emotion"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "fragility pattern: open",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — in your relationships",
+        "dims": [
+          "fragility"
         ]
       }
     ]
@@ -1585,29 +2787,53 @@
       "fragility"
     ],
     "activated_count": 3,
-    "total_insights": 2,
-    "good_insights": 2,
-    "ready": false,
-    "avg_specificity": 0.5,
-    "avg_reframe": 0.825,
-    "bloom_worthy": false,
+    "total_insights": 5,
+    "good_insights": 5,
+    "ready": true,
+    "avg_specificity": 0.38,
+    "avg_reframe": 0.77,
+    "bloom_worthy": true,
     "insights": [
       {
         "quality": "HIGH",
-        "signal": "sadness (50%) + open fragility",
-        "reframe": "You let yourself feel the hard things instead of running — that's braver than most people manage — e",
-        "dims": [
-          "emotion",
-          "fragility"
-        ]
-      },
-      {
-        "quality": "HIGH",
-        "signal": "sadness (50%) + self-awareness (self_ref 15%)",
+        "signal": "confusion (65%) + self-awareness (self_ref 15%)",
         "reframe": "You're deeply self-aware — you don't just feel things, you try to understand them — especially when ",
         "dims": [
           "emotion",
           "eq"
+        ]
+      },
+      {
+        "quality": "HIGH",
+        "signal": "self-awareness (15%) + open fragility",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that combination is rare ",
+        "dims": [
+          "eq",
+          "fragility"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "self_ref=15%",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — especially when left me",
+        "dims": [
+          "eq"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: confusion (65%)",
+        "reframe": "You're honest enough to sit with uncertainty instead of faking clarity — especially when left me",
+        "dims": [
+          "emotion"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "fragility pattern: open",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — especially when left me",
+        "dims": [
+          "fragility"
         ]
       }
     ]
@@ -1618,22 +2844,58 @@
     "novel": "Americanah",
     "words": 51,
     "activated": [
-      "eq"
+      "emotion",
+      "eq",
+      "fragility"
     ],
-    "activated_count": 1,
-    "total_insights": 1,
-    "good_insights": 1,
-    "ready": false,
-    "avg_specificity": 0.6,
-    "avg_reframe": 0.8,
-    "bloom_worthy": false,
+    "activated_count": 3,
+    "total_insights": 5,
+    "good_insights": 5,
+    "ready": true,
+    "avg_specificity": 0.66,
+    "avg_reframe": 0.68,
+    "bloom_worthy": true,
     "insights": [
+      {
+        "quality": "HIGH",
+        "signal": "self-awareness + masked fragility",
+        "reframe": "You carry more than you let on, but part of you knows it — that self-knowledge is your edge",
+        "dims": [
+          "eq",
+          "fragility"
+        ]
+      },
+      {
+        "quality": "HIGH",
+        "signal": "sadness (35%) + self-awareness (self_ref 16%)",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand them",
+        "dims": [
+          "emotion",
+          "eq"
+        ]
+      },
       {
         "quality": "MEDIUM",
         "signal": "self_ref=16%",
         "reframe": "You're deeply self-aware — you pay attention to your own inner world",
         "dims": [
           "eq"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "fragility pattern: masked",
+        "reframe": "You carry more than you show — there's depth behind the surface",
+        "dims": [
+          "fragility"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: sadness (35%)",
+        "reframe": "You feel things at a depth most people don't reach",
+        "dims": [
+          "emotion"
         ]
       }
     ]
@@ -1645,22 +2907,56 @@
     "words": 46,
     "activated": [
       "emotion",
-      "eq"
+      "eq",
+      "fragility"
     ],
-    "activated_count": 2,
-    "total_insights": 1,
-    "good_insights": 1,
-    "ready": false,
-    "avg_specificity": 0.75,
-    "avg_reframe": 0.6,
-    "bloom_worthy": false,
+    "activated_count": 3,
+    "total_insights": 5,
+    "good_insights": 5,
+    "ready": true,
+    "avg_specificity": 0.79,
+    "avg_reframe": 0.68,
+    "bloom_worthy": true,
     "insights": [
       {
+        "quality": "HIGH",
+        "signal": "self-awareness (7%) + open fragility",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that combination is rare ",
+        "dims": [
+          "eq",
+          "fragility"
+        ]
+      },
+      {
         "quality": "MEDIUM",
-        "signal": "top emotion: hope (50%)",
+        "signal": "emotion: hope (65%)",
         "reframe": "Even in difficulty, you hold onto what matters — in your work situation",
         "dims": [
           "emotion"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: sadness (50%)",
+        "reframe": "You feel things at a depth most people don't reach — in your work situation",
+        "dims": [
+          "emotion"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "fragility pattern: open",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — in your work situation",
+        "dims": [
+          "fragility"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "self_ref=7%",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your work situation",
+        "dims": [
+          "eq"
         ]
       }
     ]
@@ -1672,28 +2968,55 @@
     "words": 49,
     "activated": [
       "emotion",
-      "eq"
+      "eq",
+      "fragility"
     ],
-    "activated_count": 2,
-    "total_insights": 2,
-    "good_insights": 2,
-    "ready": false,
-    "avg_specificity": 0.3,
-    "avg_reframe": 0.5,
-    "bloom_worthy": false,
+    "activated_count": 3,
+    "total_insights": 5,
+    "good_insights": 5,
+    "ready": true,
+    "avg_specificity": 0.38,
+    "avg_reframe": 0.71,
+    "bloom_worthy": true,
     "insights": [
       {
+        "quality": "HIGH",
+        "signal": "self-awareness (8%) + open fragility",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that combination is rare ",
+        "dims": [
+          "eq",
+          "fragility"
+        ]
+      },
+      {
+        "quality": "HIGH",
+        "signal": "confusion (35%) + questioning (20%)",
+        "reframe": "You're not just venting — you're actively searching for answers — especially when can't stop",
+        "dims": [
+          "emotion",
+          "eq"
+        ]
+      },
+      {
         "quality": "MEDIUM",
-        "signal": "question_ratio=20%",
-        "reframe": "You're not just talking — you're actively searching for understanding — especially when can't stop",
+        "signal": "self_ref=8%",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — especially when can't stop",
         "dims": [
           "eq"
         ]
       },
       {
         "quality": "MEDIUM",
-        "signal": "top emotion: despair (35%)",
-        "reframe": "You've been carrying something heavy for a while — especially when can't stop",
+        "signal": "fragility pattern: open",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — especially when can't stop",
+        "dims": [
+          "fragility"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: confusion (35%)",
+        "reframe": "You're honest enough to sit with uncertainty instead of faking clarity — especially when can't stop",
         "dims": [
           "emotion"
         ]
@@ -1706,22 +3029,40 @@
     "novel": "The Name of the Wind",
     "words": 47,
     "activated": [
+      "emotion",
       "eq"
     ],
-    "activated_count": 1,
-    "total_insights": 1,
-    "good_insights": 1,
-    "ready": false,
-    "avg_specificity": 0.75,
+    "activated_count": 2,
+    "total_insights": 3,
+    "good_insights": 3,
+    "ready": true,
+    "avg_specificity": 0.783,
     "avg_reframe": 0.8,
-    "bloom_worthy": false,
+    "bloom_worthy": true,
     "insights": [
+      {
+        "quality": "HIGH",
+        "signal": "anger (35%) + self-awareness (self_ref 11%)",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand them — within your fami",
+        "dims": [
+          "emotion",
+          "eq"
+        ]
+      },
       {
         "quality": "MEDIUM",
         "signal": "self_ref=11%",
         "reframe": "You're deeply self-aware — you pay attention to your own inner world — within your family",
         "dims": [
           "eq"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: anger (35%)",
+        "reframe": "You care deeply about fairness — within your family",
+        "dims": [
+          "emotion"
         ]
       }
     ]
@@ -1737,13 +3078,31 @@
       "fragility"
     ],
     "activated_count": 3,
-    "total_insights": 3,
-    "good_insights": 3,
+    "total_insights": 5,
+    "good_insights": 5,
     "ready": true,
-    "avg_specificity": 0.75,
-    "avg_reframe": 0.783,
+    "avg_specificity": 0.83,
+    "avg_reframe": 0.77,
     "bloom_worthy": true,
     "insights": [
+      {
+        "quality": "HIGH",
+        "signal": "self-awareness + defensive fragility",
+        "reframe": "You've built walls, but you also see them clearly — that awareness is the first crack in the armor —",
+        "dims": [
+          "eq",
+          "fragility"
+        ]
+      },
+      {
+        "quality": "HIGH",
+        "signal": "confusion (35%) + self-awareness (self_ref 20%)",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand them — in your work sit",
+        "dims": [
+          "emotion",
+          "eq"
+        ]
+      },
       {
         "quality": "MEDIUM",
         "signal": "self_ref=20%",
@@ -1762,7 +3121,7 @@
       },
       {
         "quality": "MEDIUM",
-        "signal": "top emotion: confusion (35%)",
+        "signal": "emotion: confusion (35%)",
         "reframe": "You're honest enough to sit with uncertainty instead of faking clarity — in your work situation",
         "dims": [
           "emotion"
@@ -1776,22 +3135,58 @@
     "novel": "Push",
     "words": 52,
     "activated": [
-      "eq"
+      "emotion",
+      "eq",
+      "fragility"
     ],
-    "activated_count": 1,
-    "total_insights": 1,
-    "good_insights": 1,
-    "ready": false,
-    "avg_specificity": 0.75,
-    "avg_reframe": 0.8,
-    "bloom_worthy": false,
+    "activated_count": 3,
+    "total_insights": 5,
+    "good_insights": 5,
+    "ready": true,
+    "avg_specificity": 0.83,
+    "avg_reframe": 0.72,
+    "bloom_worthy": true,
     "insights": [
+      {
+        "quality": "HIGH",
+        "signal": "self-awareness (23%) + open fragility",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that combination is rare ",
+        "dims": [
+          "eq",
+          "fragility"
+        ]
+      },
+      {
+        "quality": "HIGH",
+        "signal": "hope (35%) + self-awareness (self_ref 23%)",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand them — within your fami",
+        "dims": [
+          "emotion",
+          "eq"
+        ]
+      },
       {
         "quality": "MEDIUM",
         "signal": "self_ref=23%",
         "reframe": "You're deeply self-aware — you pay attention to your own inner world — within your family",
         "dims": [
           "eq"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "fragility pattern: open",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — within your family",
+        "dims": [
+          "fragility"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: hope (35%)",
+        "reframe": "Even in difficulty, you hold onto what matters — within your family",
+        "dims": [
+          "emotion"
         ]
       }
     ]
@@ -1803,16 +3198,44 @@
     "words": 51,
     "activated": [
       "emotion",
-      "eq"
+      "eq",
+      "fragility"
     ],
-    "activated_count": 2,
-    "total_insights": 2,
-    "good_insights": 2,
-    "ready": false,
-    "avg_specificity": 0.3,
-    "avg_reframe": 0.7,
-    "bloom_worthy": false,
+    "activated_count": 3,
+    "total_insights": 6,
+    "good_insights": 6,
+    "ready": true,
+    "avg_specificity": 0.4,
+    "avg_reframe": 0.742,
+    "bloom_worthy": true,
     "insights": [
+      {
+        "quality": "HIGH",
+        "signal": "self-awareness (12%) + open fragility",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that combination is rare ",
+        "dims": [
+          "eq",
+          "fragility"
+        ]
+      },
+      {
+        "quality": "HIGH",
+        "signal": "sadness (35%) + self-awareness (self_ref 12%)",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand them — especially when ",
+        "dims": [
+          "emotion",
+          "eq"
+        ]
+      },
+      {
+        "quality": "HIGH",
+        "signal": "sadness (35%) + open fragility",
+        "reframe": "You let yourself feel the hard things instead of running — that's braver than most people manage — e",
+        "dims": [
+          "emotion",
+          "fragility"
+        ]
+      },
       {
         "quality": "MEDIUM",
         "signal": "self_ref=12%",
@@ -1823,7 +3246,15 @@
       },
       {
         "quality": "MEDIUM",
-        "signal": "top emotion: sadness (35%)",
+        "signal": "fragility pattern: open",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — especially when died",
+        "dims": [
+          "fragility"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: sadness (35%)",
         "reframe": "You feel things at a depth most people don't reach — especially when died",
         "dims": [
           "emotion"
@@ -1841,19 +3272,20 @@
       "eq"
     ],
     "activated_count": 2,
-    "total_insights": 2,
-    "good_insights": 2,
-    "ready": false,
-    "avg_specificity": 0.55,
-    "avg_reframe": 0.75,
-    "bloom_worthy": false,
+    "total_insights": 3,
+    "good_insights": 3,
+    "ready": true,
+    "avg_specificity": 0.633,
+    "avg_reframe": 0.767,
+    "bloom_worthy": true,
     "insights": [
       {
-        "quality": "MEDIUM",
-        "signal": "top emotion: shame (50%)",
-        "reframe": "You care about being the person you want to be",
+        "quality": "HIGH",
+        "signal": "shame (50%) + self-awareness (self_ref 11%)",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand them",
         "dims": [
-          "emotion"
+          "emotion",
+          "eq"
         ]
       },
       {
@@ -1862,6 +3294,14 @@
         "reframe": "You're deeply self-aware — you pay attention to your own inner world",
         "dims": [
           "eq"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: shame (50%)",
+        "reframe": "You care about being the person you want to be",
+        "dims": [
+          "emotion"
         ]
       }
     ]
@@ -1873,19 +3313,45 @@
     "words": 44,
     "activated": [
       "emotion",
-      "eq"
+      "eq",
+      "fragility"
     ],
-    "activated_count": 2,
-    "total_insights": 1,
-    "good_insights": 1,
-    "ready": false,
-    "avg_specificity": 0.65,
-    "avg_reframe": 0.6,
-    "bloom_worthy": false,
+    "activated_count": 3,
+    "total_insights": 4,
+    "good_insights": 4,
+    "ready": true,
+    "avg_specificity": 0.775,
+    "avg_reframe": 0.7,
+    "bloom_worthy": true,
     "insights": [
       {
+        "quality": "HIGH",
+        "signal": "self-awareness (9%) + open fragility",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that combination is rare ",
+        "dims": [
+          "eq",
+          "fragility"
+        ]
+      },
+      {
         "quality": "MEDIUM",
-        "signal": "top emotion: fear (35%)",
+        "signal": "self_ref=9%",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — within your family",
+        "dims": [
+          "eq"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "fragility pattern: open",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — within your family",
+        "dims": [
+          "fragility"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: fear (35%)",
         "reframe": "You're tuned into risks others might miss — within your family",
         "dims": [
           "emotion"
@@ -1903,24 +3369,33 @@
       "eq"
     ],
     "activated_count": 2,
-    "total_insights": 2,
-    "good_insights": 2,
-    "ready": false,
-    "avg_specificity": 0.75,
-    "avg_reframe": 0.6,
-    "bloom_worthy": false,
+    "total_insights": 3,
+    "good_insights": 3,
+    "ready": true,
+    "avg_specificity": 0.817,
+    "avg_reframe": 0.767,
+    "bloom_worthy": true,
     "insights": [
       {
+        "quality": "HIGH",
+        "signal": "frustration (35%) + self-awareness (self_ref 11%)",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand them — in your relation",
+        "dims": [
+          "emotion",
+          "eq"
+        ]
+      },
+      {
         "quality": "MEDIUM",
-        "signal": "question_ratio=25%",
-        "reframe": "You're not just talking — you're actively searching for understanding — in your relationships",
+        "signal": "self_ref=11%",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your relationships",
         "dims": [
           "eq"
         ]
       },
       {
         "quality": "MEDIUM",
-        "signal": "top emotion: frustration (35%)",
+        "signal": "emotion: frustration (35%)",
         "reframe": "You have a sharp sense of when things aren't right — in your relationships",
         "dims": [
           "emotion"
@@ -1934,22 +3409,40 @@
     "novel": "One Flew Over the Cuckoo's Nest",
     "words": 49,
     "activated": [
-      "eq"
+      "eq",
+      "fragility"
     ],
-    "activated_count": 1,
-    "total_insights": 1,
-    "good_insights": 1,
-    "ready": false,
-    "avg_specificity": 0.75,
-    "avg_reframe": 0.8,
-    "bloom_worthy": false,
+    "activated_count": 2,
+    "total_insights": 3,
+    "good_insights": 3,
+    "ready": true,
+    "avg_specificity": 0.817,
+    "avg_reframe": 0.733,
+    "bloom_worthy": true,
     "insights": [
+      {
+        "quality": "HIGH",
+        "signal": "self-awareness (10%) + open fragility",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that combination is rare ",
+        "dims": [
+          "eq",
+          "fragility"
+        ]
+      },
       {
         "quality": "MEDIUM",
         "signal": "self_ref=10%",
         "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your work situation",
         "dims": [
           "eq"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "fragility pattern: open",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — in your work situation",
+        "dims": [
+          "fragility"
         ]
       }
     ]
@@ -1964,13 +3457,22 @@
       "eq"
     ],
     "activated_count": 2,
-    "total_insights": 2,
-    "good_insights": 2,
-    "ready": false,
-    "avg_specificity": 0.3,
-    "avg_reframe": 0.5,
+    "total_insights": 3,
+    "good_insights": 3,
+    "ready": true,
+    "avg_specificity": 0.367,
+    "avg_reframe": 0.533,
     "bloom_worthy": false,
     "insights": [
+      {
+        "quality": "HIGH",
+        "signal": "guilt (50%) + questioning (50%)",
+        "reframe": "You're not just venting — you're actively searching for answers — especially when feels like",
+        "dims": [
+          "emotion",
+          "eq"
+        ]
+      },
       {
         "quality": "MEDIUM",
         "signal": "question_ratio=50%",
@@ -1981,8 +3483,8 @@
       },
       {
         "quality": "MEDIUM",
-        "signal": "top emotion: despair (35%)",
-        "reframe": "You've been carrying something heavy for a while — especially when feels like",
+        "signal": "emotion: guilt (50%)",
+        "reframe": "You hold yourself to a high standard — that speaks to your integrity — especially when feels like",
         "dims": [
           "emotion"
         ]
@@ -1996,22 +3498,33 @@
     "words": 47,
     "activated": [
       "emotion",
-      "eq"
+      "eq",
+      "fragility"
     ],
-    "activated_count": 2,
-    "total_insights": 2,
-    "good_insights": 2,
-    "ready": false,
-    "avg_specificity": 0.75,
-    "avg_reframe": 0.7,
-    "bloom_worthy": false,
+    "activated_count": 3,
+    "total_insights": 5,
+    "good_insights": 5,
+    "ready": true,
+    "avg_specificity": 0.83,
+    "avg_reframe": 0.72,
+    "bloom_worthy": true,
     "insights": [
       {
-        "quality": "MEDIUM",
-        "signal": "top emotion: love (50%)",
-        "reframe": "You connect with a warmth that others can feel — within your family",
+        "quality": "HIGH",
+        "signal": "love (50%) + self-awareness (self_ref 11%)",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand them — within your fami",
         "dims": [
-          "emotion"
+          "emotion",
+          "eq"
+        ]
+      },
+      {
+        "quality": "HIGH",
+        "signal": "self-awareness (11%) + open fragility",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that combination is rare ",
+        "dims": [
+          "eq",
+          "fragility"
         ]
       },
       {
@@ -2020,6 +3533,22 @@
         "reframe": "You're deeply self-aware — you pay attention to your own inner world — within your family",
         "dims": [
           "eq"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: love (50%)",
+        "reframe": "You connect with a warmth that others can feel — within your family",
+        "dims": [
+          "emotion"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "fragility pattern: open",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — within your family",
+        "dims": [
+          "fragility"
         ]
       }
     ]
@@ -2033,13 +3562,22 @@
       "eq"
     ],
     "activated_count": 1,
-    "total_insights": 0,
-    "good_insights": 0,
+    "total_insights": 1,
+    "good_insights": 1,
     "ready": false,
-    "avg_specificity": 0.0,
-    "avg_reframe": 0.0,
+    "avg_specificity": 0.75,
+    "avg_reframe": 0.8,
     "bloom_worthy": false,
-    "insights": []
+    "insights": [
+      {
+        "quality": "MEDIUM",
+        "signal": "self_ref=8%",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your work situation",
+        "dims": [
+          "eq"
+        ]
+      }
+    ]
   },
   {
     "id": 66,
@@ -2050,13 +3588,22 @@
       "eq"
     ],
     "activated_count": 1,
-    "total_insights": 0,
-    "good_insights": 0,
+    "total_insights": 1,
+    "good_insights": 1,
     "ready": false,
-    "avg_specificity": 0.0,
-    "avg_reframe": 0.0,
+    "avg_specificity": 0.6,
+    "avg_reframe": 0.8,
     "bloom_worthy": false,
-    "insights": []
+    "insights": [
+      {
+        "quality": "MEDIUM",
+        "signal": "self_ref=8%",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world",
+        "dims": [
+          "eq"
+        ]
+      }
+    ]
   },
   {
     "id": 67,
@@ -2069,13 +3616,40 @@
       "fragility"
     ],
     "activated_count": 3,
-    "total_insights": 3,
-    "good_insights": 3,
+    "total_insights": 6,
+    "good_insights": 6,
     "ready": true,
-    "avg_specificity": 0.6,
-    "avg_reframe": 0.833,
+    "avg_specificity": 0.7,
+    "avg_reframe": 0.842,
     "bloom_worthy": true,
     "insights": [
+      {
+        "quality": "HIGH",
+        "signal": "self-awareness (16%) + open fragility",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that combination is rare ",
+        "dims": [
+          "eq",
+          "fragility"
+        ]
+      },
+      {
+        "quality": "HIGH",
+        "signal": "sadness (50%) + self-awareness (self_ref 16%)",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand them — as you search fo",
+        "dims": [
+          "emotion",
+          "eq"
+        ]
+      },
+      {
+        "quality": "HIGH",
+        "signal": "sadness (50%) + open fragility",
+        "reframe": "You let yourself feel the hard things instead of running — that's braver than most people manage — a",
+        "dims": [
+          "emotion",
+          "fragility"
+        ]
+      },
       {
         "quality": "MEDIUM",
         "signal": "self_ref=16%",
@@ -2094,7 +3668,7 @@
       },
       {
         "quality": "MEDIUM",
-        "signal": "top emotion: sadness (35%)",
+        "signal": "emotion: sadness (50%)",
         "reframe": "You feel things at a depth most people don't reach — as you search for clarity",
         "dims": [
           "emotion"
@@ -2113,12 +3687,12 @@
       "conflict"
     ],
     "activated_count": 3,
-    "total_insights": 2,
-    "good_insights": 2,
-    "ready": false,
+    "total_insights": 6,
+    "good_insights": 6,
+    "ready": true,
     "avg_specificity": 0.4,
-    "avg_reframe": 0.75,
-    "bloom_worthy": false,
+    "avg_reframe": 0.667,
+    "bloom_worthy": true,
     "insights": [
       {
         "quality": "HIGH",
@@ -2130,8 +3704,42 @@
         ]
       },
       {
+        "quality": "HIGH",
+        "signal": "anger (35%) + self-awareness (self_ref 16%)",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand them — especially when ",
+        "dims": [
+          "emotion",
+          "eq"
+        ]
+      },
+      {
+        "quality": "HIGH",
+        "signal": "anger (35%) + avoidance (50%)",
+        "reframe": "You feel strongly but hold back — you're managing more than people see — especially when feel like i",
+        "dims": [
+          "emotion",
+          "conflict"
+        ]
+      },
+      {
         "quality": "MEDIUM",
-        "signal": "top emotion: anger (35%)",
+        "signal": "self_ref=16%",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — especially when feel like i d",
+        "dims": [
+          "eq"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "conflict style: avoid (50%)",
+        "reframe": "You think before you engage — that's restraint, not weakness — especially when feel like i don",
+        "dims": [
+          "conflict"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: anger (35%)",
         "reframe": "You care deeply about fairness — especially when feel like i don",
         "dims": [
           "emotion"
@@ -2150,12 +3758,12 @@
       "conflict"
     ],
     "activated_count": 3,
-    "total_insights": 1,
-    "good_insights": 1,
-    "ready": false,
-    "avg_specificity": 0.95,
-    "avg_reframe": 0.6,
-    "bloom_worthy": false,
+    "total_insights": 4,
+    "good_insights": 4,
+    "ready": true,
+    "avg_specificity": 0.775,
+    "avg_reframe": 0.625,
+    "bloom_worthy": true,
     "insights": [
       {
         "quality": "HIGH",
@@ -2164,6 +3772,30 @@
         "dims": [
           "emotion",
           "conflict"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "conflict style: avoid (60%)",
+        "reframe": "You think before you engage — that's restraint, not weakness — within your family",
+        "dims": [
+          "conflict"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: anger (50%)",
+        "reframe": "You care deeply about fairness — within your family",
+        "dims": [
+          "emotion"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "self_ref=7%",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — within your family",
+        "dims": [
+          "eq"
         ]
       }
     ]
@@ -2175,16 +3807,35 @@
     "words": 51,
     "activated": [
       "emotion",
-      "eq"
+      "eq",
+      "fragility"
     ],
-    "activated_count": 2,
-    "total_insights": 2,
-    "good_insights": 2,
-    "ready": false,
-    "avg_specificity": 0.7,
-    "avg_reframe": 0.8,
-    "bloom_worthy": false,
+    "activated_count": 3,
+    "total_insights": 5,
+    "good_insights": 5,
+    "ready": true,
+    "avg_specificity": 0.83,
+    "avg_reframe": 0.77,
+    "bloom_worthy": true,
     "insights": [
+      {
+        "quality": "HIGH",
+        "signal": "confusion (50%) + self-awareness (self_ref 12%)",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand them — within your fami",
+        "dims": [
+          "emotion",
+          "eq"
+        ]
+      },
+      {
+        "quality": "HIGH",
+        "signal": "self-awareness (12%) + open fragility",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that combination is rare ",
+        "dims": [
+          "eq",
+          "fragility"
+        ]
+      },
       {
         "quality": "MEDIUM",
         "signal": "self_ref=12%",
@@ -2195,10 +3846,18 @@
       },
       {
         "quality": "MEDIUM",
-        "signal": "top emotion: anger (35%)",
-        "reframe": "You care deeply about fairness — within your family",
+        "signal": "emotion: confusion (50%)",
+        "reframe": "You're honest enough to sit with uncertainty instead of faking clarity — within your family",
         "dims": [
           "emotion"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "fragility pattern: open",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — within your family",
+        "dims": [
+          "fragility"
         ]
       }
     ]
@@ -2213,13 +3872,22 @@
       "eq"
     ],
     "activated_count": 2,
-    "total_insights": 2,
-    "good_insights": 2,
-    "ready": false,
-    "avg_specificity": 0.55,
+    "total_insights": 3,
+    "good_insights": 3,
+    "ready": true,
+    "avg_specificity": 0.633,
     "avg_reframe": 0.8,
-    "bloom_worthy": false,
+    "bloom_worthy": true,
     "insights": [
+      {
+        "quality": "HIGH",
+        "signal": "anger (50%) + self-awareness (self_ref 22%)",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand them",
+        "dims": [
+          "emotion",
+          "eq"
+        ]
+      },
       {
         "quality": "MEDIUM",
         "signal": "self_ref=22%",
@@ -2230,7 +3898,7 @@
       },
       {
         "quality": "MEDIUM",
-        "signal": "top emotion: anger (35%)",
+        "signal": "emotion: anger (50%)",
         "reframe": "You care deeply about fairness",
         "dims": [
           "emotion"
@@ -2249,12 +3917,12 @@
       "fragility"
     ],
     "activated_count": 3,
-    "total_insights": 2,
-    "good_insights": 2,
-    "ready": false,
-    "avg_specificity": 0.6,
-    "avg_reframe": 0.825,
-    "bloom_worthy": false,
+    "total_insights": 3,
+    "good_insights": 3,
+    "ready": true,
+    "avg_specificity": 0.567,
+    "avg_reframe": 0.733,
+    "bloom_worthy": true,
     "insights": [
       {
         "quality": "MEDIUM",
@@ -2266,8 +3934,16 @@
       },
       {
         "quality": "MEDIUM",
-        "signal": "top emotion: confusion (35%)",
-        "reframe": "You're honest enough to sit with uncertainty instead of faking clarity — with what you're going thro",
+        "signal": "emotion: anger (35%)",
+        "reframe": "You care deeply about fairness — with what you're going through",
+        "dims": [
+          "emotion"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: sadness (35%)",
+        "reframe": "You feel things at a depth most people don't reach — with what you're going through",
         "dims": [
           "emotion"
         ]
@@ -2281,22 +3957,56 @@
     "words": 46,
     "activated": [
       "emotion",
-      "eq"
+      "eq",
+      "fragility"
     ],
-    "activated_count": 2,
-    "total_insights": 1,
-    "good_insights": 1,
-    "ready": false,
-    "avg_specificity": 0.3,
-    "avg_reframe": 0.6,
-    "bloom_worthy": false,
+    "activated_count": 3,
+    "total_insights": 5,
+    "good_insights": 5,
+    "ready": true,
+    "avg_specificity": 0.34,
+    "avg_reframe": 0.64,
+    "bloom_worthy": true,
     "insights": [
       {
+        "quality": "HIGH",
+        "signal": "self-awareness + masked fragility",
+        "reframe": "You carry more than you let on, but part of you knows it — that self-knowledge is your edge — especi",
+        "dims": [
+          "eq",
+          "fragility"
+        ]
+      },
+      {
         "quality": "MEDIUM",
-        "signal": "top emotion: love (50%)",
+        "signal": "emotion: love (65%)",
         "reframe": "You connect with a warmth that others can feel — especially when died",
         "dims": [
           "emotion"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: sadness (50%)",
+        "reframe": "You feel things at a depth most people don't reach — especially when died",
+        "dims": [
+          "emotion"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "self_ref=9%",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — especially when died",
+        "dims": [
+          "eq"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "fragility pattern: masked",
+        "reframe": "You carry more than you show — there's depth behind the surface — especially when died",
+        "dims": [
+          "fragility"
         ]
       }
     ]
@@ -2309,16 +4019,35 @@
     "activated": [
       "emotion",
       "eq",
-      "humor"
+      "humor",
+      "fragility"
     ],
-    "activated_count": 3,
-    "total_insights": 3,
-    "good_insights": 3,
+    "activated_count": 4,
+    "total_insights": 6,
+    "good_insights": 6,
     "ready": true,
-    "avg_specificity": 0.75,
+    "avg_specificity": 0.817,
     "avg_reframe": 0.733,
     "bloom_worthy": true,
     "insights": [
+      {
+        "quality": "HIGH",
+        "signal": "self-awareness (14%) + open fragility",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that combination is rare ",
+        "dims": [
+          "eq",
+          "fragility"
+        ]
+      },
+      {
+        "quality": "HIGH",
+        "signal": "frustration (35%) + self-awareness (self_ref 14%)",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand them — in your work sit",
+        "dims": [
+          "emotion",
+          "eq"
+        ]
+      },
       {
         "quality": "MEDIUM",
         "signal": "self_ref=14%",
@@ -2337,7 +4066,15 @@
       },
       {
         "quality": "MEDIUM",
-        "signal": "top emotion: frustration (35%)",
+        "signal": "fragility pattern: open",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — in your work situation",
+        "dims": [
+          "fragility"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: frustration (35%)",
         "reframe": "You have a sharp sense of when things aren't right — in your work situation",
         "dims": [
           "emotion"
@@ -2355,13 +4092,22 @@
       "eq"
     ],
     "activated_count": 2,
-    "total_insights": 2,
-    "good_insights": 2,
-    "ready": false,
-    "avg_specificity": 0.7,
+    "total_insights": 3,
+    "good_insights": 3,
+    "ready": true,
+    "avg_specificity": 0.783,
     "avg_reframe": 0.8,
-    "bloom_worthy": false,
+    "bloom_worthy": true,
     "insights": [
+      {
+        "quality": "HIGH",
+        "signal": "anger (35%) + self-awareness (self_ref 18%)",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand them — in your work sit",
+        "dims": [
+          "emotion",
+          "eq"
+        ]
+      },
       {
         "quality": "MEDIUM",
         "signal": "self_ref=18%",
@@ -2372,7 +4118,7 @@
       },
       {
         "quality": "MEDIUM",
-        "signal": "top emotion: anger (35%)",
+        "signal": "emotion: anger (35%)",
         "reframe": "You care deeply about fairness — in your work situation",
         "dims": [
           "emotion"
@@ -2390,13 +4136,22 @@
       "eq"
     ],
     "activated_count": 2,
-    "total_insights": 2,
-    "good_insights": 2,
-    "ready": false,
-    "avg_specificity": 0.55,
-    "avg_reframe": 0.7,
-    "bloom_worthy": false,
+    "total_insights": 3,
+    "good_insights": 3,
+    "ready": true,
+    "avg_specificity": 0.633,
+    "avg_reframe": 0.733,
+    "bloom_worthy": true,
     "insights": [
+      {
+        "quality": "HIGH",
+        "signal": "hope (50%) + self-awareness (self_ref 14%)",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand them",
+        "dims": [
+          "emotion",
+          "eq"
+        ]
+      },
       {
         "quality": "MEDIUM",
         "signal": "self_ref=14%",
@@ -2407,7 +4162,7 @@
       },
       {
         "quality": "MEDIUM",
-        "signal": "top emotion: hope (35%)",
+        "signal": "emotion: hope (50%)",
         "reframe": "Even in difficulty, you hold onto what matters",
         "dims": [
           "emotion"
@@ -2420,15 +4175,35 @@
     "character": "Mrs. Ramsay",
     "novel": "To the Lighthouse",
     "words": 46,
-    "activated": [],
-    "activated_count": 0,
-    "total_insights": 0,
-    "good_insights": 0,
+    "activated": [
+      "emotion",
+      "fragility"
+    ],
+    "activated_count": 2,
+    "total_insights": 2,
+    "good_insights": 2,
     "ready": false,
-    "avg_specificity": 0.0,
-    "avg_reframe": 0.0,
+    "avg_specificity": 0.55,
+    "avg_reframe": 0.7,
     "bloom_worthy": false,
-    "insights": []
+    "insights": [
+      {
+        "quality": "MEDIUM",
+        "signal": "fragility pattern: defensive",
+        "reframe": "You've built ways to protect yourself — and that kept you safe when you needed it",
+        "dims": [
+          "fragility"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: frustration (35%)",
+        "reframe": "You have a sharp sense of when things aren't right",
+        "dims": [
+          "emotion"
+        ]
+      }
+    ]
   },
   {
     "id": 78,
@@ -2436,22 +4211,58 @@
     "novel": "The Color Purple",
     "words": 45,
     "activated": [
-      "eq"
+      "emotion",
+      "eq",
+      "fragility"
     ],
-    "activated_count": 1,
-    "total_insights": 1,
-    "good_insights": 1,
-    "ready": false,
-    "avg_specificity": 0.75,
-    "avg_reframe": 0.8,
-    "bloom_worthy": false,
+    "activated_count": 3,
+    "total_insights": 5,
+    "good_insights": 5,
+    "ready": true,
+    "avg_specificity": 0.83,
+    "avg_reframe": 0.72,
+    "bloom_worthy": true,
     "insights": [
+      {
+        "quality": "HIGH",
+        "signal": "questioning (14%) + masked fragility",
+        "reframe": "You're asking the hard questions that most people avoid — that honesty takes real courage — in your ",
+        "dims": [
+          "eq",
+          "fragility"
+        ]
+      },
+      {
+        "quality": "HIGH",
+        "signal": "sadness (35%) + self-awareness (self_ref 11%)",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand them — in your work sit",
+        "dims": [
+          "emotion",
+          "eq"
+        ]
+      },
       {
         "quality": "MEDIUM",
         "signal": "self_ref=11%",
         "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your work situation",
         "dims": [
           "eq"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "fragility pattern: masked",
+        "reframe": "You carry more than you show — there's depth behind the surface — in your work situation",
+        "dims": [
+          "fragility"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: sadness (35%)",
+        "reframe": "You feel things at a depth most people don't reach — in your work situation",
+        "dims": [
+          "emotion"
         ]
       }
     ]
@@ -2488,22 +4299,40 @@
     "novel": "The Fault in Our Stars",
     "words": 40,
     "activated": [
-      "eq"
+      "eq",
+      "fragility"
     ],
-    "activated_count": 1,
-    "total_insights": 1,
-    "good_insights": 1,
-    "ready": false,
-    "avg_specificity": 0.75,
-    "avg_reframe": 0.8,
-    "bloom_worthy": false,
+    "activated_count": 2,
+    "total_insights": 3,
+    "good_insights": 3,
+    "ready": true,
+    "avg_specificity": 0.817,
+    "avg_reframe": 0.733,
+    "bloom_worthy": true,
     "insights": [
+      {
+        "quality": "HIGH",
+        "signal": "self-awareness (25%) + open fragility",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that combination is rare ",
+        "dims": [
+          "eq",
+          "fragility"
+        ]
+      },
       {
         "quality": "MEDIUM",
         "signal": "self_ref=25%",
         "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your work situation",
         "dims": [
           "eq"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "fragility pattern: open",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — in your work situation",
+        "dims": [
+          "fragility"
         ]
       }
     ]
@@ -2514,22 +4343,40 @@
     "novel": "Divergent",
     "words": 53,
     "activated": [
-      "eq"
+      "eq",
+      "fragility"
     ],
-    "activated_count": 1,
-    "total_insights": 1,
-    "good_insights": 1,
-    "ready": false,
-    "avg_specificity": 0.3,
-    "avg_reframe": 0.8,
-    "bloom_worthy": false,
+    "activated_count": 2,
+    "total_insights": 3,
+    "good_insights": 3,
+    "ready": true,
+    "avg_specificity": 0.367,
+    "avg_reframe": 0.733,
+    "bloom_worthy": true,
     "insights": [
+      {
+        "quality": "HIGH",
+        "signal": "self-awareness (17%) + open fragility",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that combination is rare ",
+        "dims": [
+          "eq",
+          "fragility"
+        ]
+      },
       {
         "quality": "MEDIUM",
         "signal": "self_ref=17%",
         "reframe": "You're deeply self-aware — you pay attention to your own inner world — especially when can't stop se",
         "dims": [
           "eq"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "fragility pattern: open",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — especially when can't stop se",
+        "dims": [
+          "fragility"
         ]
       }
     ]
@@ -2539,15 +4386,26 @@
     "character": "Seymour Glass",
     "novel": "A Perfect Day for Bananafish",
     "words": 46,
-    "activated": [],
-    "activated_count": 0,
-    "total_insights": 0,
-    "good_insights": 0,
+    "activated": [
+      "fragility"
+    ],
+    "activated_count": 1,
+    "total_insights": 1,
+    "good_insights": 1,
     "ready": false,
-    "avg_specificity": 0.0,
-    "avg_reframe": 0.0,
+    "avg_specificity": 0.6,
+    "avg_reframe": 0.8,
     "bloom_worthy": false,
-    "insights": []
+    "insights": [
+      {
+        "quality": "MEDIUM",
+        "signal": "fragility pattern: open",
+        "reframe": "You let yourself be seen — that takes more courage than most realize",
+        "dims": [
+          "fragility"
+        ]
+      }
+    ]
   },
   {
     "id": 83,
@@ -2556,16 +4414,35 @@
     "words": 53,
     "activated": [
       "emotion",
-      "eq"
+      "eq",
+      "fragility"
     ],
-    "activated_count": 2,
-    "total_insights": 2,
-    "good_insights": 2,
-    "ready": false,
-    "avg_specificity": 0.55,
-    "avg_reframe": 0.7,
-    "bloom_worthy": false,
+    "activated_count": 3,
+    "total_insights": 5,
+    "good_insights": 5,
+    "ready": true,
+    "avg_specificity": 0.66,
+    "avg_reframe": 0.72,
+    "bloom_worthy": true,
     "insights": [
+      {
+        "quality": "HIGH",
+        "signal": "self-awareness (11%) + open fragility",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that combination is rare",
+        "dims": [
+          "eq",
+          "fragility"
+        ]
+      },
+      {
+        "quality": "HIGH",
+        "signal": "fear (35%) + self-awareness (self_ref 11%)",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand them",
+        "dims": [
+          "emotion",
+          "eq"
+        ]
+      },
       {
         "quality": "MEDIUM",
         "signal": "self_ref=11%",
@@ -2576,7 +4453,15 @@
       },
       {
         "quality": "MEDIUM",
-        "signal": "top emotion: fear (35%)",
+        "signal": "fragility pattern: open",
+        "reframe": "You let yourself be seen — that takes more courage than most realize",
+        "dims": [
+          "fragility"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: fear (35%)",
         "reframe": "You're tuned into risks others might miss",
         "dims": [
           "emotion"
@@ -2594,16 +4479,32 @@
       "eq"
     ],
     "activated_count": 2,
-    "total_insights": 1,
-    "good_insights": 1,
-    "ready": false,
+    "total_insights": 3,
+    "good_insights": 3,
+    "ready": true,
     "avg_specificity": 0.75,
-    "avg_reframe": 0.6,
-    "bloom_worthy": false,
+    "avg_reframe": 0.75,
+    "bloom_worthy": true,
     "insights": [
       {
         "quality": "MEDIUM",
-        "signal": "top emotion: hope (35%)",
+        "signal": "self_ref=9%",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your work situation",
+        "dims": [
+          "eq"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: confusion (35%)",
+        "reframe": "You're honest enough to sit with uncertainty instead of faking clarity — in your work situation",
+        "dims": [
+          "emotion"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: hope (35%)",
         "reframe": "Even in difficulty, you hold onto what matters — in your work situation",
         "dims": [
           "emotion"
@@ -2622,11 +4523,11 @@
       "conflict"
     ],
     "activated_count": 3,
-    "total_insights": 3,
-    "good_insights": 3,
+    "total_insights": 6,
+    "good_insights": 6,
     "ready": true,
-    "avg_specificity": 0.95,
-    "avg_reframe": 0.7,
+    "avg_specificity": 0.833,
+    "avg_reframe": 0.667,
     "bloom_worthy": true,
     "insights": [
       {
@@ -2655,6 +4556,30 @@
           "conflict",
           "eq"
         ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "self_ref=13%",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your work situation",
+        "dims": [
+          "eq"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: anger (50%)",
+        "reframe": "You care deeply about fairness — in your work situation",
+        "dims": [
+          "emotion"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "conflict style: avoid (50%)",
+        "reframe": "You think before you engage — that's restraint, not weakness — in your work situation",
+        "dims": [
+          "conflict"
+        ]
       }
     ]
   },
@@ -2664,22 +4589,40 @@
     "novel": "Never Let Me Go",
     "words": 46,
     "activated": [
+      "emotion",
       "eq"
     ],
-    "activated_count": 1,
-    "total_insights": 1,
-    "good_insights": 1,
-    "ready": false,
-    "avg_specificity": 0.6,
-    "avg_reframe": 0.8,
-    "bloom_worthy": false,
+    "activated_count": 2,
+    "total_insights": 3,
+    "good_insights": 3,
+    "ready": true,
+    "avg_specificity": 0.633,
+    "avg_reframe": 0.733,
+    "bloom_worthy": true,
     "insights": [
+      {
+        "quality": "HIGH",
+        "signal": "love (35%) + self-awareness (self_ref 15%)",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand them",
+        "dims": [
+          "emotion",
+          "eq"
+        ]
+      },
       {
         "quality": "MEDIUM",
         "signal": "self_ref=15%",
         "reframe": "You're deeply self-aware — you pay attention to your own inner world",
         "dims": [
           "eq"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: love (35%)",
+        "reframe": "You connect with a warmth that others can feel",
+        "dims": [
+          "emotion"
         ]
       }
     ]
@@ -2691,16 +4634,35 @@
     "words": 57,
     "activated": [
       "emotion",
-      "eq"
+      "eq",
+      "fragility"
     ],
-    "activated_count": 2,
-    "total_insights": 2,
-    "good_insights": 2,
-    "ready": false,
-    "avg_specificity": 0.75,
-    "avg_reframe": 0.7,
-    "bloom_worthy": false,
+    "activated_count": 3,
+    "total_insights": 5,
+    "good_insights": 5,
+    "ready": true,
+    "avg_specificity": 0.83,
+    "avg_reframe": 0.72,
+    "bloom_worthy": true,
     "insights": [
+      {
+        "quality": "HIGH",
+        "signal": "self-awareness (16%) + open fragility",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that combination is rare ",
+        "dims": [
+          "eq",
+          "fragility"
+        ]
+      },
+      {
+        "quality": "HIGH",
+        "signal": "fear (35%) + self-awareness (self_ref 16%)",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand them — in your work sit",
+        "dims": [
+          "emotion",
+          "eq"
+        ]
+      },
       {
         "quality": "MEDIUM",
         "signal": "self_ref=16%",
@@ -2711,7 +4673,15 @@
       },
       {
         "quality": "MEDIUM",
-        "signal": "top emotion: fear (35%)",
+        "signal": "fragility pattern: open",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — in your work situation",
+        "dims": [
+          "fragility"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: fear (35%)",
         "reframe": "You're tuned into risks others might miss — in your work situation",
         "dims": [
           "emotion"
@@ -2724,15 +4694,26 @@
     "character": "Ignatius J. Reilly",
     "novel": "A Confederacy of Dunces",
     "words": 45,
-    "activated": [],
-    "activated_count": 0,
-    "total_insights": 0,
-    "good_insights": 0,
+    "activated": [
+      "emotion"
+    ],
+    "activated_count": 1,
+    "total_insights": 1,
+    "good_insights": 1,
     "ready": false,
-    "avg_specificity": 0.0,
-    "avg_reframe": 0.0,
+    "avg_specificity": 0.65,
+    "avg_reframe": 0.6,
     "bloom_worthy": false,
-    "insights": []
+    "insights": [
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: irritation (35%)",
+        "reframe": "You notice friction that others overlook — in your work situation",
+        "dims": [
+          "emotion"
+        ]
+      }
+    ]
   },
   {
     "id": 89,
@@ -2745,13 +4726,40 @@
       "fragility"
     ],
     "activated_count": 3,
-    "total_insights": 3,
-    "good_insights": 3,
+    "total_insights": 6,
+    "good_insights": 6,
     "ready": true,
-    "avg_specificity": 0.567,
-    "avg_reframe": 0.733,
+    "avg_specificity": 0.683,
+    "avg_reframe": 0.742,
     "bloom_worthy": true,
     "insights": [
+      {
+        "quality": "HIGH",
+        "signal": "self-awareness (17%) + open fragility",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that combination is rare",
+        "dims": [
+          "eq",
+          "fragility"
+        ]
+      },
+      {
+        "quality": "HIGH",
+        "signal": "sadness (35%) + self-awareness (self_ref 17%)",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand them",
+        "dims": [
+          "emotion",
+          "eq"
+        ]
+      },
+      {
+        "quality": "HIGH",
+        "signal": "sadness (35%) + open fragility",
+        "reframe": "You let yourself feel the hard things instead of running — that's braver than most people manage",
+        "dims": [
+          "emotion",
+          "fragility"
+        ]
+      },
       {
         "quality": "MEDIUM",
         "signal": "self_ref=17%",
@@ -2770,8 +4778,8 @@
       },
       {
         "quality": "MEDIUM",
-        "signal": "top emotion: fear (35%)",
-        "reframe": "You're tuned into risks others might miss",
+        "signal": "emotion: sadness (35%)",
+        "reframe": "You feel things at a depth most people don't reach",
         "dims": [
           "emotion"
         ]
@@ -2785,19 +4793,45 @@
     "words": 43,
     "activated": [
       "emotion",
-      "eq"
+      "eq",
+      "conflict",
+      "fragility"
     ],
-    "activated_count": 2,
-    "total_insights": 1,
-    "good_insights": 1,
-    "ready": false,
-    "avg_specificity": 0.5,
-    "avg_reframe": 0.6,
-    "bloom_worthy": false,
+    "activated_count": 4,
+    "total_insights": 4,
+    "good_insights": 4,
+    "ready": true,
+    "avg_specificity": 0.525,
+    "avg_reframe": 0.55,
+    "bloom_worthy": true,
     "insights": [
       {
         "quality": "MEDIUM",
-        "signal": "top emotion: love (35%)",
+        "signal": "conflict style: avoid (60%)",
+        "reframe": "You think before you engage — that's restraint, not weakness",
+        "dims": [
+          "conflict"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "fragility pattern: defensive",
+        "reframe": "You've built ways to protect yourself — and that kept you safe when you needed it",
+        "dims": [
+          "fragility"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: hope (35%)",
+        "reframe": "Even in difficulty, you hold onto what matters",
+        "dims": [
+          "emotion"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: love (35%)",
         "reframe": "You connect with a warmth that others can feel",
         "dims": [
           "emotion"
@@ -2812,15 +4846,16 @@
     "words": 48,
     "activated": [
       "emotion",
-      "eq"
+      "eq",
+      "fragility"
     ],
-    "activated_count": 2,
-    "total_insights": 1,
-    "good_insights": 1,
-    "ready": false,
-    "avg_specificity": 0.95,
-    "avg_reframe": 0.8,
-    "bloom_worthy": false,
+    "activated_count": 3,
+    "total_insights": 5,
+    "good_insights": 5,
+    "ready": true,
+    "avg_specificity": 0.83,
+    "avg_reframe": 0.7,
+    "bloom_worthy": true,
     "insights": [
       {
         "quality": "HIGH",
@@ -2829,6 +4864,39 @@
         "dims": [
           "emotion",
           "eq"
+        ]
+      },
+      {
+        "quality": "HIGH",
+        "signal": "self-awareness (12%) + open fragility",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that combination is rare ",
+        "dims": [
+          "eq",
+          "fragility"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "self_ref=12%",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your work situation",
+        "dims": [
+          "eq"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: despair (50%)",
+        "reframe": "You've been carrying something heavy for a while — in your work situation",
+        "dims": [
+          "emotion"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "fragility pattern: open",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — in your work situation",
+        "dims": [
+          "fragility"
         ]
       }
     ]
@@ -2845,11 +4913,11 @@
       "fragility"
     ],
     "activated_count": 4,
-    "total_insights": 3,
-    "good_insights": 3,
+    "total_insights": 7,
+    "good_insights": 7,
     "ready": true,
-    "avg_specificity": 0.883,
-    "avg_reframe": 0.783,
+    "avg_specificity": 0.836,
+    "avg_reframe": 0.736,
     "bloom_worthy": true,
     "insights": [
       {
@@ -2871,6 +4939,39 @@
         ]
       },
       {
+        "quality": "HIGH",
+        "signal": "self-awareness (16%) + open fragility",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that combination is rare ",
+        "dims": [
+          "eq",
+          "fragility"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "self_ref=16%",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your work situation",
+        "dims": [
+          "eq"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "fragility pattern: open",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — in your work situation",
+        "dims": [
+          "fragility"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: sadness (50%)",
+        "reframe": "You feel things at a depth most people don't reach — in your work situation",
+        "dims": [
+          "emotion"
+        ]
+      },
+      {
         "quality": "MEDIUM",
         "signal": "humor style: self_enhancing (45%)",
         "reframe": "You find the funny side even in hard moments — that's resilience — in your work situation",
@@ -2886,22 +4987,40 @@
     "novel": "It's Kind of a Funny Story",
     "words": 46,
     "activated": [
-      "eq"
+      "eq",
+      "fragility"
     ],
-    "activated_count": 1,
-    "total_insights": 1,
-    "good_insights": 1,
-    "ready": false,
-    "avg_specificity": 0.6,
-    "avg_reframe": 0.8,
-    "bloom_worthy": false,
+    "activated_count": 2,
+    "total_insights": 3,
+    "good_insights": 3,
+    "ready": true,
+    "avg_specificity": 0.667,
+    "avg_reframe": 0.667,
+    "bloom_worthy": true,
     "insights": [
+      {
+        "quality": "HIGH",
+        "signal": "self-awareness + masked fragility",
+        "reframe": "You carry more than you let on, but part of you knows it — that self-knowledge is your edge",
+        "dims": [
+          "eq",
+          "fragility"
+        ]
+      },
       {
         "quality": "MEDIUM",
         "signal": "self_ref=11%",
         "reframe": "You're deeply self-aware — you pay attention to your own inner world",
         "dims": [
           "eq"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "fragility pattern: masked",
+        "reframe": "You carry more than you show — there's depth behind the surface",
+        "dims": [
+          "fragility"
         ]
       }
     ]
@@ -2913,23 +5032,57 @@
     "words": 47,
     "activated": [
       "emotion",
-      "eq"
+      "eq",
+      "fragility"
     ],
-    "activated_count": 2,
-    "total_insights": 1,
-    "good_insights": 1,
-    "ready": false,
-    "avg_specificity": 0.8,
-    "avg_reframe": 0.8,
-    "bloom_worthy": false,
+    "activated_count": 3,
+    "total_insights": 5,
+    "good_insights": 5,
+    "ready": true,
+    "avg_specificity": 0.66,
+    "avg_reframe": 0.72,
+    "bloom_worthy": true,
     "insights": [
       {
         "quality": "HIGH",
-        "signal": "hope (50%) + self-awareness (self_ref 11%)",
+        "signal": "hope (65%) + self-awareness (self_ref 11%)",
         "reframe": "You're deeply self-aware — you don't just feel things, you try to understand them",
         "dims": [
           "emotion",
           "eq"
+        ]
+      },
+      {
+        "quality": "HIGH",
+        "signal": "self-awareness (11%) + open fragility",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that combination is rare",
+        "dims": [
+          "eq",
+          "fragility"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: hope (65%)",
+        "reframe": "Even in difficulty, you hold onto what matters",
+        "dims": [
+          "emotion"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "self_ref=11%",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world",
+        "dims": [
+          "eq"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "fragility pattern: open",
+        "reframe": "You let yourself be seen — that takes more courage than most realize",
+        "dims": [
+          "fragility"
         ]
       }
     ]
@@ -2940,22 +5093,40 @@
     "novel": "Piranesi",
     "words": 47,
     "activated": [
-      "eq"
+      "eq",
+      "fragility"
     ],
-    "activated_count": 1,
-    "total_insights": 1,
-    "good_insights": 1,
-    "ready": false,
-    "avg_specificity": 0.6,
-    "avg_reframe": 0.8,
-    "bloom_worthy": false,
+    "activated_count": 2,
+    "total_insights": 3,
+    "good_insights": 3,
+    "ready": true,
+    "avg_specificity": 0.667,
+    "avg_reframe": 0.667,
+    "bloom_worthy": true,
     "insights": [
+      {
+        "quality": "HIGH",
+        "signal": "self-awareness + masked fragility",
+        "reframe": "You carry more than you let on, but part of you knows it — that self-knowledge is your edge",
+        "dims": [
+          "eq",
+          "fragility"
+        ]
+      },
       {
         "quality": "MEDIUM",
         "signal": "self_ref=15%",
         "reframe": "You're deeply self-aware — you pay attention to your own inner world",
         "dims": [
           "eq"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "fragility pattern: masked",
+        "reframe": "You carry more than you show — there's depth behind the surface",
+        "dims": [
+          "fragility"
         ]
       }
     ]
@@ -2970,13 +5141,22 @@
       "eq"
     ],
     "activated_count": 2,
-    "total_insights": 2,
-    "good_insights": 2,
-    "ready": false,
-    "avg_specificity": 0.55,
-    "avg_reframe": 0.65,
-    "bloom_worthy": false,
+    "total_insights": 3,
+    "good_insights": 3,
+    "ready": true,
+    "avg_specificity": 0.633,
+    "avg_reframe": 0.733,
+    "bloom_worthy": true,
     "insights": [
+      {
+        "quality": "HIGH",
+        "signal": "hope (35%) + self-awareness (self_ref 12%)",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand them",
+        "dims": [
+          "emotion",
+          "eq"
+        ]
+      },
       {
         "quality": "MEDIUM",
         "signal": "self_ref=12%",
@@ -2987,8 +5167,8 @@
       },
       {
         "quality": "MEDIUM",
-        "signal": "top emotion: despair (35%)",
-        "reframe": "You've been carrying something heavy for a while",
+        "signal": "emotion: hope (35%)",
+        "reframe": "Even in difficulty, you hold onto what matters",
         "dims": [
           "emotion"
         ]
@@ -3006,13 +5186,22 @@
       "fragility"
     ],
     "activated_count": 3,
-    "total_insights": 2,
-    "good_insights": 2,
-    "ready": false,
-    "avg_specificity": 0.3,
-    "avg_reframe": 0.7,
-    "bloom_worthy": false,
+    "total_insights": 5,
+    "good_insights": 5,
+    "ready": true,
+    "avg_specificity": 0.34,
+    "avg_reframe": 0.72,
+    "bloom_worthy": true,
     "insights": [
+      {
+        "quality": "HIGH",
+        "signal": "self-awareness (8%) + open fragility",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that combination is rare ",
+        "dims": [
+          "eq",
+          "fragility"
+        ]
+      },
       {
         "quality": "MEDIUM",
         "signal": "fragility pattern: open",
@@ -3023,7 +5212,23 @@
       },
       {
         "quality": "MEDIUM",
-        "signal": "top emotion: sadness (35%)",
+        "signal": "self_ref=8%",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — especially when don't know ho",
+        "dims": [
+          "eq"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: anger (35%)",
+        "reframe": "You care deeply about fairness — especially when don't know how to live in a worl",
+        "dims": [
+          "emotion"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: sadness (35%)",
         "reframe": "You feel things at a depth most people don't reach — especially when don't know how to live in a wor",
         "dims": [
           "emotion"
@@ -3042,13 +5247,31 @@
       "fragility"
     ],
     "activated_count": 3,
-    "total_insights": 3,
-    "good_insights": 3,
+    "total_insights": 5,
+    "good_insights": 5,
     "ready": true,
-    "avg_specificity": 0.75,
-    "avg_reframe": 0.733,
+    "avg_specificity": 0.83,
+    "avg_reframe": 0.72,
     "bloom_worthy": true,
     "insights": [
+      {
+        "quality": "HIGH",
+        "signal": "self-awareness (12%) + open fragility",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that combination is rare ",
+        "dims": [
+          "eq",
+          "fragility"
+        ]
+      },
+      {
+        "quality": "HIGH",
+        "signal": "fear (35%) + self-awareness (self_ref 12%)",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand them — in your work sit",
+        "dims": [
+          "emotion",
+          "eq"
+        ]
+      },
       {
         "quality": "MEDIUM",
         "signal": "self_ref=12%",
@@ -3067,7 +5290,7 @@
       },
       {
         "quality": "MEDIUM",
-        "signal": "top emotion: fear (35%)",
+        "signal": "emotion: fear (35%)",
         "reframe": "You're tuned into risks others might miss — in your work situation",
         "dims": [
           "emotion"
@@ -3082,20 +5305,63 @@
     "words": 51,
     "activated": [
       "emotion",
-      "eq"
+      "eq",
+      "conflict",
+      "fragility"
     ],
-    "activated_count": 2,
-    "total_insights": 1,
-    "good_insights": 1,
-    "ready": false,
-    "avg_specificity": 0.75,
-    "avg_reframe": 0.6,
-    "bloom_worthy": false,
+    "activated_count": 4,
+    "total_insights": 6,
+    "good_insights": 6,
+    "ready": true,
+    "avg_specificity": 0.783,
+    "avg_reframe": 0.658,
+    "bloom_worthy": true,
     "insights": [
       {
+        "quality": "HIGH",
+        "signal": "self-awareness (10%) + open fragility",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that combination is rare ",
+        "dims": [
+          "eq",
+          "fragility"
+        ]
+      },
+      {
         "quality": "MEDIUM",
-        "signal": "top emotion: hope (35%)",
+        "signal": "emotion: hope (50%)",
         "reframe": "Even in difficulty, you hold onto what matters — in your work situation",
+        "dims": [
+          "emotion"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "conflict style: avoid (50%)",
+        "reframe": "You think before you engage — that's restraint, not weakness — in your work situation",
+        "dims": [
+          "conflict"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "self_ref=10%",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your work situation",
+        "dims": [
+          "eq"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "fragility pattern: open",
+        "reframe": "You let yourself be seen — that takes more courage than most realize — in your work situation",
+        "dims": [
+          "fragility"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "emotion: confusion (35%)",
+        "reframe": "You're honest enough to sit with uncertainty instead of faking clarity — in your work situation",
         "dims": [
           "emotion"
         ]
@@ -3108,17 +5374,53 @@
     "novel": "Moonlight (In Moonlight Black Boys Look Blue)",
     "words": 52,
     "activated": [
+      "emotion",
       "eq",
       "fragility"
     ],
-    "activated_count": 2,
-    "total_insights": 2,
-    "good_insights": 2,
-    "ready": false,
-    "avg_specificity": 0.75,
-    "avg_reframe": 0.65,
-    "bloom_worthy": false,
+    "activated_count": 3,
+    "total_insights": 6,
+    "good_insights": 6,
+    "ready": true,
+    "avg_specificity": 0.85,
+    "avg_reframe": 0.742,
+    "bloom_worthy": true,
     "insights": [
+      {
+        "quality": "HIGH",
+        "signal": "self-awareness (12%) + open fragility",
+        "reframe": "You pay attention to what's happening inside you and you don't look away — that combination is rare ",
+        "dims": [
+          "eq",
+          "fragility"
+        ]
+      },
+      {
+        "quality": "HIGH",
+        "signal": "sadness (35%) + self-awareness (self_ref 12%)",
+        "reframe": "You're deeply self-aware — you don't just feel things, you try to understand them — in your work sit",
+        "dims": [
+          "emotion",
+          "eq"
+        ]
+      },
+      {
+        "quality": "HIGH",
+        "signal": "sadness (35%) + open fragility",
+        "reframe": "You let yourself feel the hard things instead of running — that's braver than most people manage — i",
+        "dims": [
+          "emotion",
+          "fragility"
+        ]
+      },
+      {
+        "quality": "MEDIUM",
+        "signal": "self_ref=12%",
+        "reframe": "You're deeply self-aware — you pay attention to your own inner world — in your work situation",
+        "dims": [
+          "eq"
+        ]
+      },
       {
         "quality": "MEDIUM",
         "signal": "fragility pattern: open",
@@ -3129,10 +5431,10 @@
       },
       {
         "quality": "MEDIUM",
-        "signal": "question_ratio=20%",
-        "reframe": "You're not just talking — you're actively searching for understanding — in your work situation",
+        "signal": "emotion: sadness (35%)",
+        "reframe": "You feel things at a depth most people don't reach — in your work situation",
         "dims": [
-          "eq"
+          "emotion"
         ]
       }
     ]

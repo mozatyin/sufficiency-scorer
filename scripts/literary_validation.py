@@ -33,6 +33,10 @@ CONFLICT_KEYWORDS = {
     "struggle", "resist", "refuse", "defend", "betray", "injustice",
     "punish", "revenge", "threat", "hate", "kill", "murder", "hurt",
     "abuse", "violent", "cruelty", "unfair", "wrong", "broken",
+    "shut in my face", "took from me", "they made", "sin against",
+    "mortified", "never say anything", "can't say no", "trapped",
+    "power", "control", "manipulate", "own them", "leverage",
+    "nobody listens", "talking to a wall",
 }
 
 HUMOR_KEYWORDS = {
@@ -46,17 +50,25 @@ FRAGILITY_OPEN_KEYWORDS = {
     "lost", "help", "alone", "vulnerable", "honest", "crying",
     "broken", "dying", "death", "grief", "miss", "gone",
     "hurting", "suffering", "pain", "overwhelmed",
+    "I need", "I want", "please", "I wish", "what happened",
+    "I feel", "I'm not", "confused", "frightened", "heavy",
+    "wrong with me", "terrifies me", "never get free",
+    "deserved", "how to be normal", "nightmare",
 }
 
 FRAGILITY_DEFENSIVE_KEYWORDS = {
     "fine", "perfectly", "don't need", "I'm good", "whatever",
     "doesn't matter", "I don't care", "leave me alone",
+    "I'm completely fine", "adequate", "I'm not scared",
+    "smarter than", "own them", "easy to read",
 }
 
 FRAGILITY_MASKED_KEYWORDS = {
     "pretend", "performance", "surface", "mask", "hide",
     "nobody knows", "they don't see", "invisible",
-    "act like", "performing",
+    "act like", "performing", "underneath",
+    "people see", "what they want to see", "smile",
+    "carry more", "holding", "buried", "inside",
 }
 
 IDENTITY_KEYWORDS = {
@@ -111,7 +123,7 @@ def heuristic_fragility(text: str) -> DetectorResult:
     masked_hits = sum(1 for k in FRAGILITY_MASKED_KEYWORDS if k in text_lower)
 
     max_hits = max(open_hits, defensive_hits, masked_hits)
-    if max_hits >= 2:
+    if max_hits >= 1:
         if open_hits >= defensive_hits and open_hits >= masked_hits:
             pattern = "open"
             conf = min(0.3 + open_hits * 0.08, 0.9)
@@ -133,22 +145,53 @@ def heuristic_emotion(text: str) -> DetectorResult:
     text_lower = text.lower()
     emotions = {}
 
-    # Map keywords to emotions
+    # Map keywords to emotions — expanded for literary dialogue
     emotion_keywords = {
-        "frustration": ["tired", "can't stand", "sick of", "fed up", "suffocating", "trapped", "exhausted"],
-        "anger": ["hate", "furious", "angry", "unfair", "injustice", "wrong", "cruelty", "punish"],
-        "sadness": ["sad", "miss", "gone", "lost", "cry", "tears", "mourn", "grief", "died", "passed away", "death"],
-        "fear": ["afraid", "terrified", "scared", "frightened", "panic", "horror", "dread"],
-        "anxiety": ["worry", "anxious", "can't sleep", "racing", "nervous", "tense", "restless"],
-        "confusion": ["don't understand", "don't know", "confused", "lost", "no clue", "what's happening"],
-        "hope": ["believe", "faith", "maybe", "one day", "possible", "dream", "wish", "better"],
-        "despair": ["hopeless", "never", "nothing", "pointless", "meaningless", "empty", "no way out"],
-        "grief": ["passed away", "died", "death", "funeral", "mourning", "loss", "gone forever"],
-        "love": ["love", "loved", "heart", "dear", "care deeply", "connection"],
-        "guilt": ["fault", "blame myself", "should have", "regret", "sorry", "ashamed", "mistake"],
-        "shame": ["ashamed", "embarrassed", "humiliated", "marked", "stain", "illegitimate"],
-        "determination": ["I will", "I must", "I'm going to", "no matter what", "I choose", "I volunteer"],
-        "amusement": ["haha", "funny", "laugh", "hilarious", "amuse"],
+        "frustration": ["tired", "can't stand", "sick of", "fed up", "suffocating", "trapped",
+                         "exhausted", "stuck", "going nowhere", "can't take", "unbearable",
+                         "won't let me", "forcing", "pushed", "no escape", "pointless"],
+        "anger": ["hate", "furious", "angry", "unfair", "injustice", "wrong", "cruelty",
+                   "punish", "revenge", "destroy", "sin against", "they took", "stolen",
+                   "mortified", "how dare", "how can"],
+        "sadness": ["sad", "miss", "gone", "lost", "cry", "tears", "mourn", "grief",
+                     "died", "passed away", "death", "lonely", "alone", "nobody",
+                     "empty", "flat", "weight", "heavy", "ache", "hurts", "breaking"],
+        "fear": ["afraid", "terrified", "scared", "frightened", "panic", "horror",
+                  "dread", "danger", "kill me", "they'll find", "what happens",
+                  "not safe", "protect", "threat"],
+        "anxiety": ["worry", "anxious", "can't sleep", "racing", "nervous", "tense",
+                     "restless", "flutter", "slipping", "what if", "might",
+                     "keep going back", "can't stop thinking", "obsess"],
+        "confusion": ["don't understand", "don't know", "confused", "no clue",
+                       "what's happening", "makes no sense", "who am I", "figure out",
+                       "uncertain", "question", "wonder", "why"],
+        "hope": ["believe", "faith", "maybe", "one day", "possible", "dream",
+                  "wish", "better", "discover", "new", "start over", "chance",
+                  "learn", "grow", "ready"],
+        "despair": ["hopeless", "never", "nothing", "pointless", "meaningless",
+                     "empty", "no way out", "drowning", "darkness", "void",
+                     "whole life has been wrong", "never truly lived", "all there is"],
+        "grief": ["passed away", "died", "death", "funeral", "mourning", "loss",
+                   "gone forever", "buried", "grave", "he's gone", "she's gone",
+                   "never coming back"],
+        "love": ["love", "loved", "heart", "dear", "care deeply", "connection",
+                  "warmth", "devoted", "cherish", "miss you", "always"],
+        "guilt": ["fault", "blame myself", "should have", "regret", "sorry",
+                   "ashamed", "mistake", "I destroyed", "what I did", "undo",
+                   "atonement", "wrong thing"],
+        "shame": ["ashamed", "embarrassed", "humiliated", "marked", "stain",
+                   "illegitimate", "ugly", "invisible", "refuse to see",
+                   "nobody thinks", "worthless"],
+        "determination": ["I will", "I must", "I'm going to", "no matter what",
+                           "I choose", "I volunteer", "I'm not afraid", "I'll go",
+                           "fight for", "ready to", "choosing to", "I can"],
+        "amusement": ["haha", "funny", "laugh", "hilarious", "amuse",
+                       "comedy", "joke", "at least"],
+        "loneliness": ["alone", "nobody", "invisible", "no one", "by myself",
+                        "strangers", "performing", "real me", "isolated",
+                        "disconnected", "no friend"],
+        "irritation": ["annoying", "bother", "nag", "tiresome", "can't stand",
+                        "ridiculous", "nonsense", "disaster", "what's wrong with"],
     }
 
     for emotion, keywords in emotion_keywords.items():

@@ -11,7 +11,7 @@ MIN_WORDS = 40
 
 # === Confidence Thresholds ===
 MIN_CONFIDENCE = 0.15
-MIN_INSIGHT_CONFIDENCE = 0.4
+MIN_INSIGHT_CONFIDENCE = 0.25
 
 # === Parallelization ===
 PARALLEL_GROUPS: list[list[Dimension]] = [

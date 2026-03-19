@@ -81,19 +81,12 @@ class TestRingProgress:
             assert report.ring_progress == 1.0
 
     def test_partial_progress(self, scorer):
+        """Single weak emotion → 1 insight → partial progress."""
         results = all_inactive()
         results = [
             r if r.dimension != Dimension.EMOTION
-            else make_result(Dimension.EMOTION, True, 0.5, detail={
-                "top_emotions": [("sadness", 0.5)],
-            })
-            for r in results
-        ]
-        results = [
-            r if r.dimension != Dimension.EQ
-            else make_result(Dimension.EQ, True, 0.5, detail={
-                "features": {"self_ref": 0.1, "question_ratio": 0.0, "words": 20},
-                "valence": -0.2, "distress": 0.3,
+            else make_result(Dimension.EMOTION, True, 0.4, detail={
+                "top_emotions": [("sadness", 0.3)],
             })
             for r in results
         ]
