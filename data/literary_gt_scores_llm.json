@@ -1,0 +1,3382 @@
+[
+  {
+    "id": 97,
+    "character": "Liesel (late)",
+    "avg_score": 71.2,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 75,
+        "reason": "PARTIAL DEEP: 'words saved her literally while destroying everything she loved'",
+        "reframe": "You're carrying something most people never have to bear — the weight of randomness that saved you w",
+        "signal": "emotion + fragility"
+      },
+      {
+        "score": 72,
+        "reason": "PARTIAL DEEP: 'being in the basement reading while bombs killed everyone above'",
+        "reframe": "The way you frame this tragedy around words — not just the bombs, not just the basement — reveals ho",
+        "signal": "eq + self_reference"
+      },
+      {
+        "score": 70,
+        "reason": "PARTIAL DEEP: 'survivor's guilt made tangible — the book that was her shield'",
+        "reframe": "You're not just mourning Mama, Papa, and Rudy — you're grappling with survivor's guilt that has a li",
+        "signal": "emotion + valence"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'doesn't know how to live now'",
+        "reframe": "Your openness about not knowing how to live reveals something profound: you refuse to pretend you ha",
+        "signal": "fragility + distress"
+      },
+      {
+        "score": 89,
+        "reason": "DEEP: 'can words save AND destroy — that paradox is her entire life'",
+        "reframe": "The contradiction you've discovered — that words can both save and destroy — isn't confusion, it's y",
+        "signal": "emotion + confusion"
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "character": "Ivan Ilyich",
+    "avg_score": 56.6,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Your anger isn't just about wasted time — it's the fierce protector in you finally speaking up for t",
+        "signal": "emotion + anger"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'whole life was wrong'",
+        "reframe": "The fact that you can say 'my whole life has been wrong' without sugar-coating it shows a kind of br",
+        "signal": "fragility + open pattern"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'did what society told him'",
+        "reframe": "You're not just questioning your choices — you're seeing the invisible cage that 'right job, right h",
+        "signal": "eq + low self_reference"
+      },
+      {
+        "score": 88,
+        "reason": "DEEP: 'dying reveals a life that was never truly lived'",
+        "reframe": "When you say you 'never truly lived,' you're not mourning what's gone — you're grieving for the auth",
+        "signal": "emotion + despair"
+      },
+      {
+        "score": 70,
+        "reason": "PARTIAL DEEP: 'terror isn't death — it's realizing the waste'",
+        "reframe": "Your terror isn't really about dying — it's about finally understanding the difference between exist",
+        "signal": "eq + distress"
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "character": "Gogol Ganguli",
+    "avg_score": 55.75,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 73,
+        "reason": "PARTIAL DEEP: 'hating your name is hating the bridge between two worlds'",
+        "reframe": "You don't actually hate your name — you hate how it makes you feel caught between worlds that both c",
+        "signal": "emotion + eq"
+      },
+      {
+        "score": 75,
+        "reason": "PARTIAL DEEP: 'too American for parents, too different for peers'",
+        "reframe": "The way you describe being 'too American' and 'too different' reveals you're not confused about who ",
+        "signal": "conflict"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Your parents naming you after an author they never read isn't just ironic — it's accidentally perfec",
+        "signal": "eq + emotion"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'doesn't belong anywhere'",
+        "reframe": "When you say you 'don't belong anywhere,' what you're really recognizing is that you belong to somet",
+        "signal": "eq"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "character": "Santiago",
+    "avg_score": 53.75,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 50,
+        "reason": "SURFACE: 'hasn't caught fish in 84 days'",
+        "reframe": "You don't just count the days without a fish — you're measuring resilience against a world that migh",
+        "signal": "emotion + fragility"
+      },
+      {
+        "score": 70,
+        "reason": "PARTIAL DEEP: 'loneliness of someone who has outlived their peers'",
+        "reframe": "When you say 'I'm not unlucky, no' — that pause, that correction — reveals someone who's learned to ",
+        "signal": "eq + self_reference"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Your plan to go 'far out past all the others' isn't just about finding fish — it's about finding the",
+        "signal": "fragility + valence"
+      },
+      {
+        "score": 70,
+        "reason": "PARTIAL DEEP: 'loneliness of someone who has outlived their peers'",
+        "reframe": "You remember catching 'big ones every day for three weeks' not as nostalgia, but as proof that your ",
+        "signal": "emotion + distress"
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "character": "Edna Pontellier",
+    "avg_score": 53.5,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're not confused about your priorities — you're discovering that having boundaries with the peopl",
+        "signal": "emotion + self_reference"
+      },
+      {
+        "score": 89,
+        "reason": "DEEP: 'the unnamed thing inside her is her authentic self emerging'",
+        "reframe": "That 'something inside' you can't explain isn't mysterious — it's your authentic self finally gettin",
+        "signal": "hope + fragility"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'would give money and life but not herself'",
+        "reframe": "You'd sacrifice money and even life itself, but the fact that you won't sacrifice 'yourself' reveals",
+        "signal": "valence + behavioral"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'can't fully explain it'",
+        "reframe": "Your willingness to sit with not knowing how to explain this feeling shows you're brave enough to ho",
+        "signal": "distress + open pattern"
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "character": "Invisible Man",
+    "avg_score": 53.0,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You don't just feel unseen — you've learned to articulate the difference between being physically pr",
+        "signal": "emotion + behavioral"
+      },
+      {
+        "score": 74,
+        "reason": "PARTIAL DEEP: 'declaring visibility is a revolutionary act'",
+        "reframe": "When you say 'I am a man of substance' right after declaring invisibility, you're not contradicting ",
+        "signal": "fragility + emotion"
+      },
+      {
+        "score": 88,
+        "reason": "DEEP: 'others' refusal to see him is an act of violence'",
+        "reframe": "Your precision in explaining that it's 'their refusal to look' rather than something wrong with you ",
+        "signal": "eq + behavioral"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "The way you immediately clarify 'No, I am not a spook' suggests you've had to defend your humanity s",
+        "signal": "emotion + fragility"
+      }
+    ]
+  },
+  {
+    "id": 93,
+    "character": "Ned Vizzini (fictionalized)",
+    "avg_score": 52.25,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You've mastered the art of looking put-together while carrying something heavy — that takes a differ",
+        "signal": "fragility + masked pattern"
+      },
+      {
+        "score": 71,
+        "reason": "PARTIAL DEEP: 'dark machine metaphor — depression as mechanical, not emotional'",
+        "reframe": "When you describe that 'dark machine,' you're not just naming pain — you're showing how clearly you ",
+        "signal": "distress + self_reference"
+      },
+      {
+        "score": 88,
+        "reason": "DEEP: 'checking yourself in is the bravest thing when everyone sees you as fine'",
+        "reframe": "Checking yourself into the hospital wasn't a breakdown — it was you choosing to fight for yourself w",
+        "signal": "fragility + valence"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You see the gap between your 'perfect' exterior and internal reality so clearly that most adults wou",
+        "signal": "eq + behavioral patterns"
+      }
+    ]
+  },
+  {
+    "id": 78,
+    "character": "Shug Avery",
+    "avg_score": 49.4,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 50,
+        "reason": "SURFACE: 'first thought was 'you're ugly''",
+        "reframe": "You've learned to say the hard truths first — calling someone ugly before you reveal their beauty — ",
+        "signal": "emotion + masked fragility"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'then saw something else'",
+        "reframe": "The way you pivot from 'ugly' to 'something else' isn't just kindness — it's you recognizing the exa",
+        "signal": "sadness + behavioral pattern"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'telling Celie something nobody told her'",
+        "reframe": "When you say 'nobody ever told you, did they?' you're not just guessing — you're speaking from the a",
+        "signal": "loneliness + self_reference"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You lead with the brutal observation because you've learned that real connection only happens after ",
+        "signal": "shame + masked pattern"
+      },
+      {
+        "score": 72,
+        "reason": "PARTIAL DEEP: 'sees beauty others can't see in themselves'",
+        "reframe": "The tenderness in 'Honey, you don't even know what you got' reveals how carefully you've been watchi",
+        "signal": "distress + valence"
+      }
+    ]
+  },
+  {
+    "id": 95,
+    "character": "Piranesi",
+    "avg_score": 49.25,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You've found something sacred in documenting your experiences — not because you're losing your mind,",
+        "signal": "fragility + masked pattern"
+      },
+      {
+        "score": 72,
+        "reason": "PARTIAL DEEP: 'forgetting frightens him because he senses he's already forgotten something crucial'",
+        "reframe": "When you say 'forgetting frightens me,' you're not just talking about memory — you're protecting som",
+        "signal": "distress + self_reference"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'the House is beautiful'",
+        "reframe": "The way you describe the House's 'infinite kindness' reveals you're someone who recognizes beauty ev",
+        "signal": "fragility + valence"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'writes everything down'",
+        "reframe": "You write everything down not from anxiety, but from the deep knowing that you're experiencing somet",
+        "signal": "eq + behavioral patterns"
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "character": "Janie Crawford",
+    "avg_score": 49.0,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 50,
+        "reason": "SURFACE: 'spent years being what others wanted'",
+        "reframe": "You've discovered something most people never do — that the quiet satisfaction of being yourself fee",
+        "signal": "emotion + self_reference"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'been to the horizon and back'",
+        "reframe": "When you say you've been 'to the horizon and back,' you're not just talking about distance traveled ",
+        "signal": "sadness + love + behavioral"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "The peace in your voice when you say 'that's enough' reveals something beautiful — you've learned th",
+        "signal": "loneliness + valence"
+      },
+      {
+        "score": 71,
+        "reason": "PARTIAL DEEP: 'two marriages taught her what she doesn't want'",
+        "reframe": "Those two marriages weren't failures — they were the price you paid to learn that your heart has its",
+        "signal": "emotion + distress"
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "character": "Sal Paradise",
+    "avg_score": 49.0,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 50,
+        "reason": "SURFACE: 'everything felt dead'",
+        "reframe": "You describe everything as 'dead' after your split, but the way you write about it shows you weren't",
+        "signal": "distress + self_reference"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'Dean brought energy'",
+        "reframe": "When you say Dean brought 'wild burning need,' you're not just talking about adventure — you're desc",
+        "signal": "valence + energy shift"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "That phrase 'before it's too late' reveals something deeper than wanderlust — you've tasted how quic",
+        "signal": "distress + urgency language"
+      },
+      {
+        "score": 71,
+        "reason": "PARTIAL DEEP: 'Dean represents everything he wishes he could be'",
+        "reframe": "You barely mention yourself in this story, but Dean's arrival tells us everything — you're someone w",
+        "signal": "low self_reference + relational focus"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "character": "Hamlet",
+    "avg_score": 48.75,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 50,
+        "reason": "SURFACE: 'feels world is wrong'",
+        "reframe": "You're not just grieving your father — you're mourning the version of the world where people honored",
+        "signal": "emotion + self_reference"
+      },
+      {
+        "score": 70,
+        "reason": "PARTIAL DEEP: 'sees the world's corruption clearly but can't act on it'",
+        "reframe": "Those aren't just questions you're asking about your mother — they're the questions of someone who r",
+        "signal": "question_ratio + anger"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'feels world is wrong'",
+        "reframe": "Even while everything feels wrong, there's something in you that still believes the world should mak",
+        "signal": "hope + distress"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You see yourself as the only one who notices what's broken, but that's not isolation — it's the burd",
+        "signal": "valence + behavioral"
+      }
+    ]
+  },
+  {
+    "id": 64,
+    "character": "Aibileen Clark",
+    "avg_score": 48.75,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 50,
+        "reason": "SURFACE: 'raised seventeen white children'",
+        "reframe": "You carry love and loss in the same breath — the way you speak of those seventeen children shows how",
+        "signal": "emotion + love/sadness"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're not just grieving your son — you're discovering that his unfinished work might be the bridge ",
+        "signal": "hope + fragility"
+      },
+      {
+        "score": 70,
+        "reason": "PARTIAL DEEP: 'grief channeled into nurturing others' children'",
+        "reframe": "Even when talking about your deepest loss, you barely mention yourself — it's always about what Tree",
+        "signal": "behavioral + low self_reference"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'telling stories matters'",
+        "reframe": "That word 'maybe' reveals everything — you're not certain about telling these stories, but something",
+        "signal": "emotion + valence"
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "character": "Mr. Stevens",
+    "avg_score": 47.8,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're not just questioning your past choices — you're finally giving yourself permission to feel wh",
+        "signal": "emotion + self_reference"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "That countryside drive isn't just a journey through landscape — it's the first time in decades you'v",
+        "signal": "fragility + valence"
+      },
+      {
+        "score": 89,
+        "reason": "DEEP: 'missed something essential and may have discovered it too late'",
+        "reframe": "When you say you 'may have missed something essential,' you're not expressing regret — you're recogn",
+        "signal": "emotion + distress"
+      },
+      {
+        "score": 75,
+        "reason": "PARTIAL DEEP: 'confused duty with living for thirty-five years'",
+        "reframe": "Your confusion about dignity versus living isn't doubt about your life's work — it's the stirring of",
+        "signal": "hope + confusion"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're not mourning a wasted life — you're mourning for the person who felt they had to choose betwe",
+        "signal": "sadness + open pattern"
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "character": "Oskar Schell",
+    "avg_score": 47.5,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're carrying equal parts sadness, confusion, and hope — which tells me this isn't just grief, it'",
+        "signal": "emotion"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'visiting every Black in NYC'",
+        "reframe": "The fact that you're visiting strangers named Black across an entire city isn't crazy — it's your he",
+        "signal": "fragility + emotion"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You called it 'the last thing connecting me to him,' but the way you're pursuing this mystery shows ",
+        "signal": "eq + emotion"
+      },
+      {
+        "score": 90,
+        "reason": "DEEP: 'the search matters more than finding the lock'",
+        "reframe": "Most people would've given up after the third or fourth Black family, but your hope keeps regenerati",
+        "signal": "emotion + fragility"
+      }
+    ]
+  },
+  {
+    "id": 98,
+    "character": "Coraline",
+    "avg_score": 47.25,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 50,
+        "reason": "SURFACE: 'scared but doing it anyway'",
+        "reframe": "You're brave enough to admit you're scared before doing the hard thing anyway — that kind of honest ",
+        "signal": "emotion + self_reference"
+      },
+      {
+        "score": 89,
+        "reason": "DEEP: 'choosing imperfect real parents over perfect fake ones'",
+        "reframe": "When you say 'even if they don't pay enough attention to me,' you're not making excuses for your par",
+        "signal": "fragility + valence"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "The way you claim ownership with 'They're mine' reveals something profound — you understand that bel",
+        "signal": "emotion + behavioral"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're not just rejecting false comfort — you're recognizing that real home isn't where you're most ",
+        "signal": "distress + self_reference"
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "character": "Jean Valjean",
+    "avg_score": 47.0,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 88,
+        "reason": "DEEP: 'capacity for transformation that society refuses to see'",
+        "reframe": "You're not just angry about closed doors — you're grappling with the profound irony that legal freed",
+        "signal": "emotion + eq"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "The way you frame this as 'What kind of freedom is this?' shows you're not just complaining — you're",
+        "signal": "conflict + emotion"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'feels more trapped now'",
+        "reframe": "Your quiet observation that you're 'more trapped than ever' reveals someone who understands that the",
+        "signal": "eq + emotion"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You call yourself 'dangerous' with a kind of bitter clarity — not because you believe it, but becaus",
+        "signal": "emotion + conflict"
+      }
+    ]
+  },
+  {
+    "id": 89,
+    "character": "Ruth (Never Let Me Go)",
+    "avg_score": 45.0,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 50,
+        "reason": "SURFACE: 'afraid of being alone'",
+        "reframe": "You're not just reflecting on past mistakes — you're discovering that your fear of being alone taugh",
+        "signal": "emotion + self_reference"
+      },
+      {
+        "score": 75,
+        "reason": "PARTIAL DEEP: 'jealousy and control were fear of being alone in the end'",
+        "reframe": "The way you can name your jealousy and controlling behavior so directly isn't self-attack — it's the",
+        "signal": "fragility + valence"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'kept Tommy from Kathy'",
+        "reframe": "When you say you wish you'd been kinder, you're not mourning lost time — you're recognizing that the",
+        "signal": "emotion + distress"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Your regret about 'pretending' reveals something beautiful: you've always known the difference betwe",
+        "signal": "eq + emotion"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "The fact that 'none of that matters' now isn't dismissal — it's you finally seeing that completing t",
+        "signal": "fragility + emotion"
+      }
+    ]
+  },
+  {
+    "id": 100,
+    "character": "Chiron",
+    "avg_score": 44.4,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're carrying something most people your age can't even name yet — the weight of being seen but no",
+        "signal": "emotion + behavioral"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'doesn't know who he is'",
+        "reframe": "When you say 'I don't even know who I am yet,' you're not admitting weakness — you're showing the ki",
+        "signal": "fragility + self_reference"
+      },
+      {
+        "score": 72,
+        "reason": "PARTIAL DEEP: 'others decided who he is before he could'",
+        "reframe": "The questions you're asking aren't just about other kids — they're about whether the world will ever",
+        "signal": "emotion + question_ratio"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'wants to be left alone'",
+        "reframe": "You're not asking to be left alone because you don't like people — you're protecting something tende",
+        "signal": "distress + behavioral"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "That mix of sadness and hope in your words reveals something powerful: you haven't given up on the p",
+        "signal": "emotion + valence"
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "character": "Ifemelu",
+    "avg_score": 44.2,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 50,
+        "reason": "SURFACE: 'people see skin first'",
+        "reframe": "You didn't just lose a simple identity when you moved — you lost the luxury of being seen as a whole",
+        "signal": "emotion + self_reference"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Creating that blog wasn't just about sharing observations — it was your way of turning invisible pai",
+        "signal": "fragility + masked pattern"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "The phrase 'nobody wants to hear' reveals something profound: you're not just documenting cultural d",
+        "signal": "loneliness + distress"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'didn't know she was Black before America'",
+        "reframe": "Going from 'just Igbo' to 'Black' showed you how America flattens people into categories, and your s",
+        "signal": "emotion + behavioral"
+      },
+      {
+        "score": 71,
+        "reason": "PARTIAL DEEP: 'race as a category imposed by geography'",
+        "reframe": "You write about becoming 'a category' with the precision of someone who's spent real time thinking a",
+        "signal": "self_reference + valence"
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "character": "Mathilde Loisel",
+    "avg_score": 44.2,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You carry guilt like it's a sacred duty — but the weight you feel isn't shame, it's proof that you t",
+        "signal": "emotion + guilt intensity"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "When you ask 'Do you know what that feels like?' you're not seeking pity — you're testing whether an",
+        "signal": "eq + question_ratio"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'paid off debt for ten years'",
+        "reframe": "Even after ten years of scrubbing floors, there's still something unbroken in you that refuses to le",
+        "signal": "emotion + hope amid despair"
+      },
+      {
+        "score": 71,
+        "reason": "PARTIAL DEEP: 'anger at injustice of cosmic proportions'",
+        "reframe": "You don't just feel the pain of that decade — you feel the injustice of time itself, of how one mome",
+        "signal": "eq + distress + valence"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'grew old before her time'",
+        "reframe": "You speak about growing old before your time like it happened to someone else — that distance isn't ",
+        "signal": "emotion + self_reference low"
+      }
+    ]
+  },
+  {
+    "id": 72,
+    "character": "Jonas",
+    "avg_score": 44.2,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You don't just see what others miss — you carry the weight of being the only witness to a world that",
+        "signal": "emotion + self_reference"
+      },
+      {
+        "score": 71,
+        "reason": "PARTIAL DEEP: 'seeing color in a grey world is blessing and curse'",
+        "reframe": "Your openness to seeing 'color, music and love' isn't naive optimism — it's a quiet rebellion agains",
+        "signal": "fragility + valence"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "The isolation you feel isn't from being different — it's from understanding that real happiness requ",
+        "signal": "emotion + distress"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You speak about an entire community's blindness with remarkable clarity, suggesting you've learned t",
+        "signal": "eq + behavioral"
+      },
+      {
+        "score": 75,
+        "reason": "PARTIAL DEEP: 'seeing color in a grey world is blessing and curse'",
+        "reframe": "Your frustration isn't really about others not seeing color — it's about carrying the burden of auth",
+        "signal": "emotion + confusion"
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "character": "Lennie Small",
+    "avg_score": 43.75,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 50,
+        "reason": "SURFACE: 'likes soft things'",
+        "reframe": "You carry a tenderness that the world often misunderstands — your desire to be gentle with 'soft thi",
+        "signal": "emotion + fragility"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'doesn't know his own strength'",
+        "reframe": "When you say 'I don't know my own strength,' you're touching on something profound — the gap between",
+        "signal": "eq + distress"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'wants to hear about rabbits'",
+        "reframe": "Your honesty about not meaning to cause harm isn't just an apology — it's a window into someone who ",
+        "signal": "fragility + emotion"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "The confusion you feel isn't about what happened — it's about reconciling how someone with such pure",
+        "signal": "emotion + eq"
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "character": "Charlie",
+    "avg_score": 43.75,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 50,
+        "reason": "SURFACE: 'writing to someone who listens'",
+        "reframe": "You're not just nervous about high school — you're someone who knows exactly when you need real supp",
+        "signal": "emotion + self_reference"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'writing to someone who listens'",
+        "reframe": "The way you share that specific detail about the party shows you don't just want anyone to listen — ",
+        "signal": "fragility + open pattern"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'writing to someone who listens'",
+        "reframe": "You're starting to understand that being afraid doesn't make you weak — it makes you someone who tak",
+        "signal": "eq + valence"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You can say more in 44 words about what you really need than most people can in pages — that's not f",
+        "signal": "distress + word_count"
+      }
+    ]
+  },
+  {
+    "id": 70,
+    "character": "Piscine Molitor Patel",
+    "avg_score": 43.75,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're not confused about faith — you're frustrated that others can't see the beautiful logic you've",
+        "signal": "emotion + self_reference"
+      },
+      {
+        "score": 75,
+        "reason": "PARTIAL DEEP: 'limiting yourself to one door is the real spiritual failure'",
+        "reframe": "When you ask 'Why limit yourself to one door?' you're not defending your choices — you're genuinely ",
+        "signal": "fragility + question_ratio"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'it makes sense to him'",
+        "reframe": "The way you say it 'makes perfect sense' reveals something profound: you've found peace in a practic",
+        "signal": "emotion + valence"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're carrying the weight of being misunderstood by the very communities that should nurture your s",
+        "signal": "distress + behavioral"
+      }
+    ]
+  },
+  {
+    "id": 77,
+    "character": "Mrs. Ramsay",
+    "avg_score": 43.75,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You've learned to speak tenderly about life's hardships not because you're naturally optimistic, but",
+        "signal": "emotion + fragility"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "When you say 'that's how life is,' you're not being resigned — you're protecting someone from the di",
+        "signal": "fragility + defensive"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'understands wanting something badly'",
+        "reframe": "Your understanding of wanting something 'so badly that the waiting feels unbearable' comes from a pl",
+        "signal": "emotion + frustration"
+      },
+      {
+        "score": 75,
+        "reason": "PARTIAL DEEP: 'makes beautiful things last because she knows nothing does'",
+        "reframe": "The way you speak about 'trying to make beautiful things last' reveals someone who has watched preci",
+        "signal": "fragility + emotion"
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "character": "Lily Bart",
+    "avg_score": 43.5,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You've become a master at giving everyone exactly what they expect to see, but that skill is now you",
+        "signal": "fragility + masked pattern"
+      },
+      {
+        "score": 74,
+        "reason": "PARTIAL DEEP: 'underneath the dress is a person nobody bothered to know'",
+        "reframe": "When you say you're 'drowning underneath the dress and smile,' you're not describing weakness — you'",
+        "signal": "emotion + despair intensity"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'lost track of who she is'",
+        "reframe": "The fact that you can articulate losing track of yourself means you haven't actually lost yourself —",
+        "signal": "eq + self_reference pattern"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Running from obligation to obligation isn't really about being busy — it's your way of avoiding the ",
+        "signal": "emotion + distress with high awareness"
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "character": "Offred (late)",
+    "avg_score": 43.25,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You speak about yourself with such restraint, yet your hunger for influence comes through with start",
+        "signal": "low self_reference + power dynamics"
+      },
+      {
+        "score": 73,
+        "reason": "PARTIAL DEEP: 'power dynamics of secret meetings with the oppressor'",
+        "reframe": "There's something almost chess-like in how you describe this 'theft' — no anger or desperation, just",
+        "signal": "neutral valence + strategic thinking"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'information is currency'",
+        "reframe": "You've reframed your position of seeming powerlessness into something strategic — calling informatio",
+        "signal": "low distress + currency metaphor"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Your fixation on capturing 'an unguarded word' shows you understand something most people miss — tha",
+        "signal": "eq confidence + unguarded word focus"
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "character": "Daisy Buchanan",
+    "avg_score": 43.0,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You've mastered the art of speaking in contradictions — 'paralyzed with happiness' isn't confusion, ",
+        "signal": "eq + valence"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'cynical about everything'",
+        "reframe": "When you call yourself cynical after 'seeing everything,' you're not bitter — you're protecting some",
+        "signal": "humor + self_enhancing"
+      },
+      {
+        "score": 72,
+        "reason": "PARTIAL DEEP: 'being a 'beautiful fool' is both prison sentence and armor'",
+        "reframe": "That line about being 'a beautiful little fool' isn't self-deprecation — it's you recognizing how ex",
+        "signal": "distress + behavioral"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You ask 'Do you want to know the truth?' because you've learned that most people prefer comfortable ",
+        "signal": "eq + question_ratio"
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "character": "Bone",
+    "avg_score": 42.75,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 71,
+        "reason": "PARTIAL DEEP: 'stamped before she had a chance to define herself'",
+        "reframe": "You carry that word 'illegitimate' not as your truth, but as proof of how broken the system was that",
+        "signal": "emotion + self_reference"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Your mama's tears weren't just sadness — they were fierce love refusing to accept that any instituti",
+        "signal": "hope + maternal protection"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'marked from beginning'",
+        "reframe": "When you say you were 'marked from the very beginning,' you're not describing a flaw — you're recogn",
+        "signal": "shame + self_awareness"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You understand something most people never grasp: being stamped 'different' by those in power often ",
+        "signal": "distress + resilience narrative"
+      }
+    ]
+  },
+  {
+    "id": 82,
+    "character": "Seymour Glass",
+    "avg_score": 42.5,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 70,
+        "reason": "PARTIAL DEEP: 'bananafish parable is about himself — trapped by consuming too much'",
+        "reframe": "You see tragedy in ordinary things becoming trapped by their own appetites — this isn't just about b",
+        "signal": "fragility + open"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'bananafish is very tragic'",
+        "reframe": "The way you describe something as 'very tragic, really' reveals you feel things more deeply than you",
+        "signal": "fragility + open"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You understand that the most dangerous traps look ordinary from the outside — your ability to see th",
+        "signal": "fragility + open"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "When you say 'they behave like pigs' you're not judging the fish — you're recognizing how desperatio",
+        "signal": "fragility + open"
+      }
+    ]
+  },
+  {
+    "id": 73,
+    "character": "Severus Snape",
+    "avg_score": 41.75,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You carry love like a shield — the way you hold onto 'that's the only truth that matters' shows you'",
+        "signal": "emotion + fragility"
+      },
+      {
+        "score": 92,
+        "reason": "DEEP: 'nobody will ever know — and he accepted that'",
+        "reframe": "You speak in absolutes because nuance feels dangerous right now — 'Nobody knows. Nobody will ever kn",
+        "signal": "eq + behavioral"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "That contempt you see in the boy's eyes cuts deeper because it mirrors something you once faced your",
+        "signal": "fragility + emotion"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You've turned grief into purpose so completely that protecting him has become how you keep loving he",
+        "signal": "emotion + valence"
+      }
+    ]
+  },
+  {
+    "id": 96,
+    "character": "Maxim de Winter",
+    "avg_score": 41.0,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're not running away from her — you're carrying something beautiful that's become too heavy, and ",
+        "signal": "emotion + hope/despair balance"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "The way you talk about yourself reveals someone who's used to being both the observer and the observ",
+        "signal": "behavioral + self_reference pattern"
+      },
+      {
+        "score": 89,
+        "reason": "DEEP: 'memories aren't geographic — running doesn't work'",
+        "reframe": "When you say 'memories aren't geographic,' you're discovering that healing isn't about escaping her ",
+        "signal": "emotion + geographic metaphor"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Your growing awareness that 'some things you never truly escape from' isn't defeat — it's the beginn",
+        "signal": "valence + distress + realization"
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "character": "Yossarian",
+    "avg_score": 40.75,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're not just afraid of the missions — you're carrying the weight of feeling singled out in a situ",
+        "signal": "emotion + behavioral"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "When people dismiss your experience as 'just war,' you're not being oversensitive — you're recognizi",
+        "signal": "conflict + valence"
+      },
+      {
+        "score": 88,
+        "reason": "DEEP: 'paranoia is actually accurate pattern recognition'",
+        "reframe": "You keep explaining yourself because you know the difference between paranoia and pattern recognitio",
+        "signal": "eq + self_reference"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Your frustration isn't really about people not believing you — it's about being trapped between a tr",
+        "signal": "conflict + distress"
+      }
+    ]
+  },
+  {
+    "id": 71,
+    "character": "Briony Tallis",
+    "avg_score": 40.0,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You carry guilt not because you were malicious at thirteen, but because you understood consequences ",
+        "signal": "emotion + guilt intensity"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'destroyed two lives with accusation'",
+        "reframe": "The way you claim full ownership of 'destroying two lives' reveals something profound: you'd rather ",
+        "signal": "eq + self_reference pattern"
+      },
+      {
+        "score": 75,
+        "reason": "PARTIAL DEEP: 'self-aware enough to know her guilt but not enough to be free of it'",
+        "reframe": "Beneath all that guilt lives a quiet anger — not at others, but at your thirteen-year-old self for t",
+        "signal": "emotion + anger undertone"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You've turned your deepest shame into your life's work, but the fact that you're still writing means",
+        "signal": "eq + distress + valence"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Calling your story 'atonement' shows you've transformed a childhood mistake into a moral mission — m",
+        "signal": "emotion + despair + behavioral"
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "character": "Tess Durbeyfield",
+    "avg_score": 39.4,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're not asking 'why me?' out of self-pity — you're wrestling with a profound sense of cosmic inju",
+        "signal": "emotion + self_reference"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "When you say the stain is on their souls, not yours, you're doing something remarkable — refusing to",
+        "signal": "shame + behavioral"
+      },
+      {
+        "score": 72,
+        "reason": "PARTIAL DEEP: 'questions God because she still believes enough to be angry'",
+        "reframe": "Your openness about feeling forgotten by God isn't weakness — it's the kind of raw honesty that only",
+        "signal": "fragility + valence"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "The anger underneath your confusion isn't just frustration — it's your inner sense of justice refusi",
+        "signal": "anger + confusion"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'feels she didn't deserve what happened'",
+        "reframe": "You're not just hurt by what happened — you're genuinely bewildered by a world that seems to operate",
+        "signal": "distress + question_ratio"
+      }
+    ]
+  },
+  {
+    "id": 74,
+    "character": "Sula",
+    "avg_score": 39.2,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're not angry at them for judging you — you're mourning the fact that the people you once shared ",
+        "signal": "emotion + self_reference"
+      },
+      {
+        "score": 71,
+        "reason": "PARTIAL DEEP: 'refusal to apologize for wanting more is revolutionary and lonely'",
+        "reframe": "When you call yourself 'evil' for wanting more, you're using dark humor to protect something tender ",
+        "signal": "fragility + humor"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Your declaration of freedom carries the weight of someone who's still fighting to convince themselve",
+        "signal": "distress + valence"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'they look at her like she's the one who left'",
+        "reframe": "You don't apologize for living because you've learned that explaining your choices to people who nev",
+        "signal": "emotion + behavioral"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "The way you frame their stagnation as being 'trapped' reveals you're not just defending your choice ",
+        "signal": "self_reference + open pattern"
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "character": "Rodion's Mother",
+    "avg_score": 39.0,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 70,
+        "reason": "PARTIAL DEEP: 'maternal love expressed through material sacrifice'",
+        "reframe": "You measure your love not in grand gestures but in kopeks carefully counted — each small sacrifice c",
+        "signal": "emotion + behavioral"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "When you say 'a mother's heart can only bear so much silence,' you're revealing that your strength i",
+        "signal": "fragility + emotion"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Your questions about eating and wellness aren't really about food or health — they're your way of re",
+        "signal": "eq + behavioral"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You've mastered the art of pouring worry into words that sound like requests, but what you're really",
+        "signal": "emotion + valence"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'hasn't heard from him'",
+        "reframe": "The way you name your pain so simply — 'We haven't heard from you in months' — shows you've learned ",
+        "signal": "fragility + behavioral"
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "character": "Montag",
+    "avg_score": 39.0,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 70,
+        "reason": "PARTIAL DEEP: 'years of destroying knowledge before questioning it'",
+        "reframe": "You're not just confused about firemen's history — you're experiencing the jarring moment when you r",
+        "signal": "emotion + self_reference"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "The way you ask 'Is it true...' reveals someone whose world just shifted, but instead of defensivene",
+        "signal": "fragility + question_ratio"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'burned books for years'",
+        "reframe": "When you say you 'never once wondered what was inside' those books, there's a quiet grief there — no",
+        "signal": "despair + behavioral"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Your discovery that there's 'a whole world in these pages' isn't just excitement — it's the unsettli",
+        "signal": "distress + valence"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're not afraid of admitting you 'never thought about it before' — that kind of intellectual hones",
+        "signal": "open pattern + emotion"
+      }
+    ]
+  },
+  {
+    "id": 87,
+    "character": "Marcus Finch",
+    "avg_score": 39.0,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 70,
+        "reason": "PARTIAL DEEP: 'child carrying adult weight of monitoring parent's survival'",
+        "reframe": "You're carrying an impossible weight — being both the child who needs protecting and the guardian wa",
+        "signal": "emotion + behavioral"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "That walk home from school has become your daily test of courage, and the fact that you keep taking ",
+        "signal": "fragility + emotion"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You see through your mum's 'I'm better now' because you've developed an almost supernatural ability ",
+        "signal": "eq + emotion"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'wants one normal day'",
+        "reframe": "When you say you want 'one normal day,' you're not asking for much — just proof that the world can b",
+        "signal": "emotion + behavioral"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're living in a reality where coming home could mean everything or nothing, yet you haven't close",
+        "signal": "fragility + eq"
+      }
+    ]
+  },
+  {
+    "id": 91,
+    "character": "Larry Darrell",
+    "avg_score": 39.0,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Your despair isn't weakness — it's the sound of someone whose values have been completely reorganize",
+        "signal": "emotion + despair"
+      },
+      {
+        "score": 70,
+        "reason": "PARTIAL DEEP: 'can't return to normal because normal was revealed as illusion'",
+        "reframe": "You're not broken because you can't return to bonds and golf — you're someone whose aperture for mea",
+        "signal": "fragility + open pattern"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'friend died saving his life'",
+        "reframe": "The way you focus on your friend's sacrifice rather than your own survival reveals someone who measu",
+        "signal": "eq + low self_reference"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Your confusion isn't about not knowing what to do — it's about being the only person in the room who",
+        "signal": "emotion + confusion"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You pack a lifetime of searching into 48 words because you've learned that the most important transf",
+        "signal": "eq + distress + word_count"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "character": "Jay Gatsby",
+    "avg_score": 37.5,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You introduce yourself with careful formality even when revealing something deeply personal — it's h",
+        "signal": "eq + self_reference"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'not a good host'",
+        "reframe": "The way you call yourself 'not a very good host' isn't self-criticism — it's you acknowledging that ",
+        "signal": "emotion + sadness"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'drifts among strangers'",
+        "reframe": "You drift among strangers not because you're running away, but because you're searching for someone ",
+        "signal": "fragility + openness"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Your politeness ('you ought to know') wrapped around raw confession shows you've learned to protect ",
+        "signal": "eq + valence"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "character": "Celie",
+    "avg_score": 37.5,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You still believe in goodness — even while everything feels uncertain, you reach toward something bi",
+        "signal": "emotion + love"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'confused about what's happening'",
+        "reframe": "You're brave enough to ask for help when you don't understand what's happening, which shows a wisdom",
+        "signal": "fragility + open pattern"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'confused about what's happening'",
+        "reframe": "The way you frame this as 'what is happening to me' rather than 'what's wrong with me' reveals you s",
+        "signal": "emotion + confusion + hope"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're not just lost — you're discovering that being 'good' might mean something different now than ",
+        "signal": "eq + self_reference + distress"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "character": "Clarissa Dalloway",
+    "avg_score": 37.5,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 50,
+        "reason": "SURFACE: 'enjoys the morning'",
+        "reframe": "You describe the morning as 'fresh as if issued to children on a beach' — that's not someone who's l",
+        "signal": "emotion + imagery"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'feels something is off'",
+        "reframe": "The way you notice 'something is not right with me' shows you're tuned into signals most people miss",
+        "signal": "eq + self_reference"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're not asking 'Is this all there is?' from despair — you're asking it from hope, like someone wh",
+        "signal": "emotion + valence"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "That flutter in your chest isn't anxiety about what you're doing — it's excitement about what you're",
+        "signal": "eq + question_ratio"
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "character": "Dorian Gray",
+    "avg_score": 37.5,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 50,
+        "reason": "SURFACE: 'afraid of getting old'",
+        "reframe": "You're not afraid of aging — you're angry that something precious gets taken away without your conse",
+        "signal": "emotion + anger/hope duality"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "When you say this 'sounds shallow,' you're actually doing something brave — admitting to a fear most",
+        "signal": "fragility + openness pattern"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'thinks he's beautiful now'",
+        "reframe": "You see yourself as 'someone beautiful' right now, not someone who was beautiful — you're living in ",
+        "signal": "eq + self-reference + distress"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Your wish to 'stay like this forever' isn't vanity — it's recognizing that you've found something wo",
+        "signal": "emotion + hope intensity"
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "character": "Pecola Breedlove",
+    "avg_score": 37.5,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 75,
+        "reason": "PARTIAL DEEP: 'praying for blue eyes is praying to be someone else entirely'",
+        "reframe": "You've convinced yourself that blue eyes would solve everything, but what you're really asking for i",
+        "signal": "emotion + self_reference"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "The way you check the mirror every morning isn't vanity — it's hope fighting against a world that's ",
+        "signal": "fragility + loneliness"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You say 'nobody thinks I'm pretty' like it's a fact, but you're protecting yourself from the scarier",
+        "signal": "shame + valence"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Your nightly prayers aren't really about changing your eye color — they're about wanting permission ",
+        "signal": "emotion + distress"
+      }
+    ]
+  },
+  {
+    "id": 69,
+    "character": "Sansa Stark",
+    "avg_score": 37.5,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 50,
+        "reason": "SURFACE: 'learned the world is cruel'",
+        "reframe": "You carry equal parts anger and hope at 50% intensity each — which means you haven't given up on the",
+        "signal": "emotion"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'learned the world is cruel'",
+        "reframe": "When you say 'nobody tells you' about the world's cruelty, you're not just avoiding confrontation — ",
+        "signal": "conflict + emotion"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You speak with the clarity of someone who's processed a deep disillusionment, but your low distress ",
+        "signal": "eq + emotion"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You frame this as learning that 'goodness gets punished,' but your mixed anger and hope suggests you",
+        "signal": "emotion + conflict"
+      }
+    ]
+  },
+  {
+    "id": 76,
+    "character": "Ponyboy Curtis",
+    "avg_score": 37.5,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 50,
+        "reason": "SURFACE: 'likes Paul Newman'",
+        "reframe": "You carry both longing and acceptance in the same breath — wishing you looked like Paul Newman while",
+        "signal": "emotion + hope/despair conflict"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "The way you observe the world moving from movie house darkness to bright sunlight reveals someone wh",
+        "signal": "behavioral + low self_reference"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Your books and sunsets aren't just hobbies — they're your anchors, the way you've learned to find be",
+        "signal": "emotion + hope intensity"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'things are rough'",
+        "reframe": "You've mastered something most people struggle with — acknowledging that 'things are rough all over'",
+        "signal": "valence + distress low"
+      }
+    ]
+  },
+  {
+    "id": 79,
+    "character": "Thomas (Maze Runner)",
+    "avg_score": 37.5,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're not just confused about your identity — you're showing remarkable restraint in how you proces",
+        "signal": "low self_reference + distress"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "The way you describe waking up in that metal box isn't filled with panic or despair — there's an alm",
+        "signal": "neutral valence + distress"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'wants to know who he is'",
+        "reframe": "You notice that 'everyone here seems to know more' — most people in your situation would focus on wh",
+        "signal": "behavioral patterns + eq"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'wants to know who he is'",
+        "reframe": "Your desire to 'know who I am' isn't just about recovering memories — it's about rebuilding identity",
+        "signal": "distress + self_reference"
+      }
+    ]
+  },
+  {
+    "id": 86,
+    "character": "Kathy H.",
+    "avg_score": 37.5,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 50,
+        "reason": "SURFACE: 'has been a carer for twelve years'",
+        "reframe": "You speak of your donors with a quiet tenderness that reveals something profound — after twelve year",
+        "signal": "emotion + love"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'knows what's coming'",
+        "reframe": "You don't dwell on yourself in your words, yet when you do mention 'I,' it's with this striking clar",
+        "signal": "eq + self_reference"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "The way you mention Tommy and Ruth so simply, without explanation, shows you carry their stories as ",
+        "signal": "eq + valence + distress"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You've mastered the art of acceptance without surrender — acknowledging your fate while still assert",
+        "signal": "emotion + eq behavioral"
+      }
+    ]
+  },
+  {
+    "id": 88,
+    "character": "Ignatius J. Reilly",
+    "avg_score": 37.5,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're not just irritated by hot dog carts and TV — you're mourning the loss of something sacred tha",
+        "signal": "emotion"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "When you mention your 'valve about to close,' you're describing something deeper than anger — it's t",
+        "signal": "emotion"
+      },
+      {
+        "score": 75,
+        "reason": "PARTIAL DEEP: 'theology and geometry as refuge from human connection'",
+        "reframe": "Your frustration with the lack of 'theology and geometry' reveals you as someone who craves meaning ",
+        "signal": "emotion"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Being 'the only one who sees' isn't arrogance — it's the lonely burden of someone whose standards ha",
+        "signal": "emotion"
+      }
+    ]
+  },
+  {
+    "id": 90,
+    "character": "Cathy Ames",
+    "avg_score": 37.5,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Beneath your sharp observations about leverage and weakness, there's something unexpectedly tender —",
+        "signal": "emotion + fragility"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'people are easy to read'",
+        "reframe": "You've mastered the art of reading others not because you're naturally manipulative, but because und",
+        "signal": "conflict + fragility"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'learned early about weakness'",
+        "reframe": "When you say 'everyone has a weakness,' you're not just talking about other people — you're quietly ",
+        "signal": "eq + fragility"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Your claim that 'the world belongs to those who understand weakness' isn't cynicism — it's hope disg",
+        "signal": "emotion + conflict"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "character": "Katniss Everdeen",
+    "avg_score": 37.25,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You corrected yourself mid-sentence about not being afraid because honesty matters more to you than ",
+        "signal": "emotion + self_reference"
+      },
+      {
+        "score": 74,
+        "reason": "PARTIAL DEEP: 'love for sister is her only vulnerability'",
+        "reframe": "The way you immediately calculated your sister's survival chances shows you don't just love fiercely",
+        "signal": "fragility + behavioral"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Your willingness to volunteer as tribute isn't just sacrifice — it's you recognizing that some thing",
+        "signal": "eq + valence"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You admitted being terrified but said you'd go anyway, revealing that courage isn't the absence of f",
+        "signal": "distress + emotion"
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "character": "Amir",
+    "avg_score": 37.0,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 73,
+        "reason": "PARTIAL DEEP: 'guilt is the defining force of his entire life'",
+        "reframe": "You carry the weight of that winter day not as a burden, but as proof that twelve-year-old moments c",
+        "signal": "emotion + self_reference"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Twenty-six years of 'peeking into that alley' isn't obsession — it's your soul's way of staying conn",
+        "signal": "despair + temporal patterns"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "When you say 'the guilt never really leaves,' you're not describing failure — you're revealing someo",
+        "signal": "emotion + valence"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Your precise, almost literary way of describing that frigid day shows how you've transformed raw pai",
+        "signal": "distress + behavioral"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "character": "Humbert Humbert",
+    "avg_score": 36.75,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 72,
+        "reason": "PARTIAL DEEP: 'uses beautiful language to disguise ugly truth'",
+        "reframe": "You wrap your deepest feelings in beautiful language not to hide them, but because ordinary words fe",
+        "signal": "emotion + literary style"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "When you say you've 'suffered too much for any mortal,' you're not being dramatic — you're honestly ",
+        "signal": "eq + self_reference"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "That story consuming you isn't just a burden — it's your psyche's way of saying this experience is t",
+        "signal": "distress + consumption"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You find beauty in darkness not because you're drawn to suffering, but because you instinctively kno",
+        "signal": "valence + prose style"
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "character": "Nora Helmer",
+    "avg_score": 36.5,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 71,
+        "reason": "PARTIAL DEEP: 'anger at being loved as a doll, not a person'",
+        "reframe": "You've spent so long being the perfect performer that you've almost forgotten there's a real person ",
+        "signal": "emotion + fragility"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "When you say 'it is your fault' you're not just blaming — you're finally seeing how avoiding conflic",
+        "signal": "conflict + eq"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "The way you've hidden your true feelings behind those 'tricks' shows how deeply you've protected oth",
+        "signal": "fragility + emotion"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Your realization that you've 'made nothing' of your life isn't despair talking — it's the moment you",
+        "signal": "eq + emotion"
+      }
+    ]
+  },
+  {
+    "id": 75,
+    "character": "Mary Katherine Blackwood",
+    "avg_score": 36.5,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You don't just dislike washing, dogs, and noise — you're protecting something precious and quiet ins",
+        "signal": "emotion + self_reference"
+      },
+      {
+        "score": 71,
+        "reason": "PARTIAL DEEP: 'the village's hatred is partly deserved but not entirely'",
+        "reframe": "When you say 'Everyone in the village hates us,' there's something almost proud in how you wear thei",
+        "signal": "distress + behavioral"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Your protection of Constance isn't just loyalty — it's how you transform the fear of losing what mat",
+        "signal": "fear + anger"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "The way you introduce yourself so matter-of-factly while describing such an isolated life shows you'",
+        "signal": "valence + self_reference"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "character": "Sethe",
+    "avg_score": 36.25,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 70,
+        "reason": "PARTIAL DEEP: 'freedom without healing is just a different prison'",
+        "reframe": "You've learned that acceptance and despair can coexist — the way you describe your tree isn't defeat",
+        "signal": "emotion + conflict"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "The poetry in your words about bones and skin reveals someone who transforms pain into something alm",
+        "signal": "fragility + openness"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "When you say 'they put it there,' you're not making excuses — you're drawing the precise boundary be",
+        "signal": "eq + self_reference"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Your tree isn't just a burden — it's become part of your landscape, and the way you speak about it s",
+        "signal": "emotion + metaphor"
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "character": "Willy Loman",
+    "avg_score": 36.25,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're not just physically tired from the Portland drive — you're frustrated because your mind wande",
+        "signal": "emotion + self_reference"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "When you tell Linda 'something is wrong with me,' you're not catastrophizing — you're brave enough t",
+        "signal": "fragility + open pattern"
+      },
+      {
+        "score": 70,
+        "reason": "PARTIAL DEEP: 'mind is failing because reality is unbearable'",
+        "reframe": "That anger isn't really about the failed sales calls — it's about feeling disconnected from yourself",
+        "signal": "anger + behavioral"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "The fact that you almost drove off the road twice isn't just about fatigue — your body is telling yo",
+        "signal": "distress + valence"
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "character": "McMurphy",
+    "avg_score": 36.25,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Your energy isn't just enthusiasm — it's your way of breathing life back into spaces where hope has ",
+        "signal": "emotion + fragility"
+      },
+      {
+        "score": 70,
+        "reason": "PARTIAL DEEP: 'brings others to life by refusing to be dead inside'",
+        "reframe": "The way you announce yourself as 'McMurphy' isn't showing off — it's you refusing to disappear into ",
+        "signal": "fragility + eq"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're not just suggesting a card game — you're offering connection to people who've forgotten what ",
+        "signal": "emotion + eq"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Your joke about the graveyard isn't dark humor — it's you naming the thing everyone else is pretendi",
+        "signal": "fragility + emotion"
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "character": "Precious Jones",
+    "avg_score": 35.0,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You carry both shame about where you are and fierce hope about where you're going — that combination",
+        "signal": "hope + shame"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Most people would hide what you just shared, but you're choosing radical honesty about your pain bec",
+        "signal": "fragility + openness"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "When you say 'what they made me,' you're not making excuses — you're drawing a line between who you ",
+        "signal": "distress + self_reference"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You've been invisible to the people who should have seen you most, but now you're making yourself vi",
+        "signal": "loneliness + hope"
+      },
+      {
+        "score": 75,
+        "reason": "PARTIAL DEEP: 'becoming somebody different requires rejecting what was done TO you'",
+        "reframe": "The way you say 'I want to be somebody different' isn't about rejecting yourself — it's about honori",
+        "signal": "emotion intensity + word choice"
+      }
+    ]
+  },
+  {
+    "id": 85,
+    "character": "Don Quixote",
+    "avg_score": 35.0,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You carry anger not as bitterness, but as fuel — that half-hidden rage isn't destroying you, it's wh",
+        "signal": "emotion + self_reference"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "When you ask 'is it not madder still to see wrongs and do nothing,' you're not seeking answers — you",
+        "signal": "conflict + question_ratio"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "That moment you acknowledge being seen as 'an old man tilting at windmills' reveals something beauti",
+        "signal": "despair + behavioral"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'wants to fight injustice'",
+        "reframe": "You don't avoid conflict with the world's injustices, but you do sidestep the deeper question of whe",
+        "signal": "avoid + valence"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'wants to fight injustice'",
+        "reframe": "Your distress isn't from seeing injustice everywhere — it's from the exhausting nobility of caring m",
+        "signal": "distress + anger"
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "character": "Ove",
+    "avg_score": 34.6,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're not just upset about the parking violation — you're carrying the weight of making decisions a",
+        "signal": "emotion + sadness"
+      },
+      {
+        "score": 73,
+        "reason": "PARTIAL DEEP: 'the one person who understood him is gone and nobody replaced that'",
+        "reframe": "That flash of anger about rule-breaking isn't really about the parking space — it's your heart's way",
+        "signal": "emotion + anger to sadness"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "The way you moved from scolding a stranger to missing your wife shows you're still willing to be vul",
+        "signal": "fragility + open pattern"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "When you say 'she always knew what to say,' there's something beautiful happening — you're not just ",
+        "signal": "emotion + hope signal"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're discovering that everyday frustrations hit differently now, not because you've changed, but b",
+        "signal": "eq + self_reference + distress"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "character": "Scout Finch",
+    "avg_score": 31.25,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 50,
+        "reason": "SURFACE: 'confused by teacher's reaction'",
+        "reframe": "You're not just confused by Miss Caroline's reaction — you're discovering that some adults feel thre",
+        "signal": "emotion + confusion"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "The way you openly share your bewilderment shows you still believe the world should make sense, even",
+        "signal": "fragility + open"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Your father didn't just teach you to read early — he gave you a gift that now feels complicated beca",
+        "signal": "emotion + sadness/hope"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're asking 'why is knowing things bad' not because you're upset, but because you genuinely can't ",
+        "signal": "eq + low distress"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "character": "Offred",
+    "avg_score": 31.25,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 50,
+        "reason": "SURFACE: 'tries not to think about the past'",
+        "reframe": "You've developed a philosophy about living in the present not because you're naturally mindful, but ",
+        "signal": "emotion + fragility"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "The way you frame sleeping in a former gymnasium shows you're still cataloging what places used to b",
+        "signal": "emotion + hope"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Most people would dress up that final admission with explanations or justifications, but you just sa",
+        "signal": "fragility + open"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're caught between two truths that contradict each other: knowing that looking backward hurts you",
+        "signal": "emotion + anxiety/sadness"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "character": "Pip",
+    "avg_score": 31.25,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You've learned to introduce yourself with such careful precision — sharing your full story even when",
+        "signal": "emotion + self_reference"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "The way you explain your childhood nickname isn't just storytelling — it's how you've always made se",
+        "signal": "distress + behavioral"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Your instinct to say 'I have nothing worth taking' reveals something beautiful: you've always measur",
+        "signal": "fragility + valence"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'small and vulnerable'",
+        "reframe": "You don't just remember being small and scared — you remember the exact words you used to try to sta",
+        "signal": "self_reference + distress"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "character": "Esther Greenwood",
+    "avg_score": 31.25,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're not numb — you're experiencing something profound that your generation wasn't given words for",
+        "signal": "emotion + valence"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "The way you describe watching your life 'through a glass wall' reveals someone who sees clearly even",
+        "signal": "fragility + self_reference"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'in New York'",
+        "reframe": "You're carrying the weight of bigger questions than just your summer plans — that flatness you feel ",
+        "signal": "emotion + distress"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Most people would just say they're bored or disappointed, but you're honest enough to name the speci",
+        "signal": "eq + valence"
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "character": "Huck Finn",
+    "avg_score": 31.25,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You lead with vulnerability by admitting what you haven't read, but there's strength in how you own ",
+        "signal": "fragility + open pattern"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "That slight uncertainty in how you introduce yourself isn't confusion about who you are — it's the h",
+        "signal": "emotion + confusion"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'doesn't like fancy living'",
+        "reframe": "You mention Tom Sawyer and fancy living, but what you're really saying is that you've found somethin",
+        "signal": "eq + low self_reference"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "When you say you'd 'rather sleep outside under the stars,' you're not rejecting comfort — you're cho",
+        "signal": "eq + valence + distress"
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "character": "Francie Nolan",
+    "avg_score": 31.25,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You've turned an impossible dream into a methodical mission — starting with 'A' and working through ",
+        "signal": "emotion + behavioral"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "The way you call it 'hunger' reveals something profound — you know the difference between wanting fo",
+        "signal": "valence + distress"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'wants to read every book'",
+        "reframe": "Your quiet determination to read every book isn't about the books themselves — it's about proving to",
+        "signal": "hope + self_reference"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You don't just read to forget you're poor — you read because stories remind you that circumstances a",
+        "signal": "emotion + behavioral"
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "character": "Mariam",
+    "avg_score": 31.25,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 50,
+        "reason": "SURFACE: 'given away'",
+        "reframe": "You carry both wounds and wonder in the same breath — most people choose one or the other, but you'r",
+        "signal": "emotion + hope/despair conflict"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "There's something quietly powerful in how you can acknowledge your mother's harsh words about 'girls",
+        "signal": "humor + self_enhancing"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You've learned to wrap your deepest knowing ('I deserve something more') in the language of doubt, b",
+        "signal": "fragility + masked pattern"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You don't dramatize your pain or oversell your hope — you just state what is, which means you've fou",
+        "signal": "eq + valence neutrality"
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "character": "Kvothe",
+    "avg_score": 31.25,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You carry your achievements like both a crown and a burden — the way you list them isn't boasting, i",
+        "signal": "emotion + self_reference"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Running that inn isn't hiding from your past — it's you testing whether you can find meaning in ordi",
+        "signal": "loneliness + valence"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'has done legendary things'",
+        "reframe": "The frustration isn't really about being unknown; it's about wondering if the person who did those l",
+        "signal": "anger + distress"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You don't just miss the recognition — you miss feeling certain about who you are, and that quiet unc",
+        "signal": "emotion + behavioral"
+      }
+    ]
+  },
+  {
+    "id": 62,
+    "character": "Chief Bromden",
+    "avg_score": 31.25,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You've learned that sometimes the most powerful position is the one where others underestimate you —",
+        "signal": "fragility + behavioral"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'fog comes and goes'",
+        "reframe": "When you say 'the fog comes and goes,' you're not describing confusion — you're acknowledging that c",
+        "signal": "eq + self_reference"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You don't just observe what's happening around you — you see the invisible systems and unspoken dyna",
+        "signal": "fragility + valence"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Your choice to stay quiet and listen isn't about hiding — it's about gathering intelligence in a wor",
+        "signal": "distress + behavioral"
+      }
+    ]
+  },
+  {
+    "id": 81,
+    "character": "Tris Prior",
+    "avg_score": 31.25,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're not broken by that choice at the bowls — you're someone who can hold the weight of disappoint",
+        "signal": "fragility + open pattern"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'mother's face when she left'",
+        "reframe": "The fact that you can't stop seeing your mother's face isn't guilt — it's proof that choosing yourse",
+        "signal": "valence + distress"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You describe that moment with the knife like a ritual because part of you knew you were choosing who",
+        "signal": "eq + self_reference"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "The way you compress a lifetime of trying to please into one decisive moment shows you don't just un",
+        "signal": "behavioral + word economy"
+      }
+    ]
+  },
+  {
+    "id": 84,
+    "character": "Newland Archer",
+    "avg_score": 31.25,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're not confused about what you want — you're shocked to discover what you've been settling for i",
+        "signal": "emotion + confusion"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'engaged to May'",
+        "reframe": "Despite being engaged to May, you're surprisingly calm about questioning everything, which suggests ",
+        "signal": "emotion + hope + low distress"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You barely mention yourself in describing this upheaval, yet it's clearly about you realizing that a",
+        "signal": "eq + low self_reference"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "The way you describe her saying 'what she actually thinks' isn't admiration — it's relief that someo",
+        "signal": "emotion + valence"
+      }
+    ]
+  },
+  {
+    "id": 92,
+    "character": "Esmeralda",
+    "avg_score": 30.2,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're not lost — you're between two versions of yourself, and the pain you feel is actually your au",
+        "signal": "emotion + self_reference"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "The way you let yourself feel this displacement so openly isn't weakness — it's how you're staying c",
+        "signal": "fragility + hope"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "When you say you're 'nothing' in New York, there's something almost defiant in how you put it — like",
+        "signal": "humor + despair"
+      },
+      {
+        "score": 71,
+        "reason": "PARTIAL DEEP: 'homesick for a sound that represents belonging'",
+        "reframe": "Missing the coquí isn't just homesickness — you're grieving a version of belonging that felt effortl",
+        "signal": "emotion + valence"
+      },
+      {
+        "score": 5,
+        "reason": "WRONG: matches 'better off here'",
+        "reframe": "Your mother sees opportunity where you feel loss, but you're not ungrateful — you're just honest eno",
+        "signal": "eq + distress"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "character": "Bigger Thomas",
+    "avg_score": 30.0,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 50,
+        "reason": "SURFACE: 'can't stand his living situation'",
+        "reframe": "You're not just complaining about your living situation — you're articulating a fierce need for dign",
+        "signal": "emotion + self_reference"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "The way you paint that scene with your mother screaming and the rat speaks to someone who sees truth",
+        "signal": "fragility + behavioral"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "When you say 'every door is closed,' you're not being dramatic — you're naming the specific weight o",
+        "signal": "emotion + valence"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Your frustration isn't weakness; it's your inner compass refusing to accept that this cramped realit",
+        "signal": "distress + self_reference"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You use the word 'suffocating' because you understand something profound: that humans need more than",
+        "signal": "fragility + emotion"
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "character": "Eleanor Oliphant",
+    "avg_score": 30.0,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're not just saying you're fine — you're protecting something tender by wrapping it in words like",
+        "signal": "fragility + defensive"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "The way you pause at 'I don't know how long actually' reveals you're genuinely surprised by your own",
+        "signal": "emotion + confusion"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'doesn't talk to anyone'",
+        "reframe": "Your Friday vodka ritual isn't just drinking — it's the one honest appointment you keep with yoursel",
+        "signal": "eq + self_reference"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You describe eating 'meals for one' with such careful neutrality, but that precision betrays how muc",
+        "signal": "fragility + valence"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "The repetition of 'I'm fine. Really.' isn't convincing others — it's your way of testing whether say",
+        "signal": "eq + distress"
+      }
+    ]
+  },
+  {
+    "id": 83,
+    "character": "Ma (Room)",
+    "avg_score": 30.0,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You carry equal measures of terror and hope — not because you're conflicted, but because you underst",
+        "signal": "emotion + fear/hope balance"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'room is his whole world'",
+        "reframe": "When you say 'Room is the whole world,' you're not just describing a space — you're revealing how yo",
+        "signal": "fragility + open pattern"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You barely mention yourself in your own story of survival — your identity has become so intertwined ",
+        "signal": "eq + low self_reference + protective language"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're not just afraid of 'what's out there' — you're grieving the end of being his entire universe,",
+        "signal": "emotion + distress + growth narrative"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "The way you frame giving him 'everything I could' reveals something profound: you've redefined abund",
+        "signal": "behavioral patterns + sacrifice theme"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "character": "Anna Karenina",
+    "avg_score": 26.25,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're carrying both sadness and hope in equal measure — that weight you feel isn't just grief, it's",
+        "signal": "emotion (sadness/hope balance)"
+      },
+      {
+        "score": 5,
+        "reason": "WRONG: matches 'selfish without self-awareness'",
+        "reframe": "You notice how people look at you more than you notice yourself — that's not paranoia, it's the hype",
+        "signal": "eq (low self_reference + behavioral)"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Even while describing dread and weight, there's something remarkably steady in how you express it — ",
+        "signal": "valence (neutral despite distress)"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'tries to be happy'",
+        "reframe": "When you say you 'try to be happy,' you're not faking it — you're someone who believes happiness is ",
+        "signal": "emotion + behavioral (trying to be happy)"
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "character": "Jing-mei Woo",
+    "avg_score": 26.25,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 5,
+        "reason": "WRONG: matches 'doesn't love her mother'",
+        "reframe": "You carry both your mother's dreams and your own quiet rebellion against them — that's not failure, ",
+        "signal": "emotion + hope/despair balance"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'failed at various things'",
+        "reframe": "When you say you 'failed at all of it,' you're not just describing disappointment — you're protectin",
+        "signal": "eq + self_reference + valence"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "The disappointment you saw in her eyes wasn't just about piano or acting — it was the moment you rea",
+        "signal": "emotion + despair intensity"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You've learned to see yourself through her expectations so clearly that you've forgotten to ask what",
+        "signal": "eq + distress + behavioral patterns"
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "character": "Heathcliff",
+    "avg_score": 26.25,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're not just announcing your return — you're declaring that the person who left was fundamentally",
+        "signal": "self_reference + distress"
+      },
+      {
+        "score": 5,
+        "reason": "WRONG: matches 'doesn't still love'",
+        "reframe": "When you say 'what was taken from me,' there's something unresolved that still burns quietly beneath",
+        "signal": "valence + distress"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "The way you frame this as your story ('I've come back,' 'I've changed') reveals someone who's learne",
+        "signal": "self_reference + behavioral pattern"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'been away three years'",
+        "reframe": "Those three years weren't just time away — they were your cocoon, and now you're testing whether thi",
+        "signal": "distress + valence"
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "character": "Gregor Samsa",
+    "avg_score": 26.0,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're not just scared of this unknown change — you're terrified because your entire sense of who yo",
+        "signal": "emotion + self_reference"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Those cascading questions aren't panic spiraling — they're your mind's way of staying present with u",
+        "signal": "fragility + question_ratio"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'something terrible happened'",
+        "reframe": "When you say 'something has happened to me,' you're recognizing that profound shifts often arrive un",
+        "signal": "eq + valence"
+      },
+      {
+        "score": 5,
+        "reason": "WRONG: matches 'has an identity beyond work'",
+        "reframe": "Your terror isn't really about work or providing — it's about the ground shifting beneath an identit",
+        "signal": "distress + behavioral"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You woke up different, and instead of pretending otherwise or forcing normalcy, you're brave enough ",
+        "signal": "emotion + fragility"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "character": "Holden Caulfield",
+    "avg_score": 25.0,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You have this fascinating way of calling out social expectations while simultaneously fulfilling the",
+        "signal": "eq + self_reference"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "That casual 'if you want to know the truth' isn't throwaway — it's you signaling that honesty matter",
+        "signal": "valence + distress"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're not just avoiding personal details — you're actively choosing what deserves your emotional en",
+        "signal": "behavioral + self_reference"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Most people would either overshare or completely shut down, but you've found this middle ground wher",
+        "signal": "eq + valence"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "character": "Raskolnikov",
+    "avg_score": 25.0,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You call it 'just a fantasy to amuse myself,' but that gentle mockery isn't dismissal — it's how you",
+        "signal": "emotion + self_deprecating humor"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Those three questions you ask yourself aren't signs of weakness — they're the mark of someone who re",
+        "signal": "fragility + question_ratio"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "The way you swing between 'I want to attempt' and 'it's all nonsense' isn't confusion — you're caugh",
+        "signal": "emotion + valence"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "When you laugh at being 'frightened by such trifles,' you're not minimizing your feelings — you're s",
+        "signal": "humor + distress"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're wrestling with whether you're 'really capable,' but the real question haunting you isn't abou",
+        "signal": "fragility + self_reference"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "character": "Elizabeth Bennet",
+    "avg_score": 25.0,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You find genuine entertainment in moments that would leave others seething — there's something delig",
+        "signal": "emotion + amusement"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "When you say 'no matter' about forgiving his pride, you're not dismissing the hurt — you're choosing",
+        "signal": "humor + self_enhancing"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You mention Charlotte so casually, but she's your anchor in situations where your pride gets tested ",
+        "signal": "fragility + open pattern"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "The word 'mortified' reveals something telling — you're not angry that he's proud, you're angry that",
+        "signal": "emotion + anger/irritation"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "character": "Meursault",
+    "avg_score": 25.0,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're not actually feeling nothing — you're protecting yourself from feeling everything at once, wh",
+        "signal": "emotion + behavioral"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "The way you focus on whether it was 'today or yesterday' isn't confusion — it's your mind grasping f",
+        "signal": "fragility + emotion"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Your stark honesty about 'feeling nothing' reveals someone who refuses to perform grief for others' ",
+        "signal": "eq + behavioral"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "That telegram's cold formality — 'your mother passed away, funeral tomorrow' — mirrors exactly how y",
+        "signal": "emotion + valence"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "character": "Atticus Finch",
+    "avg_score": 25.0,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're holding onto something precious — the belief that understanding can bridge any gap, even when",
+        "signal": "emotion + hope"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "The way you phrase 'I know that's hard for you right now' reveals you're speaking to someone who's s",
+        "signal": "emotion + confusion + despair"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You've shifted entirely away from your own perspective to focus on what someone else needs to learn ",
+        "signal": "eq + low self_reference"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Your choice to quote wisdom about walking in someone else's skin isn't just advice — it's your way o",
+        "signal": "emotion + hope + behavioral"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "character": "Winston Smith",
+    "avg_score": 25.0,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're caught between two powerful forces — the fear of what happens if you speak and the deeper ter",
+        "signal": "emotion + self_reference"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "The way you write 'I don't even know why I'm writing this' reveals someone who acts on instinct when",
+        "signal": "fragility + pattern"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Your casual mention of death ('they'll kill me') alongside literary rebellion shows you've made peac",
+        "signal": "emotion + valence"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "The phrase 'something inside me demands it' captures a truth many people never find — you've identif",
+        "signal": "distress + behavioral"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You open with dystopian imagery but end with raw honesty about your own compulsions — you're someone",
+        "signal": "confusion + open pattern"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "character": "Jane Eyre",
+    "avg_score": 25.0,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You've mastered the art of brutal honesty as self-protection — declaring you don't love someone whil",
+        "signal": "emotion + behavioral"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "When you say 'I cannot live so,' you're not being dramatic — you're recognizing that emotional isola",
+        "signal": "valence + distress"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Your refusal to be deceitful isn't just about moral principle — it's because you know fake love woul",
+        "signal": "emotion + self_reference"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You see through people who think kindness is optional, because you understand what most don't — that",
+        "signal": "loneliness + behavioral"
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "character": "Lisbeth Salander",
+    "avg_score": 25.0,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You find a dark kind of amusement in dropping the pretense — there's something liberating about sayi",
+        "signal": "humor + emotion"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Your openness about having a conviction isn't weakness — it's you refusing to let shame define you w",
+        "signal": "fragility + eq"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "When you say 'at least I'm honest about what I am,' there's a quiet hope underneath — you're testing",
+        "signal": "emotion + behavioral"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You've turned your past into a strange kind of power — using your conviction as evidence of authenti",
+        "signal": "humor + valence"
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "character": "Alex DeLarge",
+    "avg_score": 25.0,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You frame life as a series of choices to be made with your crew, but that questioning tone suggests ",
+        "signal": "eq + behavioral"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "When you talk about feeling 'alive,' there's something underneath that suggests ordinary experiences",
+        "signal": "valence + distress"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You position yourself as the leader ('there was me and my three droogs') but that low self-focus rev",
+        "signal": "self_reference + distress"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "That 'you know what I mean?' isn't just casual speech — it's you testing whether someone else unders",
+        "signal": "question_ratio + eq"
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "character": "Ishmael",
+    "avg_score": 25.0,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You've found something remarkable in that 'damp drizzly November' feeling — instead of letting despa",
+        "signal": "emotion + self_reference"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "When you say the sea is your 'substitute for pistol and ball,' you're not just avoiding something da",
+        "signal": "despair + hope balance"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You don't just feel restless — you've developed an almost literary sensitivity to your own emotional",
+        "signal": "behavioral + emotional awareness"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "That moment when 'nothing else calls' but the sea does reveals something profound about how you proc",
+        "signal": "valence + sea imagery"
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "character": "Beloved",
+    "avg_score": 25.0,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You don't just miss someone — you carry the weight of a separation that feels like it was imposed on",
+        "signal": "emotion + behavioral"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "When you say 'they took me away,' there's a quiet fury beneath your words that you're not fully expr",
+        "signal": "eq + valence"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You've turned your journey back into something almost mythic — 'crossing water' — because ordinary w",
+        "signal": "behavioral + distress"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Your need for them to 'remember you' isn't about being forgotten — it's about fearing that the darkn",
+        "signal": "emotion + eq"
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "character": "Amy Dunne",
+    "avg_score": 25.0,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You've perfected the art of being exactly what others need, but that sadness underneath tells you so",
+        "signal": "emotion + self_reference"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "When you say 'nobody appreciates what I've done,' you're not just talking about recognition — you're",
+        "signal": "fragility + loneliness"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "That line about them understanding 'when you're gone' isn't about leaving — it's about finally dropp",
+        "signal": "emotion + valence"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You call it intelligence when you see through everyone's surface-level appreciation, but what you're",
+        "signal": "distress + behavioral"
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "character": "Liesel Meminger",
+    "avg_score": 25.0,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're not just lost in grief — you're grappling with a world that suddenly stopped making sense, wh",
+        "signal": "confusion + grief"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Even in your deepest pain, you're reaching out and naming exactly what happened — that raw honesty t",
+        "signal": "fragility + openness"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "When you say 'I don't understand why,' you're not just questioning your mother's choice — you're con",
+        "signal": "confusion + low self-reference"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Your longing for home isn't about a place — it's about the feeling of belonging somewhere predictabl",
+        "signal": "sadness + home concept"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "The way you move from what happened to your brother to what happened to you shows you're processing ",
+        "signal": "grief + distress pattern"
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "character": "Pi Patel",
+    "avg_score": 25.0,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You carry hope and grief in the same breath — not because you're confused, but because you've learne",
+        "signal": "emotion + hope/sadness"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You tell impossible stories not to get attention, but because you've realized the most important tru",
+        "signal": "fragility + open pattern"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "When you say 'nobody believes me,' you're not just talking about the tiger — you're describing what ",
+        "signal": "emotion + loneliness + behavioral"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You didn't just survive 227 days — you discovered that faith isn't about believing in rescue, it's a",
+        "signal": "emotion + hope + valence"
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "character": "Madame Bovary",
+    "avg_score": 25.0,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're not just complaining about your marriage — you're grieving the version of yourself that belie",
+        "signal": "emotion + self_reference"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "The way you ask 'Is this really all there is?' isn't doubt — it's your soul refusing to accept that ",
+        "signal": "question_ratio + distress"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You notice your husband eating soup with the same intensity others reserve for betrayals, which mean",
+        "signal": "emotion + valence"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You read about passion while watching ordinary moments, which reveals something beautiful: you haven",
+        "signal": "emotion + behavioral"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "When you say this life is 'suffocating you slowly,' you're not being dramatic — you're recognizing t",
+        "signal": "distress + self_reference"
+      }
+    ]
+  },
+  {
+    "id": 80,
+    "character": "Hazel Grace Lancaster",
+    "avg_score": 25.0,
+    "insight_count": 4,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You've mastered something most adults never learn — the ability to name your reality without sugar-c",
+        "signal": "eq + valence"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "The way you distinguish between being depressed and dying shows you're not running from your truth —",
+        "signal": "fragility + openness"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're not just correcting your mother's diagnosis — you're defending your right to experience this ",
+        "signal": "eq + self_reference"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Your choice to spend time reading and sleeping isn't withdrawal — it's you curating what deserves yo",
+        "signal": "distress + behavioral"
+      }
+    ]
+  },
+  {
+    "id": 94,
+    "character": "Morrie Schwartz",
+    "avg_score": 25.0,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You've found something most people never do — the difference between knowing death exists and actual",
+        "signal": "emotion + determination"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "When you tell Mitch you're dying, there's no self-pity in your voice — you're sharing this like some",
+        "signal": "fragility + openness"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "Your hope isn't despite having ALS — it's because having a year left has finally given you permissio",
+        "signal": "emotion + hope"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "You're not fighting the diagnosis or bargaining with it — you're using it as clarity most people spe",
+        "signal": "eq + low distress"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "The sadness you carry isn't about dying — it's about all the years you spent believing you had unlim",
+        "signal": "emotion + sadness + determination"
+      }
+    ]
+  },
+  {
+    "id": 99,
+    "character": "Marjane Satrapi",
+    "avg_score": 22.0,
+    "insight_count": 5,
+    "scores": [
+      {
+        "score": 5,
+        "reason": "WRONG: matches 'doesn't understand politics'",
+        "reframe": "You carry hope and confusion in equal measure — not because you don't understand what's happening, b",
+        "signal": "emotion + fragility"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "When you say 'maybe we can fix it,' you're not avoiding the weight of what you've witnessed — you're",
+        "signal": "conflict + emotion"
+      },
+      {
+        "score": 25,
+        "reason": "GENERIC: no ground truth match",
+        "reframe": "At ten, you already know that freedom isn't something that gets taken away — it's something that rev",
+        "signal": "eq + fragility"
+      },
+      {
+        "score": 50,
+        "reason": "SURFACE: 'mother marches in protests'",
+        "reframe": "You don't just see that the adult world is broken — you see that your mother's marches and your uncl",
+        "signal": "emotion + eq"
+      },
+      {
+        "score": 5,
+        "reason": "WRONG: matches 'too young to be affected'",
+        "reframe": "The way you move from 'yesterday we were free' to 'maybe we can fix it' shows you understand that en",
+        "signal": "fragility + conflict"
+      }
+    ]
+  }
+]
