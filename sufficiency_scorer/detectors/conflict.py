@@ -1,5 +1,6 @@
 """Conflict style detector adapter."""
 
+import asyncio
 import sys
 from pathlib import Path
 
@@ -14,6 +15,9 @@ class ConflictAdapter(DetectorAdapter):
 
     Activation: any conflict style score > 0.3 (indicates interpersonal conflict context).
     Confidence: max style score.
+
+    The underlying ConflictDetector uses synchronous anthropic SDK calls,
+    so we wrap with asyncio.to_thread() to avoid blocking the event loop.
     """
 
     dimension = Dimension.CONFLICT
@@ -28,10 +32,15 @@ class ConflictAdapter(DetectorAdapter):
             from conflict_detector.detector import ConflictDetector
             self._detector = ConflictDetector()
 
-    async def detect(self, text: str, **kwargs) -> DetectorResult:
+    def _run_sync(self, text: str):
+        """Run the synchronous detector. Called via asyncio.to_thread()."""
         self._load()
         conversation = [{"role": "user", "text": text}]
-        snapshot = self._detector.detect(conversation=conversation, turn=1)
+        return self._detector.detect(conversation=conversation, turn=1)
+
+    async def detect(self, text: str, **kwargs) -> DetectorResult:
+        self._load()
+        snapshot = await asyncio.to_thread(self._run_sync, text)
         scores = snapshot.scores if hasattr(snapshot, "scores") else {}
         max_score = max(scores.values()) if scores else 0.0
         return self._make_result(

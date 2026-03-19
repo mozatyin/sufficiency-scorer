@@ -1,5 +1,6 @@
 """Emotion detector adapter — wraps emotion-detector project."""
 
+import asyncio
 import sys
 from pathlib import Path
 
@@ -14,6 +15,9 @@ class EmotionAdapter(DetectorAdapter):
 
     Activation: any emotion > 0.25 intensity.
     Confidence: max emotion intensity (strongest signal).
+
+    The underlying EmotionDetector uses synchronous anthropic SDK calls,
+    so we wrap with asyncio.to_thread() to avoid blocking the event loop.
     """
 
     dimension = Dimension.EMOTION
@@ -28,15 +32,16 @@ class EmotionAdapter(DetectorAdapter):
             from emotion_detector.detector import EmotionDetector
             self._detector = EmotionDetector()
 
-    async def detect(self, text: str, **kwargs) -> DetectorResult:
+    def _run_sync(self, text: str):
+        """Run the synchronous detector. Called via asyncio.to_thread()."""
         self._load()
         conversation = [{"role": "user", "text": text}]
-        snapshot = await self._run(conversation)
-        return self._evaluate(snapshot)
-
-    async def _run(self, conversation: list[dict]):
-        self._load()
         return self._detector.detect(conversation=conversation, turn=1)
+
+    async def detect(self, text: str, **kwargs) -> DetectorResult:
+        self._load()
+        snapshot = await asyncio.to_thread(self._run_sync, text)
+        return self._evaluate(snapshot)
 
     def _evaluate(self, snapshot) -> DetectorResult:
         emotions = snapshot.emotions if hasattr(snapshot, "emotions") else {}
