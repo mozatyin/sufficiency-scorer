@@ -1,145 +1,144 @@
-"""Tests for the core scoring engine."""
+"""Tests for the insight-driven scoring engine."""
 
 import pytest
-from sufficiency_scorer.models import DetectorResult, Dimension
+from sufficiency_scorer.models import DetectorResult, Dimension, InsightQuality
 from sufficiency_scorer.scorer import SufficiencyScorer
 
 
-@pytest.fixture
-def scorer():
-    return SufficiencyScorer()
-
-
-def make_result(dim: Dimension, activated: bool = False, confidence: float = 0.0) -> DetectorResult:
-    return DetectorResult(dimension=dim, activated=activated, confidence=confidence)
+def make_result(dim: Dimension, activated: bool = False, confidence: float = 0.0, detail: dict | None = None) -> DetectorResult:
+    return DetectorResult(dimension=dim, activated=activated, confidence=confidence, detail=detail or {})
 
 
 def all_inactive() -> list[DetectorResult]:
     return [make_result(dim) for dim in Dimension]
 
 
-class TestEmotionGate:
-    """Emotion is the gatekeeper — without it, ring can't pass 45%."""
+def work_pressure_results() -> list[DetectorResult]:
+    """Simulates rich emotional input."""
+    base = all_inactive()
+    overrides = {
+        Dimension.EMOTION: make_result(Dimension.EMOTION, True, 0.7, detail={
+            "top_emotions": [("frustration", 0.55), ("anger", 0.52), ("sadness", 0.48)],
+        }),
+        Dimension.EQ: make_result(Dimension.EQ, True, 0.6, detail={
+            "features": {"self_ref": 0.15, "question_ratio": 0.33, "words": 27},
+            "valence": -0.35, "distress": 0.43,
+        }),
+        Dimension.CONFLICT: make_result(Dimension.CONFLICT, True, 0.6, detail={
+            "styles": {"avoid": 0.7, "compromise": 0.4},
+        }),
+        Dimension.FRAGILITY: make_result(Dimension.FRAGILITY, True, 0.5, detail={
+            "pattern": "open", "pattern_scores": {"open": 0.6},
+        }),
+        Dimension.SOULGRAPH: make_result(Dimension.SOULGRAPH, True, 0.5, detail={
+            "items": 2, "avg_specificity": 0.5,
+        }),
+    }
+    return [overrides.get(r.dimension, r) for r in base]
 
-    def test_no_emotion_caps_at_45(self, scorer):
-        """Even if other dimensions fire, no emotion = capped."""
-        results = all_inactive()
-        # Activate 5 non-emotion dimensions
-        for dim in [Dimension.CONFLICT, Dimension.HUMOR, Dimension.MBTI, Dimension.EQ, Dimension.FRAGILITY]:
-            results = [r if r.dimension != dim else make_result(dim, True, 0.8) for r in results]
-        report = scorer.score(results)
-        assert report.score <= 0.45
 
-    def test_emotion_alone_gives_progress(self, scorer):
+class TestReadyDecision:
+    @pytest.fixture
+    def scorer(self):
+        return SufficiencyScorer()
+
+    def test_ready_with_rich_input(self, scorer):
+        report = scorer.score(work_pressure_results())
+        assert report.ready is True
+        assert len(report.insights) >= 3
+
+    def test_not_ready_with_nothing(self, scorer):
+        report = scorer.score(all_inactive())
+        assert report.ready is False
+        assert len(report.insights) == 0
+
+    def test_not_ready_with_single_weak_signal(self, scorer):
         results = all_inactive()
         results = [
-            r if r.dimension != Dimension.EMOTION else make_result(Dimension.EMOTION, True, 0.6)
+            r if r.dimension != Dimension.EQ
+            else make_result(Dimension.EQ, True, 0.2, detail={
+                "features": {"self_ref": 0.05, "question_ratio": 0.0, "words": 10},
+                "valence": -0.1, "distress": 0.1,
+            })
             for r in results
         ]
         report = scorer.score(results)
-        assert 0.1 < report.score < 0.5
-
-    def test_emotion_unlocks_higher_scores(self, scorer):
-        results = all_inactive()
-        for dim in [Dimension.EMOTION, Dimension.CONFLICT, Dimension.FRAGILITY, Dimension.EQ]:
-            results = [r if r.dimension != dim else make_result(dim, True, 0.7) for r in results]
-        report = scorer.score(results)
-        assert report.score > 0.45
-
-
-class TestActivationThreshold:
-    """7 of 11 activated = 100%."""
-
-    def test_seven_activated_is_full(self, scorer):
-        dims = [Dimension.EMOTION, Dimension.CONFLICT, Dimension.HUMOR, Dimension.MBTI,
-                Dimension.EQ, Dimension.FRAGILITY, Dimension.COMMUNICATION_DNA]
-        results = all_inactive()
-        for dim in dims:
-            results = [r if r.dimension != dim else make_result(dim, True, 0.7) for r in results]
-        report = scorer.score(results)
-        assert report.score == 1.0
-        assert report.ready is True
-
-    def test_six_activated_not_full(self, scorer):
-        dims = [Dimension.EMOTION, Dimension.CONFLICT, Dimension.HUMOR, Dimension.MBTI,
-                Dimension.EQ, Dimension.FRAGILITY]
-        results = all_inactive()
-        for dim in dims:
-            results = [r if r.dimension != dim else make_result(dim, True, 0.7) for r in results]
-        report = scorer.score(results)
-        assert report.score < 1.0
         assert report.ready is False
 
-    def test_seven_without_emotion_still_capped(self, scorer):
-        """7 activated but no emotion → still capped."""
-        dims = [Dimension.CONFLICT, Dimension.HUMOR, Dimension.MBTI, Dimension.EQ,
-                Dimension.FRAGILITY, Dimension.COMMUNICATION_DNA, Dimension.SOULGRAPH]
-        results = all_inactive()
-        for dim in dims:
-            results = [r if r.dimension != dim else make_result(dim, True, 0.7) for r in results]
-        report = scorer.score(results)
-        assert report.score <= 0.45
 
+class TestRingProgress:
+    @pytest.fixture
+    def scorer(self):
+        return SufficiencyScorer()
 
-class TestProgressGradient:
-    """Score increases smoothly as more dimensions activate."""
-
-    def test_zero_input_zero_score(self, scorer):
+    def test_zero_insights_zero_progress(self, scorer):
         report = scorer.score(all_inactive())
-        assert report.score == 0.0
-        assert report.activated_count == 0
+        assert report.ring_progress == 0.0
 
-    def test_monotonic_increase(self, scorer):
-        dims_ordered = [
-            Dimension.EMOTION, Dimension.EQ, Dimension.CONFLICT,
-            Dimension.FRAGILITY, Dimension.HUMOR, Dimension.MBTI,
-            Dimension.COMMUNICATION_DNA,
-        ]
-        results = all_inactive()
-        prev_score = 0.0
-        for dim in dims_ordered:
-            results = [r if r.dimension != dim else make_result(dim, True, 0.7) for r in results]
-            report = scorer.score(results)
-            assert report.score >= prev_score, f"Score decreased when adding {dim}"
-            prev_score = report.score
+    def test_ready_means_full_progress(self, scorer):
+        report = scorer.score(work_pressure_results())
+        if report.ready:
+            assert report.ring_progress == 1.0
 
-
-class TestRingSegments:
-    def test_segments_count(self, scorer):
-        report = scorer.score(all_inactive())
-        assert len(report.segments) == 11
-
-    def test_activated_segment_is_filled(self, scorer):
+    def test_partial_progress(self, scorer):
         results = all_inactive()
         results = [
-            r if r.dimension != Dimension.EMOTION else make_result(Dimension.EMOTION, True, 0.8)
+            r if r.dimension != Dimension.EMOTION
+            else make_result(Dimension.EMOTION, True, 0.5, detail={
+                "top_emotions": [("sadness", 0.5)],
+            })
+            for r in results
+        ]
+        results = [
+            r if r.dimension != Dimension.EQ
+            else make_result(Dimension.EQ, True, 0.5, detail={
+                "features": {"self_ref": 0.1, "question_ratio": 0.0, "words": 20},
+                "valence": -0.2, "distress": 0.3,
+            })
             for r in results
         ]
         report = scorer.score(results)
-        emotion_seg = [s for s in report.segments if s.dimension == Dimension.EMOTION][0]
-        assert emotion_seg.filled is True
-        assert emotion_seg.intensity == 0.8
+        assert 0.0 < report.ring_progress < 1.0
 
 
 class TestPromptHint:
-    def test_no_activation_tells_more(self, scorer):
+    @pytest.fixture
+    def scorer(self):
+        return SufficiencyScorer()
+
+    def test_no_insights_tells_more(self, scorer):
         report = scorer.score(all_inactive())
         assert report.prompt_hint == "tell_me_more"
 
-    def test_ready_when_full(self, scorer):
-        dims = [Dimension.EMOTION, Dimension.CONFLICT, Dimension.HUMOR, Dimension.MBTI,
-                Dimension.EQ, Dimension.FRAGILITY, Dimension.COMMUNICATION_DNA]
-        results = all_inactive()
-        for dim in dims:
-            results = [r if r.dimension != dim else make_result(dim, True, 0.7) for r in results]
-        report = scorer.score(results)
+    def test_ready_says_ready(self, scorer):
+        report = scorer.score(work_pressure_results())
         assert report.prompt_hint == "ready"
 
-    def test_no_emotion_asks_feelings(self, scorer):
+    def test_some_insights_keeps_going(self, scorer):
         results = all_inactive()
         results = [
-            r if r.dimension != Dimension.EQ else make_result(Dimension.EQ, True, 0.5)
+            r if r.dimension != Dimension.EMOTION
+            else make_result(Dimension.EMOTION, True, 0.5, detail={
+                "top_emotions": [("sadness", 0.5)],
+            })
             for r in results
         ]
         report = scorer.score(results)
-        assert report.prompt_hint == "how_do_you_feel"
+        if not report.ready:
+            assert report.prompt_hint in ("keep_going", "almost_there", "tell_me_more")
+
+
+class TestInsightsPassedThrough:
+    @pytest.fixture
+    def scorer(self):
+        return SufficiencyScorer()
+
+    def test_insights_in_report(self, scorer):
+        report = scorer.score(work_pressure_results())
+        assert len(report.insights) > 0
+
+    def test_insights_sorted_by_quality(self, scorer):
+        report = scorer.score(work_pressure_results())
+        if len(report.insights) >= 2:
+            for i in range(len(report.insights) - 1):
+                assert report.insights[i].quality >= report.insights[i + 1].quality
