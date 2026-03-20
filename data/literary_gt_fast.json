@@ -1,0 +1,502 @@
+[
+  {
+    "id": 1,
+    "character": "Jay Gatsby",
+    "avg_score": 0
+  },
+  {
+    "id": 24,
+    "character": "Dorian Gray",
+    "avg_score": 0
+  },
+  {
+    "id": 51,
+    "character": "Liesel Meminger",
+    "avg_score": 0
+  },
+  {
+    "id": 57,
+    "character": "Precious Jones",
+    "avg_score": 0
+  },
+  {
+    "id": 71,
+    "character": "Briony Tallis",
+    "avg_score": 0
+  },
+  {
+    "id": 77,
+    "character": "Mrs. Ramsay",
+    "avg_score": 0
+  },
+  {
+    "id": 95,
+    "character": "Piranesi",
+    "avg_score": 0
+  },
+  {
+    "id": 97,
+    "character": "Liesel (late)",
+    "avg_score": 0
+  },
+  {
+    "id": 70,
+    "character": "Piscine Molitor Patel",
+    "avg_score": 15.0
+  },
+  {
+    "id": 18,
+    "character": "Bigger Thomas",
+    "avg_score": 50.0
+  },
+  {
+    "id": 27,
+    "character": "Yossarian",
+    "avg_score": 65.66666666666667
+  },
+  {
+    "id": 39,
+    "character": "Willy Loman",
+    "avg_score": 67.5
+  },
+  {
+    "id": 61,
+    "character": "Madame Bovary",
+    "avg_score": 67.5
+  },
+  {
+    "id": 90,
+    "character": "Cathy Ames",
+    "avg_score": 67.5
+  },
+  {
+    "id": 99,
+    "character": "Marjane Satrapi",
+    "avg_score": 69.25
+  },
+  {
+    "id": 100,
+    "character": "Chiron",
+    "avg_score": 69.75
+  },
+  {
+    "id": 4,
+    "character": "Raskolnikov",
+    "avg_score": 70.0
+  },
+  {
+    "id": 21,
+    "character": "Sethe",
+    "avg_score": 70.0
+  },
+  {
+    "id": 48,
+    "character": "Lennie Small",
+    "avg_score": 70.0
+  },
+  {
+    "id": 49,
+    "character": "Mariam",
+    "avg_score": 71.75
+  },
+  {
+    "id": 69,
+    "character": "Sansa Stark",
+    "avg_score": 71.75
+  },
+  {
+    "id": 78,
+    "character": "Shug Avery",
+    "avg_score": 71.75
+  },
+  {
+    "id": 43,
+    "character": "Ivan Ilyich",
+    "avg_score": 72.5
+  },
+  {
+    "id": 36,
+    "character": "Beloved",
+    "avg_score": 73.5
+  },
+  {
+    "id": 2,
+    "character": "Holden Caulfield",
+    "avg_score": 82.5
+  },
+  {
+    "id": 3,
+    "character": "Celie",
+    "avg_score": 84.25
+  },
+  {
+    "id": 41,
+    "character": "Heathcliff",
+    "avg_score": 84.25
+  },
+  {
+    "id": 10,
+    "character": "Atticus Finch",
+    "avg_score": 84.75
+  },
+  {
+    "id": 5,
+    "character": "Elizabeth Bennet",
+    "avg_score": 85.0
+  },
+  {
+    "id": 6,
+    "character": "Meursault",
+    "avg_score": 85.0
+  },
+  {
+    "id": 19,
+    "character": "Santiago",
+    "avg_score": 85.0
+  },
+  {
+    "id": 22,
+    "character": "Huck Finn",
+    "avg_score": 85.0
+  },
+  {
+    "id": 46,
+    "character": "McMurphy",
+    "avg_score": 85.0
+  },
+  {
+    "id": 66,
+    "character": "Offred (late)",
+    "avg_score": 85.0
+  },
+  {
+    "id": 75,
+    "character": "Mary Katherine Blackwood",
+    "avg_score": 85.0
+  },
+  {
+    "id": 76,
+    "character": "Ponyboy Curtis",
+    "avg_score": 85.0
+  },
+  {
+    "id": 85,
+    "character": "Don Quixote",
+    "avg_score": 85.0
+  },
+  {
+    "id": 89,
+    "character": "Ruth (Never Let Me Go)",
+    "avg_score": 85.0
+  },
+  {
+    "id": 9,
+    "character": "Offred",
+    "avg_score": 85.5
+  },
+  {
+    "id": 8,
+    "character": "Humbert Humbert",
+    "avg_score": 86.0
+  },
+  {
+    "id": 68,
+    "character": "Gogol Ganguli",
+    "avg_score": 86.0
+  },
+  {
+    "id": 15,
+    "character": "Jane Eyre",
+    "avg_score": 86.75
+  },
+  {
+    "id": 38,
+    "character": "Rodion's Mother",
+    "avg_score": 86.75
+  },
+  {
+    "id": 50,
+    "character": "Ove",
+    "avg_score": 86.75
+  },
+  {
+    "id": 53,
+    "character": "Pi Patel",
+    "avg_score": 86.75
+  },
+  {
+    "id": 72,
+    "character": "Jonas",
+    "avg_score": 86.75
+  },
+  {
+    "id": 79,
+    "character": "Thomas (Maze Runner)",
+    "avg_score": 86.75
+  },
+  {
+    "id": 86,
+    "character": "Kathy H.",
+    "avg_score": 86.75
+  },
+  {
+    "id": 96,
+    "character": "Maxim de Winter",
+    "avg_score": 86.75
+  },
+  {
+    "id": 55,
+    "character": "Kvothe",
+    "avg_score": 87.25
+  },
+  {
+    "id": 31,
+    "character": "Alex DeLarge",
+    "avg_score": 87.33333333333333
+  },
+  {
+    "id": 11,
+    "character": "Anna Karenina",
+    "avg_score": 87.5
+  },
+  {
+    "id": 12,
+    "character": "Winston Smith",
+    "avg_score": 87.5
+  },
+  {
+    "id": 33,
+    "character": "Ishmael",
+    "avg_score": 87.5
+  },
+  {
+    "id": 37,
+    "character": "Pecola Breedlove",
+    "avg_score": 87.5
+  },
+  {
+    "id": 47,
+    "character": "Amy Dunne",
+    "avg_score": 87.5
+  },
+  {
+    "id": 52,
+    "character": "Ifemelu",
+    "avg_score": 87.5
+  },
+  {
+    "id": 62,
+    "character": "Chief Bromden",
+    "avg_score": 87.5
+  },
+  {
+    "id": 88,
+    "character": "Ignatius J. Reilly",
+    "avg_score": 87.5
+  },
+  {
+    "id": 91,
+    "character": "Larry Darrell",
+    "avg_score": 87.5
+  },
+  {
+    "id": 92,
+    "character": "Esmeralda",
+    "avg_score": 87.5
+  },
+  {
+    "id": 13,
+    "character": "Katniss Everdeen",
+    "avg_score": 88.5
+  },
+  {
+    "id": 14,
+    "character": "Hamlet",
+    "avg_score": 88.5
+  },
+  {
+    "id": 25,
+    "character": "Nora Helmer",
+    "avg_score": 88.5
+  },
+  {
+    "id": 29,
+    "character": "Jean Valjean",
+    "avg_score": 88.5
+  },
+  {
+    "id": 35,
+    "character": "Gregor Samsa",
+    "avg_score": 88.5
+  },
+  {
+    "id": 42,
+    "character": "Janie Crawford",
+    "avg_score": 88.5
+  },
+  {
+    "id": 60,
+    "character": "Charlie",
+    "avg_score": 88.5
+  },
+  {
+    "id": 63,
+    "character": "Mathilde Loisel",
+    "avg_score": 88.5
+  },
+  {
+    "id": 80,
+    "character": "Hazel Grace Lancaster",
+    "avg_score": 88.5
+  },
+  {
+    "id": 98,
+    "character": "Coraline",
+    "avg_score": 88.5
+  },
+  {
+    "id": 40,
+    "character": "Daisy Buchanan",
+    "avg_score": 89.0
+  },
+  {
+    "id": 17,
+    "character": "Clarissa Dalloway",
+    "avg_score": 89.25
+  },
+  {
+    "id": 23,
+    "character": "Lisbeth Salander",
+    "avg_score": 89.25
+  },
+  {
+    "id": 28,
+    "character": "Tess Durbeyfield",
+    "avg_score": 89.25
+  },
+  {
+    "id": 30,
+    "character": "Edna Pontellier",
+    "avg_score": 89.25
+  },
+  {
+    "id": 34,
+    "character": "Lily Bart",
+    "avg_score": 89.25
+  },
+  {
+    "id": 44,
+    "character": "Invisible Man",
+    "avg_score": 89.25
+  },
+  {
+    "id": 45,
+    "character": "Francie Nolan",
+    "avg_score": 89.25
+  },
+  {
+    "id": 64,
+    "character": "Aibileen Clark",
+    "avg_score": 89.25
+  },
+  {
+    "id": 94,
+    "character": "Morrie Schwartz",
+    "avg_score": 89.75
+  },
+  {
+    "id": 81,
+    "character": "Tris Prior",
+    "avg_score": 90.0
+  },
+  {
+    "id": 83,
+    "character": "Ma (Room)",
+    "avg_score": 90.0
+  },
+  {
+    "id": 65,
+    "character": "Sal Paradise",
+    "avg_score": 90.25
+  },
+  {
+    "id": 59,
+    "character": "Bone",
+    "avg_score": 90.5
+  },
+  {
+    "id": 58,
+    "character": "Oskar Schell",
+    "avg_score": 90.75
+  },
+  {
+    "id": 7,
+    "character": "Scout Finch",
+    "avg_score": 91.0
+  },
+  {
+    "id": 16,
+    "character": "Pip",
+    "avg_score": 91.0
+  },
+  {
+    "id": 74,
+    "character": "Sula",
+    "avg_score": 91.0
+  },
+  {
+    "id": 93,
+    "character": "Ned Vizzini (fictionalized)",
+    "avg_score": 91.0
+  },
+  {
+    "id": 54,
+    "character": "Montag",
+    "avg_score": 91.5
+  },
+  {
+    "id": 56,
+    "character": "Eleanor Oliphant",
+    "avg_score": 92.5
+  },
+  {
+    "id": 26,
+    "character": "Amir",
+    "avg_score": 92.75
+  },
+  {
+    "id": 32,
+    "character": "Jing-mei Woo",
+    "avg_score": 92.75
+  },
+  {
+    "id": 84,
+    "character": "Newland Archer",
+    "avg_score": 92.75
+  },
+  {
+    "id": 87,
+    "character": "Marcus Finch",
+    "avg_score": 92.75
+  },
+  {
+    "id": 20,
+    "character": "Esther Greenwood",
+    "avg_score": 93.5
+  },
+  {
+    "id": 82,
+    "character": "Seymour Glass",
+    "avg_score": 93.5
+  },
+  {
+    "id": 67,
+    "character": "Mr. Stevens",
+    "avg_score": 94.25
+  },
+  {
+    "id": 73,
+    "character": "Severus Snape",
+    "avg_score": 95.0
+  }
+]
