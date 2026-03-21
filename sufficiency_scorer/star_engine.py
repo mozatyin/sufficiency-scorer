@@ -210,6 +210,15 @@ class StarEngine:
         # Safety check
         if any(banned in label for banned in BANNED_TERMS):
             return None
+        # Dedup: don't create a star with a label we already have
+        existing_labels = {s.label for s in self.stars}
+        if label in existing_labels:
+            # Try template fallback instead
+            template_label = get_positive_label(result.dimension, signal_key)
+            if template_label and template_label not in existing_labels:
+                label = template_label
+            else:
+                return None
         star = Star(
             id=f"star_{result.dimension.value}_{len(self.stars)}",
             dimension=result.dimension,
