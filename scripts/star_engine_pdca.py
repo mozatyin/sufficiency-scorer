@@ -150,7 +150,7 @@ async def main():
     print("=" * 80)
 
     results = []
-    for i in range(1, 4):  # 3 iterations (LLM labels now)
+    for i in range(1, 2):  # 1 iteration (measuring V2 improvement)
         print(f"\n--- ITERATION {i} ---")
         t0 = time.monotonic()
         r = await run_one_iteration(personas, i)

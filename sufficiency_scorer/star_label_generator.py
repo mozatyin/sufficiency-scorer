@@ -1,38 +1,42 @@
-"""LLM-powered star label generation — personalized, not template.
+"""LLM-powered star label generation — V2 with precomputed signals.
 
-Takes a detector signal + user's actual words → generates a 3-6 character
-Chinese label that's specific to THIS user.
-
-Philosophy: 王阳明"致良知" — every person has inner light. Labels point to
-the light within, even when it's covered by clouds.
+Takes detector signal + precomputed context + user text → 3-6 char Chinese label.
+Philosophy: 王阳明"致良知" — every person has inner light.
 """
 
-import json
 import os
 
-SYSTEM = """你是 SoulMap 的星标签生成器。
+from sufficiency_scorer.precompute import precompute, format_precomputed
 
-用户说了一段话，AI 检测器发现了某个维度的信号。你要生成一个 3-6 个字的星标签。
+# Compact system prompt — every token earns its place
+SYSTEM = """你是 SoulMap 星标签生成器。从用户的话和分析信号中，生成一个 3-6 字的中文星标签。
 
-规则：
-1. 标签必须正面 — 指向用户内心的光明面（王阳明：我心光明）
-2. 标签必须具体 — 基于用户说的具体内容，不能是通用语
-3. 3-6 个中文字，可以加"?"表示暗示
-4. 禁止临床术语、负面人格判断
-5. 每个人的标签都应该不同
+核心原则（王阳明：我心光明）：
+- 指向内心光明面，即使被乌云遮蔽
+- 必须触及情感核心，不只是描述场景
+- 必须基于用户说的具体内容
 
-坏: "内心柔软"（太通用，谁都行）
-好: "加班背后的底线"（具体引用了用户的情境）
-好: "笑着扛一切"（基于用户自嘲的方式）"""
+场景 vs 情感核心的区别：
+✗ "淋浴里的真实" — 只描述了场景（在哪里哭）
+✓ "不屈的温柔" — 触及了情感核心（每天被霸凌还能保持柔软）
+
+✗ "肾上腺素的选择" — 浪漫化了行为表面
+✓ "挣扎中的诚实" — 看到了承认问题的勇气
+
+✗ "向内看的人" — 通用，谁都行
+✓ "加班背后的底线" — 具体到这个人的处境
+
+标签要让用户想："它怎么知道的？"而不是"嗯，还行吧"。"""
 
 USER = """信号: {dimension} — {signal_key}
-用户原话: "{text}"
+上下文: {context}
+用户: "{text}"
 
-生成1个标签（3-6字）。只返回标签文字，不要引号不要解释。"""
+一个标签（3-6字），只返回文字："""
 
 
 class StarLabelGenerator:
-    """Generates personalized star labels via LLM. One call per star."""
+    """Generates personalized star labels via LLM with precomputed context."""
 
     def __init__(self, api_key: str | None = None):
         self._api_key = api_key or os.environ.get("ANTHROPIC_API_KEY", "")
@@ -54,21 +58,25 @@ class StarLabelGenerator:
         return self._client
 
     def generate_label(self, dimension: str, signal_key: str, user_text: str) -> str | None:
-        """Generate one personalized star label. Returns 3-6 char Chinese label."""
+        """Generate one personalized star label with precomputed context."""
         try:
+            # Precompute context signals (0ms)
+            pc = precompute(user_text)
+            context = format_precomputed(pc)
+
             client = self._get_client()
             r = client.messages.create(
                 model=self._model,
-                max_tokens=30,
+                max_tokens=20,
                 system=SYSTEM,
                 messages=[{"role": "user", "content": USER.format(
                     dimension=dimension,
                     signal_key=signal_key,
+                    context=context,
                     text=user_text[:150],
                 )}],
             )
-            label = r.content[0].text.strip().strip('"').strip("'").strip("「」")
-            # Validate: 2-10 Chinese characters
+            label = r.content[0].text.strip().strip('"\'「」【】')
             if 2 <= len(label) <= 10:
                 return label
             return None
