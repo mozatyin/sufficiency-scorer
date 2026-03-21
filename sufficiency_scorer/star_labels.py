@@ -69,10 +69,13 @@ POSITIVE_LABELS: dict[Dimension, dict[str, str]] = {
         "touch": "需要温暖的连接",
     },
     Dimension.EQ: {
-        "high_self_ref": "深度自我觉察",
+        "high_self_ref": "向内看的人",
         "high_question_ratio": "主动寻找出路",
         "high_distress": "正在经历重要的转变",
         "negative_valence": "在低谷中前行",
+        "high_self_ref+question": "一边感受一边思考",
+        "high_self_ref+distress": "清醒地承受着",
+        "low_self_ref": "关注外面多过自己",
     },
     Dimension.CONNECTION_RESPONSE: {
         "turning_toward": "善于接住情感",
@@ -214,14 +217,26 @@ def get_signal_key(dim: Dimension, detail: dict) -> str | None:
         return max(styles, key=styles.get, default=None) if styles else None
     elif dim == Dimension.EQ:
         features = detail.get("features", {})
-        if features.get("question_ratio", 0) >= 0.15:
+        sr = features.get("self_ref", 0)
+        qr = features.get("question_ratio", 0)
+        distress = detail.get("distress", 0)
+        valence = detail.get("valence", 0)
+        # Compound signals first (more specific)
+        if sr >= 0.08 and qr >= 0.15:
+            return "high_self_ref+question"
+        if sr >= 0.08 and distress >= 0.3:
+            return "high_self_ref+distress"
+        # Single signals
+        if qr >= 0.15:
             return "high_question_ratio"
-        if features.get("self_ref", 0) >= 0.08:
-            return "high_self_ref"
-        if detail.get("distress", 0) >= 0.3:
+        if distress >= 0.3:
             return "high_distress"
-        if detail.get("valence", 0) < -0.2:
+        if sr >= 0.08:
+            return "high_self_ref"
+        if valence < -0.2:
             return "negative_valence"
+        if sr < 0.03 and features.get("words", 0) >= 20:
+            return "low_self_ref"
     elif dim == Dimension.SOULGRAPH:
         items = detail.get("items", 0)
         spec = detail.get("avg_specificity", 0)

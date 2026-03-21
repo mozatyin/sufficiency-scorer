@@ -33,7 +33,7 @@ ACTIVATION_THRESHOLD = 0.20  # minimum confidence to count as activated
 BRIGHTNESS_CHANGE_THRESHOLD = 0.15  # min delta to trigger brightness update
 FOG_ETA_MS = 3000  # fog → star delay
 MAX_NEW_STARS_PER_TURN = 1
-MIN_STARS_BY_TURN = {2: 2, 4: 3}  # turn → minimum star count
+MIN_STARS_BY_TURN = {2: 2, 3: 2, 4: 3}  # turn → minimum star count
 
 
 # === Data Models ===
@@ -118,8 +118,12 @@ class StarEngine:
                 if delta >= BRIGHTNESS_CHANGE_THRESHOLD:
                     brightness_updates.append(r)
 
-        # Sort candidates by confidence (strongest signal first)
-        new_dim_candidates.sort(key=lambda r: r.confidence, reverse=True)
+        # Sort candidates: prefer dimensions we don't have yet, then by confidence
+        existing_dims = {s.dimension for s in self.stars}
+        new_dim_candidates.sort(key=lambda r: (
+            r.dimension not in existing_dims,  # True sorts after False, so negate
+            r.confidence,
+        ), reverse=True)
 
         # Create at most 1 new star
         new_star_created = False
@@ -153,24 +157,25 @@ class StarEngine:
         for r in activated:
             self._activated_dims[r.dimension] = r.confidence
 
-        # Minimum guarantee fallback
-        if not new_star_created:
-            min_required = MIN_STARS_BY_TURN.get(turn_count, 0)
-            if len(self.stars) < min_required:
-                fallback = self._fallback_star(results, turn_count, user_text)
-                if fallback:
-                    pos = self._random_position()
-                    output.fog_events.append(FogEvent(
-                        position=pos,
-                        intensity=0.5,
-                        dimension=fallback.dimension,
-                    ))
-                    output.new_stars.append(StarCreatedEvent(star=fallback, fog_position=pos))
+        # Minimum guarantee fallback — keep adding until we meet the minimum
+        min_required = MIN_STARS_BY_TURN.get(turn_count, 0)
+        while len(self.stars) < min_required:
+            fallback = self._fallback_star(results, turn_count, user_text)
+            if fallback:
+                pos = self._random_position()
+                output.fog_events.append(FogEvent(
+                    position=pos,
+                    intensity=0.5,
+                    dimension=fallback.dimension,
+                ))
+                output.new_stars.append(StarCreatedEvent(star=fallback, fog_position=pos))
+            else:
+                break  # no more fallback candidates
 
         # Check dark star opportunity (at most 1 per session, after turn 3)
         if turn_count >= 3 and not any(s.is_dark for s in self.stars):
             dark = self._try_dark_star(results, turn_count)
-            if dark and len(output.new_stars) == 0:
+            if dark:
                 pos = self._random_position()
                 output.fog_events.append(FogEvent(
                     position=pos,
@@ -210,10 +215,10 @@ class StarEngine:
     ) -> Star | None:
         """Fallback: create star from most obvious unlabeled dimension."""
         existing_dims = {s.dimension for s in self.stars}
-        # Find activated but un-starred dimensions
+        # Find activated but un-starred dimensions (very low threshold for fallback)
         candidates = [
             r for r in results
-            if r.activated and r.dimension not in existing_dims and r.confidence >= 0.1
+            if r.activated and r.dimension not in existing_dims and r.confidence >= 0.05
         ]
         candidates.sort(key=lambda r: r.confidence, reverse=True)
         for c in candidates:
@@ -226,6 +231,29 @@ class StarEngine:
             for r in results:
                 if r.dimension == Dimension.EQ and r.activated:
                     return self._create_star(r, turn)
+
+        # Last resort: create a star from topic/text heuristic
+        # Pick an un-starred dimension and give it a generic but relevant label
+        unstarred = [d for d in Dimension if d not in existing_dims
+                     and d not in (Dimension.CHARACTER, Dimension.COMMUNICATION_DNA, Dimension.CONNECTION_RESPONSE)]
+        if unstarred and user_text:
+            from sufficiency_scorer.star_labels import POSITIVE_LABELS
+            for dim in unstarred:
+                labels = POSITIVE_LABELS.get(dim, {})
+                if labels:
+                    # Pick the first label that fits
+                    first_key = next(iter(labels))
+                    star = Star(
+                        id=f"star_{dim.value}_{len(self.stars)}",
+                        dimension=dim,
+                        signal_key=first_key,
+                        label=labels[first_key],
+                        brightness=0.4,
+                        created_at_turn=turn,
+                    )
+                    self.stars.append(star)
+                    self._activated_dims[dim] = 0.3
+                    return star
         return None
 
     def _try_dark_star(self, results: list[DetectorResult], turn: int) -> Star | None:

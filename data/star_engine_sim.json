@@ -1,0 +1,2204 @@
+[
+  {
+    "id": 1,
+    "character": "Jay Gatsby",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "向内看的人",
+      "外表平静内心波涛",
+      "对不公平很敏感"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 2,
+    "character": "Holden Caulfield",
+    "stars_per_turn": [
+      0,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "内心柔软",
+      "敢于面对真实",
+      "一边感受一边思考"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 3,
+    "character": "Celie",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "向内看的人",
+      "承受过重量",
+      "先思考再行动"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 4,
+    "character": "Raskolnikov",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "自嘲是你的超能力",
+      "外表平静内心波涛",
+      "一边感受一边思考"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 6,
+    "character": "Meursault",
+    "stars_per_turn": [
+      1,
+      1,
+      2,
+      3
+    ],
+    "labels": [
+      "爱得很深",
+      "敢于面对真实",
+      "一边感受一边思考"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 7,
+    "character": "Scout Finch",
+    "stars_per_turn": [
+      1,
+      1,
+      2,
+      3
+    ],
+    "labels": [
+      "允许自己不确定",
+      "向内看的人",
+      "先思考再行动"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 8,
+    "character": "Humbert Humbert",
+    "stars_per_turn": [
+      1,
+      2,
+      3,
+      3
+    ],
+    "labels": [
+      "向内看的人",
+      "承受过重量",
+      "直面问题的勇气"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 9,
+    "character": "Offred",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "敢于面对真实",
+      "承受过重量",
+      "一边感受一边思考"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 10,
+    "character": "Atticus Finch",
+    "stars_per_turn": [
+      1,
+      1,
+      2,
+      3
+    ],
+    "labels": [
+      "允许自己不确定",
+      "向内看的人",
+      "先思考再行动"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 11,
+    "character": "Anna Karenina",
+    "stars_per_turn": [
+      1,
+      2,
+      3,
+      3
+    ],
+    "labels": [
+      "向内看的人",
+      "对不公平很敏感",
+      "直面问题的勇气"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 12,
+    "character": "Winston Smith",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "敢于面对真实",
+      "承受过重量",
+      "一边感受一边思考"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 13,
+    "character": "Katniss Everdeen",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "向内看的人",
+      "承受过重量",
+      "先思考再行动"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 14,
+    "character": "Hamlet",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "内心有火焰",
+      "敢于面对真实",
+      "一边感受一边思考"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 15,
+    "character": "Jane Eyre",
+    "stars_per_turn": [
+      1,
+      2,
+      3,
+      3
+    ],
+    "labels": [
+      "向内看的人",
+      "承受过重量",
+      "直面问题的勇气"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 16,
+    "character": "Pip",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "清醒地承受着",
+      "承受过重量",
+      "先思考再行动"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 17,
+    "character": "Clarissa Dalloway",
+    "stars_per_turn": [
+      1,
+      1,
+      2,
+      3
+    ],
+    "labels": [
+      "对风险有预感力",
+      "外表平静内心波涛",
+      "一边感受一边思考"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 18,
+    "character": "Bigger Thomas",
+    "stars_per_turn": [
+      1,
+      1,
+      2,
+      3
+    ],
+    "labels": [
+      "对不公平很敏感",
+      "直面问题的勇气",
+      "一边感受一边思考"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 19,
+    "character": "Santiago",
+    "stars_per_turn": [
+      1,
+      2,
+      3,
+      3
+    ],
+    "labels": [
+      "敢于面对真实",
+      "承受过重量",
+      "直面问题的勇气"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 20,
+    "character": "Esther Greenwood",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "向内看的人",
+      "承受过重量",
+      "先思考再行动"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 21,
+    "character": "Sethe",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "敢于面对真实",
+      "承受过重量",
+      "一边感受一边思考"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 22,
+    "character": "Huck Finn",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "敢于面对真实",
+      "承受过重量",
+      "一边感受一边思考"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 23,
+    "character": "Lisbeth Salander",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "向内看的人",
+      "先思考再行动",
+      "对不公平很敏感"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 24,
+    "character": "Dorian Gray",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "向内看的人",
+      "承受过重量",
+      "先思考再行动"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 25,
+    "character": "Nora Helmer",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "先思考再行动",
+      "外表平静内心波涛",
+      "一边感受一边思考"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 26,
+    "character": "Amir",
+    "stars_per_turn": [
+      1,
+      1,
+      2,
+      3
+    ],
+    "labels": [
+      "承受过重量",
+      "向内看的人",
+      "先思考再行动"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 27,
+    "character": "Yossarian",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "先思考再行动",
+      "承受过重量",
+      "一边感受一边思考"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 28,
+    "character": "Tess Durbeyfield",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "一边感受一边思考",
+      "先思考再行动",
+      "敢于面对真实"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 29,
+    "character": "Jean Valjean",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "直面问题的勇气",
+      "内心有火焰",
+      "一边感受一边思考"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 30,
+    "character": "Edna Pontellier",
+    "stars_per_turn": [
+      1,
+      2,
+      3,
+      3
+    ],
+    "labels": [
+      "向内看的人",
+      "内心有光",
+      "直面问题的勇气"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 31,
+    "character": "Alex DeLarge",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "一边感受一边思考",
+      "敢于面对真实",
+      "对不公平很敏感"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 32,
+    "character": "Jing-mei Woo",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "向内看的人",
+      "内心柔软",
+      "先思考再行动"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 33,
+    "character": "Ishmael",
+    "stars_per_turn": [
+      1,
+      1,
+      2,
+      3
+    ],
+    "labels": [
+      "承受过重量",
+      "直面问题的勇气",
+      "一边感受一边思考"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 34,
+    "character": "Lily Bart",
+    "stars_per_turn": [
+      1,
+      2,
+      3,
+      3
+    ],
+    "labels": [
+      "外表平静内心波涛",
+      "承受过重量",
+      "直面问题的勇气"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 35,
+    "character": "Gregor Samsa",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "一边感受一边思考",
+      "内心有光",
+      "先思考再行动"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 36,
+    "character": "Beloved",
+    "stars_per_turn": [
+      1,
+      2,
+      3,
+      3
+    ],
+    "labels": [
+      "一边感受一边思考",
+      "承受过重量",
+      "敢于面对真实"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 37,
+    "character": "Pecola Breedlove",
+    "stars_per_turn": [
+      1,
+      2,
+      3,
+      3
+    ],
+    "labels": [
+      "向内看的人",
+      "内心有火焰",
+      "直面问题的勇气"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 38,
+    "character": "Rodion's Mother",
+    "stars_per_turn": [
+      1,
+      1,
+      2,
+      3
+    ],
+    "labels": [
+      "天生的连接者",
+      "向内看的人",
+      "先思考再行动"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 39,
+    "character": "Willy Loman",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "向内看的人",
+      "内心有火焰",
+      "先思考再行动"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 40,
+    "character": "Daisy Buchanan",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "在风暴中找到幽默",
+      "承受过重量",
+      "一边感受一边思考"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 41,
+    "character": "Heathcliff",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "向内看的人",
+      "先思考再行动",
+      "敢于面对真实"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 42,
+    "character": "Janie Crawford",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "向内看的人",
+      "敢于面对真实",
+      "对不公平很敏感"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 43,
+    "character": "Ivan Ilyich",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "承受过重量",
+      "敢于面对真实",
+      "一边感受一边思考"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 44,
+    "character": "Invisible Man",
+    "stars_per_turn": [
+      1,
+      1,
+      1,
+      3
+    ],
+    "labels": [
+      "在乎成为更好的人",
+      "一边感受一边思考",
+      "先思考再行动"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 45,
+    "character": "Francie Nolan",
+    "stars_per_turn": [
+      1,
+      1,
+      2,
+      3
+    ],
+    "labels": [
+      "内心有光",
+      "向内看的人",
+      "先思考再行动"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 46,
+    "character": "McMurphy",
+    "stars_per_turn": [
+      1,
+      2,
+      3,
+      3
+    ],
+    "labels": [
+      "外表平静内心波涛",
+      "承受过重量",
+      "直面问题的勇气"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 47,
+    "character": "Amy Dunne",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "内心柔软",
+      "外表平静内心波涛",
+      "一边感受一边思考"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 48,
+    "character": "Lennie Small",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "向内看的人",
+      "内心有火焰",
+      "先思考再行动"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 49,
+    "character": "Mariam",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "在风暴中找到幽默",
+      "内心有光",
+      "外表平静内心波涛"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 50,
+    "character": "Ove",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "内心柔软",
+      "敢于面对真实",
+      "一边感受一边思考"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 51,
+    "character": "Liesel Meminger",
+    "stars_per_turn": [
+      1,
+      1,
+      2,
+      3
+    ],
+    "labels": [
+      "允许自己不确定",
+      "向内看的人",
+      "先思考再行动"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 52,
+    "character": "Ifemelu",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "向内看的人",
+      "承受过重量",
+      "先思考再行动"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 53,
+    "character": "Pi Patel",
+    "stars_per_turn": [
+      1,
+      1,
+      1,
+      3
+    ],
+    "labels": [
+      "内心有光",
+      "一边感受一边思考",
+      "先思考再行动"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 54,
+    "character": "Montag",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "一边感受一边思考",
+      "内心有火焰",
+      "先思考再行动"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 55,
+    "character": "Kvothe",
+    "stars_per_turn": [
+      1,
+      1,
+      1,
+      3
+    ],
+    "labels": [
+      "内心有火焰",
+      "一边感受一边思考",
+      "先思考再行动"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 56,
+    "character": "Eleanor Oliphant",
+    "stars_per_turn": [
+      1,
+      2,
+      3,
+      3
+    ],
+    "labels": [
+      "向内看的人",
+      "用坚强保护柔软",
+      "直面问题的勇气"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 57,
+    "character": "Precious Jones",
+    "stars_per_turn": [
+      1,
+      2,
+      3,
+      3
+    ],
+    "labels": [
+      "向内看的人",
+      "敢于面对真实",
+      "先思考再行动"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 58,
+    "character": "Oskar Schell",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "敢于面对真实",
+      "承受过重量",
+      "一边感受一边思考"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 59,
+    "character": "Bone",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "在乎成为更好的人",
+      "用坚强保护柔软",
+      "一边感受一边思考"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 60,
+    "character": "Charlie",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "向内看的人",
+      "承受过重量",
+      "先思考再行动"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 61,
+    "character": "Madame Bovary",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "一边感受一边思考",
+      "承受过重量",
+      "先思考再行动"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 63,
+    "character": "Mathilde Loisel",
+    "stars_per_turn": [
+      1,
+      1,
+      2,
+      3
+    ],
+    "labels": [
+      "对自己要求很高",
+      "用坚强保护柔软",
+      "一边感受一边思考"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 64,
+    "character": "Aibileen Clark",
+    "stars_per_turn": [
+      1,
+      1,
+      2,
+      3
+    ],
+    "labels": [
+      "天生的连接者",
+      "敢于面对真实",
+      "一边感受一边思考"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 65,
+    "character": "Sal Paradise",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "向内看的人",
+      "承受过重量",
+      "先思考再行动"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 66,
+    "character": "Offred (late)",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "向内看的人",
+      "承受过重量",
+      "先思考再行动"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 67,
+    "character": "Mr. Stevens",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "向内看的人",
+      "敢于面对真实",
+      "内心柔软"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 68,
+    "character": "Gogol Ganguli",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "向内看的人",
+      "承受过重量",
+      "先思考再行动"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 69,
+    "character": "Sansa Stark",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "先思考再行动",
+      "内心有火焰",
+      "一边感受一边思考"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 70,
+    "character": "Piscine Molitor Patel",
+    "stars_per_turn": [
+      1,
+      1,
+      2,
+      3
+    ],
+    "labels": [
+      "允许自己不确定",
+      "向内看的人",
+      "先思考再行动"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 71,
+    "character": "Briony Tallis",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "向内看的人",
+      "内心有火焰",
+      "先思考再行动"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 72,
+    "character": "Jonas",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "敢于面对真实",
+      "承受过重量",
+      "一边感受一边思考"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 73,
+    "character": "Severus Snape",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "天生的连接者",
+      "敢于面对真实",
+      "一边感受一边思考"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 74,
+    "character": "Sula",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "向内看的人",
+      "承受过重量",
+      "敢于面对真实"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 75,
+    "character": "Mary Katherine Blackwood",
+    "stars_per_turn": [
+      1,
+      2,
+      3,
+      3
+    ],
+    "labels": [
+      "向内看的人",
+      "直觉很敏锐",
+      "敢于面对真实"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 76,
+    "character": "Ponyboy Curtis",
+    "stars_per_turn": [
+      1,
+      1,
+      2,
+      3
+    ],
+    "labels": [
+      "内心有光",
+      "直面问题的勇气",
+      "一边感受一边思考"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 77,
+    "character": "Mrs. Ramsay",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "用坚强保护柔软",
+      "承受过重量",
+      "一边感受一边思考"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 78,
+    "character": "Shug Avery",
+    "stars_per_turn": [
+      1,
+      2,
+      3,
+      3
+    ],
+    "labels": [
+      "向内看的人",
+      "敢于面对真实",
+      "直面问题的勇气"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 79,
+    "character": "Thomas (Maze Runner)",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "向内看的人",
+      "承受过重量",
+      "先思考再行动"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 80,
+    "character": "Hazel Grace Lancaster",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "向内看的人",
+      "承受过重量",
+      "用坚强保护柔软"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 81,
+    "character": "Tris Prior",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "向内看的人",
+      "承受过重量",
+      "先思考再行动"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 82,
+    "character": "Seymour Glass",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "敢于面对真实",
+      "对不公平很敏感",
+      "一边感受一边思考"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 83,
+    "character": "Ma (Room)",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "向内看的人",
+      "承受过重量",
+      "敢于面对真实"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 84,
+    "character": "Newland Archer",
+    "stars_per_turn": [
+      1,
+      1,
+      2,
+      3
+    ],
+    "labels": [
+      "允许自己不确定",
+      "向内看的人",
+      "先思考再行动"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 85,
+    "character": "Don Quixote",
+    "stars_per_turn": [
+      1,
+      1,
+      2,
+      3
+    ],
+    "labels": [
+      "内心有火焰",
+      "在风暴中找到幽默",
+      "一边感受一边思考"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 86,
+    "character": "Kathy H.",
+    "stars_per_turn": [
+      1,
+      2,
+      3,
+      3
+    ],
+    "labels": [
+      "向内看的人",
+      "直觉很敏锐",
+      "直面问题的勇气"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 87,
+    "character": "Marcus Finch",
+    "stars_per_turn": [
+      1,
+      2,
+      3,
+      3
+    ],
+    "labels": [
+      "向内看的人",
+      "内心柔软",
+      "直面问题的勇气"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 88,
+    "character": "Ignatius J. Reilly",
+    "stars_per_turn": [
+      1,
+      1,
+      1,
+      3
+    ],
+    "labels": [
+      "标准比别人高",
+      "一边感受一边思考",
+      "先思考再行动"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 89,
+    "character": "Ruth (Never Let Me Go)",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "向内看的人",
+      "敢于面对真实",
+      "对不公平很敏感"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 90,
+    "character": "Cathy Ames",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "先思考再行动",
+      "内心有光",
+      "一边感受一边思考"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 91,
+    "character": "Larry Darrell",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "向内看的人",
+      "敢于面对真实",
+      "内心柔软"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 92,
+    "character": "Esmeralda",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "敢于面对真实",
+      "内心有光",
+      "一边感受一边思考"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 93,
+    "character": "Ned Vizzini (fictionalized)",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "外表平静内心波涛",
+      "承受过重量",
+      "一边感受一边思考"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 94,
+    "character": "Morrie Schwartz",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "内心有光",
+      "敢于面对真实",
+      "一边感受一边思考"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 95,
+    "character": "Piranesi",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "向内看的人",
+      "承受过重量",
+      "先思考再行动"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 96,
+    "character": "Maxim de Winter",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "向内看的人",
+      "承受过重量",
+      "先思考再行动"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 97,
+    "character": "Liesel (late)",
+    "stars_per_turn": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "labels": [
+      "天生的连接者",
+      "直面问题的勇气",
+      "一边感受一边思考"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 98,
+    "character": "Coraline",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "向内看的人",
+      "承受过重量",
+      "先思考再行动"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 99,
+    "character": "Marjane Satrapi",
+    "stars_per_turn": [
+      1,
+      1,
+      2,
+      3
+    ],
+    "labels": [
+      "内心有光",
+      "敢于面对真实",
+      "一边感受一边思考"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 100,
+    "character": "Chiron",
+    "stars_per_turn": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "labels": [
+      "敢于面对真实",
+      "承受过重量",
+      "一边感受一边思考"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 0,
+    "fog_events": 3
+  },
+  {
+    "id": 5,
+    "character": "Elizabeth Bennet",
+    "stars_per_turn": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "labels": [
+      "在风暴中找到幽默",
+      "承受过重量",
+      "直面问题的勇气",
+      "准备好放下什么了?"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 1,
+    "fog_events": 4
+  },
+  {
+    "id": 62,
+    "character": "Chief Bromden",
+    "stars_per_turn": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "labels": [
+      "敢于面对真实",
+      "承受过重量",
+      "直面问题的勇气",
+      "内心渴望改变?"
+    ],
+    "label_quality": [
+      "generic",
+      "generic",
+      "generic"
+    ],
+    "dark_stars": 1,
+    "fog_events": 4
+  }
+]
