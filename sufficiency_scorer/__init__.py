@@ -18,7 +18,7 @@ from sufficiency_scorer.models import (
 from sufficiency_scorer.scorer import SufficiencyScorer
 from sufficiency_scorer.insight_extractor import InsightExtractor
 from sufficiency_scorer.insight_generator import InsightGenerator
-from sufficiency_scorer.star_engine import StarEngine, Star, FogEvent, StarCreatedEvent
+from sufficiency_scorer.star_engine import StarEngine, Star, FogEvent, FogAnimationParams, StarCreatedEvent
 from sufficiency_scorer.orchestrator import Orchestrator
 from sufficiency_scorer.precompute import precompute
 

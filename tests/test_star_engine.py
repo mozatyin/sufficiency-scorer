@@ -3,7 +3,7 @@
 import pytest
 from sufficiency_scorer.models import DetectorResult, Dimension
 from sufficiency_scorer.star_engine import (
-    StarEngine, Star, FogEvent, StarCreatedEvent, ACTIVATION_THRESHOLD,
+    StarEngine, Star, FogEvent, StarCreatedEvent, DETECTOR_THRESHOLDS, DEFAULT_THRESHOLD,
 )
 from sufficiency_scorer.star_labels import (
     get_positive_label, get_signal_key, get_dark_labels, BANNED_TERMS,
@@ -201,7 +201,9 @@ class TestFogEvents:
         output = engine.process_turn(results, turn_count=1)
         assert len(output.fog_events) == 1
         fog = output.fog_events[0]
-        assert fog.eta_ms == 3000
+        assert fog.event == "fog_appear"
+        assert fog.animation.duration_ms == 3000
+        assert fog.animation.color_hint == "warm"  # emotion = warm
         assert fog.dimension == Dimension.EMOTION
         assert 0.0 <= fog.position[0] <= 1.0
         assert 0.0 <= fog.position[1] <= 1.0

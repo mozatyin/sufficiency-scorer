@@ -29,11 +29,45 @@ from sufficiency_scorer.star_labels import (
 
 
 # === Configuration ===
-ACTIVATION_THRESHOLD = 0.20  # minimum confidence to count as activated
 BRIGHTNESS_CHANGE_THRESHOLD = 0.15  # min delta to trigger brightness update
 FOG_ETA_MS = 3000  # fog → star delay
 MAX_NEW_STARS_PER_TURN = 1
-MIN_STARS_BY_TURN = {2: 2, 3: 2, 4: 3}  # turn → minimum star count
+MIN_STARS_BY_TURN = {2: 2, 3: 2, 4: 3, 6: 4, 10: 5}  # turn → minimum star count
+
+# Per-detector activation thresholds (V8.x FR-06)
+# Lower = easier to activate. "crisis" never generates stars.
+DETECTOR_THRESHOLDS: dict[str, float | None] = {
+    "emotion": 0.4,
+    "communication_dna": 0.3,
+    "eq": 0.3,
+    "humor": 0.5,
+    "conflict": 0.6,
+    "mbti": 0.5,
+    "attachment": 0.6,
+    "love_language": 0.6,
+    "fragility": 0.7,
+    "values": 0.6,
+    "connection_response": 0.6,
+    "character": 0.6,
+    "soulgraph": 0.5,
+    "crisis": None,  # never generates stars
+}
+DEFAULT_THRESHOLD = 0.4
+
+
+def _color_for_dimension(dim: Dimension) -> str:
+    """Map dimension to fog color hint."""
+    warm = {Dimension.EMOTION, Dimension.LOVE_LANGUAGE, Dimension.FRAGILITY, Dimension.CONNECTION_RESPONSE}
+    cool = {Dimension.CONFLICT, Dimension.MBTI, Dimension.COMMUNICATION_DNA}
+    return "warm" if dim in warm else "cool" if dim in cool else "neutral"
+
+
+def _meets_threshold(dimension: Dimension, confidence: float) -> bool:
+    """Check if a detector result meets its per-detector activation threshold."""
+    threshold = DETECTOR_THRESHOLDS.get(dimension.value, DEFAULT_THRESHOLD)
+    if threshold is None:
+        return False  # e.g., crisis never activates
+    return confidence >= threshold
 
 
 # === Data Models ===
@@ -44,17 +78,28 @@ class Star(BaseModel):
     dimension: Dimension
     signal_key: str
     label: str
+    label_type: str = Field(default="fuzzy", description="'precise' (conf>=0.7) or 'fuzzy'")
+    trigger_reason: str = Field(default="first_activation", description="first_activation | high_confidence | minimum_guarantee")
     is_dark: bool = Field(default=False, description="30% dark star with ?")
     brightness: float = Field(default=0.7, ge=0.0, le=1.0)
     created_at_turn: int = 0
 
 
+class FogAnimationParams(BaseModel):
+    """Animation parameters for fog rendering."""
+    duration_ms: int = FOG_ETA_MS
+    opacity: float = Field(default=0.6, ge=0.0, le=1.0)
+    color_hint: str = Field(default="warm", description="warm | cool | neutral")
+
+
 class FogEvent(BaseModel):
-    """Fog disturbance — precedes star creation by 3 seconds."""
+    """Fog disturbance signal for frontend."""
+    event: str = Field(default="fog_appear", description="fog_appear | fog_intensify | fog_clear")
     position: list[float] = Field(description="[x, y] on star map, 0.0-1.0")
     intensity: float = Field(ge=0.0, le=1.0)
-    eta_ms: int = FOG_ETA_MS
     dimension: Dimension
+    text: str = Field(default="", description="Fog text hint")
+    animation: FogAnimationParams = Field(default_factory=FogAnimationParams)
 
 
 class StarCreatedEvent(BaseModel):
@@ -126,7 +171,10 @@ class StarEngine:
 
         suppress_new_stars = safety_gate == "layer_1"
 
-        activated = [r for r in results if r.activated and r.confidence >= ACTIVATION_THRESHOLD]
+        activated = [
+            r for r in results
+            if r.activated and _meets_threshold(r.dimension, r.confidence)
+        ]
         new_dim_candidates: list[DetectorResult] = []
         brightness_updates: list[DetectorResult] = []
 
@@ -156,9 +204,13 @@ class StarEngine:
             if star:
                 pos = self._random_position()
                 output.fog_events.append(FogEvent(
+                    event="fog_appear",
                     position=pos,
                     intensity=min(top.confidence * 1.2, 1.0),
                     dimension=top.dimension,
+                    animation=FogAnimationParams(
+                        color_hint=_color_for_dimension(top.dimension),
+                    ),
                 ))
                 output.new_stars.append(StarCreatedEvent(star=star, fog_position=pos))
                 new_star_created = True
@@ -187,9 +239,14 @@ class StarEngine:
             if fallback:
                 pos = self._random_position()
                 output.fog_events.append(FogEvent(
+                    event="fog_appear",
                     position=pos,
                     intensity=0.5,
                     dimension=fallback.dimension,
+                    animation=FogAnimationParams(
+                        opacity=0.4,
+                        color_hint=_color_for_dimension(fallback.dimension),
+                    ),
                 ))
                 output.new_stars.append(StarCreatedEvent(star=fallback, fog_position=pos))
             else:
@@ -201,9 +258,14 @@ class StarEngine:
             if dark:
                 pos = self._random_position()
                 output.fog_events.append(FogEvent(
+                    event="fog_appear",
                     position=pos,
                     intensity=0.3,
                     dimension=Dimension.EMOTION,
+                    animation=FogAnimationParams(
+                        opacity=0.3,
+                        color_hint="neutral",
+                    ),
                 ))
                 output.new_stars.append(StarCreatedEvent(star=dark, fog_position=pos))
 
@@ -239,11 +301,14 @@ class StarEngine:
                 label = template_label
             else:
                 return None
+        label_type = "precise" if result.confidence >= 0.7 else "fuzzy"
         star = Star(
             id=f"star_{result.dimension.value}_{len(self.stars)}",
             dimension=result.dimension,
             signal_key=signal_key,
             label=label,
+            label_type=label_type,
+            trigger_reason="first_activation",
             brightness=round(min(result.confidence, 1.0), 2),
             created_at_turn=turn,
         )
@@ -265,6 +330,7 @@ class StarEngine:
         for c in candidates:
             star = self._create_star(c, turn)
             if star:
+                star.trigger_reason = "minimum_guarantee"
                 return star
 
         # Ultra-fallback: EQ is almost always activated
