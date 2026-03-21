@@ -8,31 +8,31 @@ import os
 
 from sufficiency_scorer.precompute import precompute, format_precomputed
 
-# Compact system prompt — every token earns its place
-SYSTEM = """你是 SoulMap 星标签生成器。从用户的话和分析信号中，生成一个 3-6 字的中文星标签。
+# Core insight from DBT + best-performing labels analysis:
+# The best labels NAME A PARADOX the person is living in.
+# "被爱淹没的孤独" = love + loneliness (82分)
+# "微笑下的沸腾" = smile + boiling (78分)
+# The worst labels describe one thing: "向内看的人" (35分)
 
-核心原则（王阳明：我心光明）：
-- 指向内心光明面，即使被乌云遮蔽
-- 必须触及情感核心，不只是描述场景
-- 必须基于用户说的具体内容
+SYSTEM = """Output a 4-8 character Chinese label for this person's soul map star.
 
-场景 vs 情感核心的区别：
-✗ "淋浴里的真实" — 只描述了场景（在哪里哭）
-✓ "不屈的温柔" — 触及了情感核心（每天被霸凌还能保持柔软）
+TWO modes depending on tone:
 
-✗ "肾上腺素的选择" — 浪漫化了行为表面
-✓ "挣扎中的诚实" — 看到了承认问题的勇气
+PAIN/STRUGGLE/CONFLICT → name the PARADOX (two opposing forces, NOT the scene):
+  "微笑下的沸腾" "爱里的筋疲力尽" "两杯咖啡的习惯" "擅长里的陌生" "坚强里的土崩"
+  NEVER describe the scene (where/when). Always name the emotional tension.
 
-✗ "向内看的人" — 通用，谁都行
-✓ "加班背后的底线" — 具体到这个人的处境
+JOY/GRATITUDE/CURIOSITY/EXCITEMENT → name the ESSENCE (celebrate the light):
+  "三年磨出的光" "抱紧每一天" "打开所有门的人" "好奇不灭"
 
-标签要让用户想："它怎么知道的？"而不是"嗯，还行吧"。"""
+Choose mode based on what the person actually said. Don't force darkness onto light.
+BANNED: generic labels like "内心柔软" "向内看的人" "敢于面对"
 
-USER = """信号: {dimension} — {signal_key}
-上下文: {context}
-用户: "{text}"
+Output ONLY the Chinese label. Nothing else."""
 
-一个标签（3-6字），只返回文字："""
+USER = """{dimension}/{signal_key} | {context}
+"{text}"
+"""
 
 
 class StarLabelGenerator:
@@ -76,8 +76,10 @@ class StarLabelGenerator:
                     text=user_text[:150],
                 )}],
             )
-            label = r.content[0].text.strip().strip('"\'「」【】')
-            if 2 <= len(label) <= 10:
+            label = r.content[0].text.strip().strip('"\'「」【】。，')
+            # Remove any trailing punctuation or explanation
+            label = label.split('\n')[0].split('。')[0].split('，')[0].strip()
+            if 2 <= len(label) <= 12:
                 return label
             return None
         except Exception:

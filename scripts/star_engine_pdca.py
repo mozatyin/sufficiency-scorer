@@ -150,7 +150,7 @@ async def main():
     print("=" * 80)
 
     results = []
-    for i in range(1, 2):  # 1 iteration (measuring V2 improvement)
+    for i in range(1, 2):  # 1 iteration (V3 paradox labels)
         print(f"\n--- ITERATION {i} ---")
         t0 = time.monotonic()
         r = await run_one_iteration(personas, i)
