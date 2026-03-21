@@ -2,3 +2,12 @@
 __pycache__/
 .pytest_cache/
 *.egg-info/
+.DS_Store
+
+# Generated results (large, reproducible)
+data/literary_results.json
+data/literary_gt_scores.json
+data/literary_gt_scores_llm.json
+data/literary_gt_llm_judge.json
+data/literary_gt_fast.json
+data/star_engine_sim.json

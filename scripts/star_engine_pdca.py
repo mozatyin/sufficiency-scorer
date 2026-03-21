@@ -192,7 +192,7 @@ async def main():
     print("PDCA PROGRESSION")
     print("=" * 80)
     for r in results:
-        bar = "█" * (r["mean_score"] // 5)
+        bar = "█" * int(r["mean_score"] // 5)
         print(f"  R{r['iteration']:>2}: {r['mean_score']:>5.1f}/100 {bar}  ≥70={r['high_pct']:>3}%  <50={r['low_pct']:>3}%")
 
     output = Path(__file__).resolve().parent.parent / "data" / "star_pdca_results.json"

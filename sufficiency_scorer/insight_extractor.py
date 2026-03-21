@@ -1,8 +1,14 @@
-"""Insight extraction — the AlphaGo layer.
+"""Insight extraction — signal analysis layer (no LLM, zero cost).
 
-Two passes:
-1. Cross-dimensional (HIGH): surprising patterns across detector pairs.
-2. Single-dimensional (MEDIUM): top signal from each detector, positively reframed.
+Used by SufficiencyScorer to determine bloom readiness: "are there 3+ extractable insights?"
+This is the GATE, not the DISPLAY — template reframes here are for counting, not for users.
+
+For user-facing content, InsightGenerator (LLM) and StarLabelGenerator (LLM) take over after bloom.
+
+Pipeline:
+  1. InsightExtractor.extract() → "enough signals? bloom!" (zero cost, <1ms)
+  2. InsightGenerator.generate() → personalized insights for user (1x LLM, ~87/100)
+  3. StarLabelGenerator.generate_label() → star labels (Nx Haiku, ~67/100)
 """
 
 import re
