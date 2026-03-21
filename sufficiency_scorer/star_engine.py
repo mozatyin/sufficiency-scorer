@@ -90,9 +90,11 @@ class StarEngine:
         # after 3s → output.new_stars → render stars
     """
 
-    def __init__(self):
+    def __init__(self, label_generator=None):
         self.stars: list[Star] = []
         self._activated_dims: dict[Dimension, float] = {}  # dim → last confidence
+        self._label_generator = label_generator
+        self._user_text = ""
 
     def process_turn(
         self,
@@ -102,6 +104,7 @@ class StarEngine:
     ) -> StarEngineOutput:
         """Process one conversation turn. Returns fog/star/brightness events."""
         output = StarEngineOutput()
+        self._user_text = user_text
 
         activated = [r for r in results if r.activated and r.confidence >= ACTIVATION_THRESHOLD]
         new_dim_candidates: list[DetectorResult] = []
@@ -192,9 +195,18 @@ class StarEngine:
         signal_key = get_signal_key(result.dimension, result.detail)
         if not signal_key:
             return None
-        label = get_positive_label(result.dimension, signal_key)
+
+        # Try LLM-generated label if generator available, else fall back to template
+        label = None
+        if self._label_generator and self._user_text:
+            label = self._label_generator.generate_label(
+                result.dimension.value, signal_key, self._user_text
+            )
+        if not label:
+            label = get_positive_label(result.dimension, signal_key)
         if not label:
             return None
+
         # Safety check
         if any(banned in label for banned in BANNED_TERMS):
             return None
