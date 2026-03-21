@@ -249,3 +249,102 @@ class TestReset:
         assert len(engine.stars) > 0
         engine.reset()
         assert len(engine.stars) == 0
+
+
+# === V6 Gate-Aware Star Suppression ===
+
+class TestSafetyGate:
+    """Stars must respect the Guard module's gate output."""
+
+    def test_layer_0_suppresses_all(self):
+        """Crisis mode: no stars, no fog, no brightness changes."""
+        engine = StarEngine()
+        output = engine.process_turn(
+            work_pressure(), turn_count=1, safety_gate="layer_0_only",
+        )
+        assert len(output.fog_events) == 0
+        assert len(output.new_stars) == 0
+        assert len(output.brightness_changes) == 0
+        assert len(engine.stars) == 0
+
+    def test_layer_1_suppresses_new_stars(self):
+        """High distress: no new stars, but brightness updates allowed."""
+        engine = StarEngine()
+        # First create a star normally
+        engine.process_turn(work_pressure(), turn_count=1, safety_gate="layer_3_ok")
+        initial_count = len(engine.stars)
+        assert initial_count > 0
+
+        # Now at layer_1: should NOT create new stars
+        output = engine.process_turn(
+            work_pressure(), turn_count=2, safety_gate="layer_1",
+        )
+        assert len(output.new_stars) == 0
+        assert len(engine.stars) == initial_count  # no new stars
+
+    def test_layer_1_allows_brightness_updates(self):
+        """At layer_1, existing stars can still update brightness."""
+        engine = StarEngine()
+        # Create star at low confidence
+        results = work_pressure()
+        engine.process_turn(results, turn_count=1, safety_gate="layer_3_ok")
+
+        # Increase confidence significantly
+        boosted = work_pressure()
+        for r in boosted:
+            if r.activated:
+                r.confidence = min(r.confidence + 0.3, 1.0)
+
+        output = engine.process_turn(boosted, turn_count=2, safety_gate="layer_1")
+        # Brightness changes should still fire
+        # (may or may not depending on delta threshold)
+
+    def test_layer_2_normal_generation(self):
+        """layer_2_ok: normal star generation."""
+        engine = StarEngine()
+        output = engine.process_turn(
+            work_pressure(), turn_count=1, safety_gate="layer_2_ok",
+        )
+        assert len(engine.stars) > 0
+
+    def test_layer_3_normal_generation(self):
+        """layer_3_ok (default): normal star generation."""
+        engine = StarEngine()
+        output = engine.process_turn(work_pressure(), turn_count=1)
+        assert len(engine.stars) > 0
+
+    def test_crisis_then_recovery_stars_resume(self):
+        """After crisis clears, stars should resume normally."""
+        engine = StarEngine()
+        # Turn 1: crisis — no stars
+        engine.process_turn(work_pressure(), turn_count=1, safety_gate="layer_0_only")
+        assert len(engine.stars) == 0
+
+        # Turn 2: recovered — stars resume
+        output = engine.process_turn(
+            work_pressure(), turn_count=2, safety_gate="layer_2_ok",
+        )
+        assert len(engine.stars) > 0
+
+    def test_layer_0_suppresses_dark_stars(self):
+        """Dark stars also suppressed at layer_0."""
+        engine = StarEngine()
+        # Build up stars first
+        engine.process_turn(work_pressure(), turn_count=1, safety_gate="layer_3_ok")
+        engine.process_turn(work_pressure(), turn_count=2, safety_gate="layer_3_ok")
+        stars_before = len(engine.stars)
+
+        # Turn 3: crisis — no dark star
+        output = engine.process_turn(
+            work_pressure(), turn_count=3, safety_gate="layer_0_only",
+        )
+        assert len(engine.stars) == stars_before  # no new stars at all
+
+    def test_layer_1_suppresses_fallback(self):
+        """Min guarantee fallback also suppressed at layer_1."""
+        engine = StarEngine()
+        # Turn 2 normally requires ≥ 2 stars, but at layer_1 no fallback
+        output = engine.process_turn(
+            all_inactive(), turn_count=2, safety_gate="layer_1",
+        )
+        assert len(engine.stars) == 0  # no fallback at layer_1

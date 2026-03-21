@@ -101,10 +101,30 @@ class StarEngine:
         results: list[DetectorResult],
         turn_count: int,
         user_text: str = "",
+        safety_gate: str = "layer_3_ok",
     ) -> StarEngineOutput:
-        """Process one conversation turn. Returns fog/star/brightness events."""
+        """Process one conversation turn. Returns fog/star/brightness events.
+
+        Args:
+            results: Detector results from this turn.
+            turn_count: Current conversation turn number.
+            user_text: User's message text (for label generation).
+            safety_gate: Guard module's gate output. Controls star suppression:
+                - "layer_0_only": NO stars, NO fog (crisis mode)
+                - "layer_1": NO new stars, but brightness updates allowed
+                - "layer_2_ok": Normal star generation
+                - "layer_3_ok": Normal star generation (full depth)
+        """
         output = StarEngineOutput()
         self._user_text = user_text
+
+        # Gate check: suppress stars during crisis
+        if safety_gate == "layer_0_only":
+            # "今晚没有星。但你被听到了。"
+            output.total_stars = len(self.stars)
+            return output
+
+        suppress_new_stars = safety_gate == "layer_1"
 
         activated = [r for r in results if r.activated and r.confidence >= ACTIVATION_THRESHOLD]
         new_dim_candidates: list[DetectorResult] = []
@@ -128,9 +148,9 @@ class StarEngine:
             r.confidence,
         ), reverse=True)
 
-        # Create at most 1 new star
+        # Create at most 1 new star (suppressed at layer_1)
         new_star_created = False
-        if new_dim_candidates:
+        if new_dim_candidates and not suppress_new_stars:
             top = new_dim_candidates[0]
             star = self._create_star(top, turn_count)
             if star:
@@ -160,8 +180,8 @@ class StarEngine:
         for r in activated:
             self._activated_dims[r.dimension] = r.confidence
 
-        # Minimum guarantee fallback — keep adding until we meet the minimum
-        min_required = MIN_STARS_BY_TURN.get(turn_count, 0)
+        # Minimum guarantee fallback (suppressed at layer_1)
+        min_required = MIN_STARS_BY_TURN.get(turn_count, 0) if not suppress_new_stars else 0
         while len(self.stars) < min_required:
             fallback = self._fallback_star(results, turn_count, user_text)
             if fallback:
@@ -175,8 +195,8 @@ class StarEngine:
             else:
                 break  # no more fallback candidates
 
-        # Check dark star opportunity (at most 1 per session, after turn 3)
-        if turn_count >= 3 and not any(s.is_dark for s in self.stars):
+        # Check dark star opportunity (suppressed at layer_1)
+        if turn_count >= 3 and not suppress_new_stars and not any(s.is_dark for s in self.stars):
             dark = self._try_dark_star(results, turn_count)
             if dark:
                 pos = self._random_position()
