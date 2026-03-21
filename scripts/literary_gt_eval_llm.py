@@ -62,7 +62,7 @@ async def main():
 
         # Generate insights via LLM
         try:
-            insights = generator.generate(results, user_text=text)
+            insights = generator.generate(user_text=text)
         except Exception as e:
             print(f"  ERROR #{cid} {char['character']}: {e}")
             errors += 1

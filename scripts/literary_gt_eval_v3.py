@@ -4,7 +4,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from scripts.literary_gt_eval_llm_judge import LLMJudge
-from sufficiency_scorer.insight_generator_v3 import InsightGeneratorV3
+from sufficiency_scorer.insight_generator import InsightGenerator as InsightGeneratorV3
 
 DATA = Path(__file__).resolve().parent.parent / "data" / "literary_first_words.json"
 GT = Path(__file__).resolve().parent.parent / "data" / "literary_ground_truth.json"

@@ -1,42 +1,20 @@
-"""LLM-powered star label generation — V2 with precomputed signals.
-
-Takes detector signal + precomputed context + user text → 3-6 char Chinese label.
-Philosophy: 王阳明"致良知" — every person has inner light.
-"""
+"""Star label generator — minimal prompt, precomputed signals."""
 
 import os
-
 from sufficiency_scorer.precompute import precompute, format_precomputed
 
-# Core insight from DBT + best-performing labels analysis:
-# The best labels NAME A PARADOX the person is living in.
-# "被爱淹没的孤独" = love + loneliness (82分)
-# "微笑下的沸腾" = smile + boiling (78分)
-# The worst labels describe one thing: "向内看的人" (35分)
+# 55 tokens. Pain→paradox, joy→essence. Examples do the heavy lifting.
+SYSTEM = """Output one 4-8 char Chinese star label. Pain→paradox(A中的B), Joy→essence(celebrate).
+Ex: "微笑下的沸腾" "两杯咖啡的习惯" "三年磨出的光" "擅长里的陌生" "抱紧每一天"
+NO generic: "内心柔软" "向内看" "敢于面对". Label only, nothing else."""
 
-SYSTEM = """Output a 4-8 character Chinese label for this person's soul map star.
-
-TWO modes depending on tone:
-
-PAIN/STRUGGLE/CONFLICT → name the PARADOX (two opposing forces, NOT the scene):
-  "微笑下的沸腾" "爱里的筋疲力尽" "两杯咖啡的习惯" "擅长里的陌生" "坚强里的土崩"
-  NEVER describe the scene (where/when). Always name the emotional tension.
-
-JOY/GRATITUDE/CURIOSITY/EXCITEMENT → name the ESSENCE (celebrate the light):
-  "三年磨出的光" "抱紧每一天" "打开所有门的人" "好奇不灭"
-
-Choose mode based on what the person actually said. Don't force darkness onto light.
-BANNED: generic labels like "内心柔软" "向内看的人" "敢于面对"
-
-Output ONLY the Chinese label. Nothing else."""
-
-USER = """{dimension}/{signal_key} | {context}
-"{text}"
+USER = """{dim}/{key}|{ctx}
+"{txt}"
 """
 
 
 class StarLabelGenerator:
-    """Generates personalized star labels via LLM with precomputed context."""
+    """One Haiku call per star. ~55 system + ~40 user tokens."""
 
     def __init__(self, api_key: str | None = None):
         self._api_key = api_key or os.environ.get("ANTHROPIC_API_KEY", "")
@@ -47,40 +25,36 @@ class StarLabelGenerator:
         else:
             self._model = "claude-haiku-4-5-20251001"
             self._base_url = None
+        self._pc_cache: dict[str, str] = {}
 
     def _get_client(self):
         if self._client is None:
             import anthropic
-            kwargs = {"api_key": self._api_key}
+            kw = {"api_key": self._api_key}
             if self._base_url:
-                kwargs["base_url"] = self._base_url
-            self._client = anthropic.Anthropic(**kwargs)
+                kw["base_url"] = self._base_url
+            self._client = anthropic.Anthropic(**kw)
         return self._client
 
     def generate_label(self, dimension: str, signal_key: str, user_text: str) -> str | None:
-        """Generate one personalized star label with precomputed context."""
+        """Generate one star label. Caches precompute per text."""
         try:
-            # Precompute context signals (0ms)
-            pc = precompute(user_text)
-            context = format_precomputed(pc)
+            # Cache precompute (same text = same context)
+            ctx = self._pc_cache.get(user_text)
+            if ctx is None:
+                ctx = format_precomputed(precompute(user_text))
+                self._pc_cache[user_text] = ctx
 
-            client = self._get_client()
-            r = client.messages.create(
+            r = self._get_client().messages.create(
                 model=self._model,
-                max_tokens=20,
+                max_tokens=15,
                 system=SYSTEM,
                 messages=[{"role": "user", "content": USER.format(
-                    dimension=dimension,
-                    signal_key=signal_key,
-                    context=context,
-                    text=user_text[:150],
+                    dim=dimension, key=signal_key, ctx=ctx, txt=user_text[:120],
                 )}],
             )
-            label = r.content[0].text.strip().strip('"\'「」【】。，')
-            # Remove any trailing punctuation or explanation
+            label = r.content[0].text.strip().strip('"\'「」【】。，:：')
             label = label.split('\n')[0].split('。')[0].split('，')[0].strip()
-            if 2 <= len(label) <= 12:
-                return label
-            return None
+            return label if 2 <= len(label) <= 12 else None
         except Exception:
             return None

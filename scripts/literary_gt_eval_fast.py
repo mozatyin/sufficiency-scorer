@@ -14,7 +14,7 @@ from scripts.literary_validation import (
 )
 from scripts.literary_gt_eval_llm_judge import LLMJudge
 from sufficiency_scorer.detectors.eq import EQAdapter
-from sufficiency_scorer.insight_generator_fast import FastInsightGenerator
+from sufficiency_scorer.insight_generator import InsightGenerator as FastInsightGenerator
 from sufficiency_scorer.models import DetectorResult, Dimension
 
 DATA_PATH = Path(__file__).resolve().parent.parent / "data" / "literary_first_words.json"
@@ -55,7 +55,7 @@ async def main():
         # Generate (timed)
         t0 = time.monotonic()
         try:
-            insights = generator.generate(results, user_text=text)
+            insights = generator.generate(user_text=text)
         except Exception as e:
             print(f"  GEN ERROR #{cid}: {e}")
             continue
